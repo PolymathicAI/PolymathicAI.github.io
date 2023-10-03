@@ -56,11 +56,13 @@ body {
 }
 
 // Text Format
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
@@ -105,7 +107,7 @@ p {
 
 // Horizontal Lines
 hr {
-  clear :both;
+  clear: both;
   border: none;
   width: 100%;
   height: 1px;
@@ -216,48 +218,54 @@ blockquote {
 
 // Page Loader
 .page-loader {
-	display: block;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
   right: 0;
   bottom: 0;
-	left: 0;
-	opacity: 1;
-  background: $light-blue;
-	transition: all 0.7s $transition-links-type;
+  left: 0;
+  opacity: 1;
+  background: $light-bkgd;
+  transition: all 0.7s $transition-links-type;
   z-index: 99999999999;
 
   // Load Icon
-	.load-icon {
-		display: block;
+  .load-icon {
+    display: block;
     position: relative;
-		width: 70px;
-		height: 70px;
+    width: 70px;
+    height: 70px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-		&:before, &:after {
-			content: '';
-			display: block;
-			position: absolute;
-			background: rgba($primary, 0.2);
-			width: 100%;
-			height: 100%;
-			border-radius: 50%;
-		}
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: rgba($primary, 0.2);
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
 
-		&:before { animation: sera-loader-in .85s linear 0s alternate infinite; }
-		&:after { animation: sera-loader-out .85s linear 0s alternate infinite; }
-	}
+    &:before {
+      animation: sera-loader-in .85s linear 0s alternate infinite;
+    }
+
+    &:after {
+      animation: sera-loader-out .85s linear 0s alternate infinite;
+    }
+  }
 
   // After Complete Loading Destroy
-	&.load-complete {
-		height: 0;
-		opacity: 0;
-	}
+  &.load-complete {
+    height: 0;
+    opacity: 0;
+  }
 }
 
 // Go to top
@@ -272,7 +280,7 @@ blockquote {
   height: 50px;
   cursor: pointer;
   border: 1px solid $primary;
-  background: rgba($light-blue, 0.2);
+  background: rgba($light-bkgd, 0.2);
   transform: translate3d(0, calc(130% + 50px), 0);
   transition: all $transition-links $transition-links-type;
   z-index: 9999;

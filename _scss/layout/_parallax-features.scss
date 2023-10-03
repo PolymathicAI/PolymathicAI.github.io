@@ -9,11 +9,14 @@
 section.parallax-features-section {
   position: relative;
   padding-bottom: 50px;
-  color: $light-blue;
+  color: $light-bkgd;
 
   // Section Header
   header.section-header {
-    h2, h3, h4 {
+
+    h2,
+    h3,
+    h4 {
       color: $white;
     }
 
@@ -90,7 +93,9 @@ section.parallax-features-section {
 
       }
 
-      &, p, .icon-wrap .circle {
+      &,
+      p,
+      .icon-wrap .circle {
         transition: all $transition-links $transition-links-type;
       }
 

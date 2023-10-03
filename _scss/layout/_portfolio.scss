@@ -15,7 +15,7 @@ section.portfolio-section {
     .filter-menu {
       display: block;
       width: 100%;
-      background-color: $light-blue;
+      background-color: $light-bkgd;
       border-radius: 3px;
       letter-spacing: normal;
       text-align: center;
@@ -121,7 +121,8 @@ section.portfolio-section {
         transform: translateY(100%);
         transition: all $transition-links $transition-links-type;
 
-        h3, h4 {
+        h3,
+        h4 {
           text-transform: uppercase;
         }
 

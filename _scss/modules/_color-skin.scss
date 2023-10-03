@@ -39,19 +39,21 @@
 $blue: #21c2f8;
 $green: #2ecc71;
 $red: #CA0E4C;
-$red_bright:#d93f72;
+$red_bright: #d93f72;
 
 // Global Pallete
 $white: #fff;
 $black: #000;
 $black-transparent: rgba($black, 0.9);
 $light-blue: #f4f8f9;
+$light-red: #f9f8f4;
 
 // Primary & Secondary
 $primary: $red;
 $primary_bright: $red_bright;
 $primary_dark: #000000c9;
 $secondary: #2c3e50;
+$light-bkgd: $light-red;
 
 // Gray Pallete
 $text-gray: #848484;
@@ -68,14 +70,14 @@ $background-color: $white;
 
 // Sections Colors
 $section-bg: $white;
-$section-focus: $light-blue;
+$section-focus: $light-bkgd;
 
 // Footer Colors
 $footer-color: $text-gray;
 $footer-background-color: $dark-gray;
 
 // Sidebar Colors [Widgets]
-$sidebar-header: $light-blue;
+$sidebar-header: $light-bkgd;
 $sidebar-title: $secondary;
 
 $shadow-color: rgba(39, 36, 36, 0.1);

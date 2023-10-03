@@ -7,11 +7,14 @@
  **/
 
 section.contact-section {
-  color: $light-blue;
+  color: $light-bkgd;
 
   // Section Header
   header.section-header {
-    h2, h3, h4 {
+
+    h2,
+    h3,
+    h4 {
       color: $white;
     }
 
@@ -27,11 +30,13 @@ section.contact-section {
     // Contact Form
     form.contact-form {
 
-      .col-md-6, .col-md-12 {
+      .col-md-6,
+      .col-md-12 {
         margin-bottom: 30px;
       }
 
-      input, textarea {
+      input,
+      textarea {
         color: $white;
 
         &:hover,
@@ -41,16 +46,23 @@ section.contact-section {
           background: transparentize($primary, 0.75);
 
           // Placeholders
-          &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
             color: $white;
           }
-          &::-moz-placeholder { /* Firefox 19+ */
+
+          &::-moz-placeholder {
+            /* Firefox 19+ */
             color: $white;
           }
-          &:-ms-input-placeholder { /* IE 10+ */
+
+          &:-ms-input-placeholder {
+            /* IE 10+ */
             color: $white;
           }
-          &:-moz-placeholder { /* Firefox 18- */
+
+          &:-moz-placeholder {
+            /* Firefox 18- */
             color: $white;
           }
         }
