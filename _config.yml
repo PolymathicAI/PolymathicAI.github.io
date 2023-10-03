@@ -335,60 +335,60 @@ team-title: The Team
 #
 team:
   # Team Member
-  - name: Alberto Bietti
+  - name: Alberto<br>Bietti
     avatar: albert_bietti.jpg
 
-  - name: Bruno Regaldo
+  - name: Bruno<br>Regaldo
     avatar: bruno_regaldo_saint_blancard.jpg
 
   # Team Member
-  - name: Francois Lanusse
+  - name: Francois<br>Lanusse
     avatar: francois_lanusse.jpg
 
 
   # Team Member
-  - name: Geraud Krawezik
+  - name: Geraud<br>Krawezik
     avatar: geraud_krawezik.jpg
 
-  - name: Keiya Hirashima
+  - name: Keiya<br>Hirashima
     avatar: keiya_hirashima.jpg
 
-  - name: Kyunghyun Cho
+  - name: Kyunghyun<br>Cho
     avatar: kyunghyun_cho.jpg
 
-  - name: Leopoldo Sarra
+  - name: Leopoldo<br>Sarra
     avatar: leopoldo_sarra.jpg
 
   # Team Member
-  - name: Liam Parker
+  - name: Liam<br>Parker
     avatar: liam_parker.jpg
 
   # Team Member
-  - name: Mariel Pettee
+  - name: Mariel<br>Pettee
     avatar: mariel_pettee.jpg
 
-  - name: Michael Eickenberg
+  - name: Michael<br>Eickenberg
     avatar: michael_eickenberg.jpg
 
-  - name: Michael McCabe
+  - name: Michael<br>McCabe
     avatar: michael_mccabe.jpg
 
-  - name: Miles Cranmer
+  - name: Miles<br>Cranmer
     avatar: miles_cranmer.jpg
 
-  - name: Nick Lourie
+  - name: Nick<br>Lourie
     avatar: nick_lourie.jpg
 
-  - name: Ruben Ohana
+  - name: Ruben<br>Ohana
     avatar: ruben_ohana.jpg
 
-  - name: Shirley Ho
+  - name: Shirley<br>Ho
     avatar: shirley_ho.jpg
 
-  - name: Siavash Golkar
+  - name: Siavash<br>Golkar
     avatar: siavash_golkar.jpg
 
-  - name: Tiberiu Tesileanu
+  - name: Tiberiu<br>Tesileanu
     avatar: tiberiu_tesileanu.jpg
 
 
