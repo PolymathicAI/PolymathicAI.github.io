@@ -39,19 +39,6 @@ section.team-section {
 
         img {
           filter: grayscale(100%);
-          position: relative;
-          display: inline-block; // or block
-        }
-
-        img::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: rgba($primary, 0.1); // this makes the primary color half-transparent
-          mix-blend-mode: multiply;
         }
 
         &:before,
