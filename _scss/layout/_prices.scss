@@ -1,0 +1,167 @@
+/**
+ *
+ *  Prices Section Style
+ *
+ *  @package ohkimur_layout
+ *
+ **/
+
+section.prices-section {
+
+  // Pricing Tables Container
+  .pricing-tables-container {
+    margin-top: 80px;
+
+    // Wrapper
+    .pricing-tables-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+
+      // Responsive Media
+      @media (max-width: 991px) and (min-width: 400px) {
+        display: block;
+
+        .pricing-table {
+          margin-bottom: 30px;
+        }
+      }
+
+      // Responsive Media
+      @media (max-width: 400px) {
+        display: block;
+
+        .col-md-3 {
+          width: 100% !important;
+          left: 0;
+          margin-bottom: 30px;
+        }
+      }
+
+    }
+
+    // Pricing Table
+    .pricing-table {
+      position: relative;
+      border: 1px solid $simple-gray;
+      text-align: center;
+      background: $white;
+      transition: all $transition-links $transition-links-type;
+
+      // Pricing Table Focus
+      &.pricing-table-focus {
+
+        .plan-head {
+          position: relative;
+          padding-top: 90px;
+
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: calc(100% + 2px);
+            height: 4px;
+            top: -1px;
+            left: -1px;
+            background: $primary;
+          }
+        }
+
+        .plan-action {
+          padding-bottom: 40px;
+        }
+
+      }
+
+      // Plan Head
+      .plan-head {
+        padding: 50px 0;
+        font-weight: bold;
+        border-bottom: 1px solid $simple-gray;
+        overflow: hidden;
+
+        .offer {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 120%;
+          height: auto;
+          color: $white;
+          font-size: 0.75rem;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 10px 0;
+          background: $primary;
+          transform: rotate(-45deg) translate(-32%,-160%);
+        }
+
+        .plan-title {
+          text-transform: uppercase;
+          color: $secondary;
+          font-size: 1.25rem;
+        }
+
+        hr.normal {
+          width: 60px;
+          height: 2px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+
+          &:after {
+            height: 2px;
+          }
+        }
+
+        .plan-subtitle {
+          font-size: 0.875rem;
+        }
+
+      }
+
+      // Plan Content
+      .plan-content {
+        padding: 40px 22px;
+        border-bottom: 1px solid $simple-gray;
+
+        h4.feature-title {
+          font-weight: bold;
+          color: $secondary;
+          font-size: 1rem;
+
+          .check {
+            color: $green;
+            font-size: 1.1em;
+            margin-right: 4px;
+          }
+        }
+
+        hr.separator {
+          margin: 20px auto;
+        }
+
+        p.feature-content {
+          font-size: 0.75rem;
+          margin: 20px 0;
+        }
+
+      }
+
+      // Plan Action
+      .plan-action {
+        padding: 30px 10px;
+      }
+
+      // Hover Mode
+      &:hover {
+        box-shadow: 0px 4px 9px 0px $shadow-color;
+      }
+
+    }
+
+  }
+
+}

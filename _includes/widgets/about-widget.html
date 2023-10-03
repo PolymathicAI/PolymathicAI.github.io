@@ -1,0 +1,37 @@
+<!-- About Widget -->
+<div class="widget about-widget">
+
+  <!-- Widget Header -->
+  <header class="widget-header">
+    <h4 class="widget-title">About Me</h4>
+  </header>
+
+  <!-- Widget Content -->
+  <div class="widget-content">
+
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="{{ site.baseurl }}/images/avatars/{{ site.about-widget.author-avatar }}" alt="Avatar Profile Image">
+        <div class="social-icons">
+          <ul class="icons global-text-color-icons">
+            <li><a href="{{ site.about-widget.author-social-links.youtube }}" target="_blank"><i class="fi flaticon-youtube"></i></a></li>
+            <li><a href="{{ site.about-widget.author-social-links.pinterest }}" target="_blank"><i class="fi flaticon-pinterest"></i></a></li>
+            <li><a href="{{ site.about-widget.author-social-links.facebook }}" target="_blank"><i class="fi flaticon-facebook"></i></a></li>
+            <li><a href="{{ site.about-widget.author-social-links.twitter }}" target="_blank"><i class="fi flaticon-twitter"></i></a></li>
+            <li><a href="{{ site.about-widget.author-social-links.google-plus }}" target="_blank"><i class="fi flaticon-google-plus"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="info clearfix">
+          <h4 class="author-name">{{ site.about-widget.author-name }}</h4>
+          <h5 class="author-info">{{ site.about-widget.author-tagline }}</h5>
+          <hr class="medium">
+        </div>
+        <p class="author-text">{{ site.about-widget.author-info }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>

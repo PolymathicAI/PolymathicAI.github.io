@@ -1,0 +1,117 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+/**
+ *
+ *  Theme Name: Sera - OnePage Multi-Purpose Theme
+ *  Theme URI: https://github.com/ohkimur/
+ *  Author: Ohkimur
+ *  Author URI: https://github.com/ohkimur/
+ *  Description: OnePage Multi-Purpose Theme
+ *  Version: 1.0
+ *  License: GNU General Public License v2 or later
+ *  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ *  Tags: onepage, blog, multiple-columns, left-sidebar, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, post-formats, threaded-comments, translation-ready
+ *  Text Domain: sera-onepage
+ *
+ *  @package ohkimur_project
+ *
+ **/
+
+ @charset "UTF-8";
+
+ /**
+  * -----------------------------------------------------------------------------
+  *
+  *  [ Table of contents ]
+  *
+  *  1. Modules
+  *    1.1 Reset Css
+  *    1.2 Configuration
+  *    1.3 Color Skin
+  *        1.3.1 Light Theme
+  *        1.3.2 Dark Theme
+  *    1.4 Class Tools
+  *    1.5 Bootstrap Grid System
+  *    1.6 Responsive Embed
+  *        1.6.1 16:6 Video Aspect Ratio
+  *        1.6.2 4:3 Video Aspect Ratio
+  *        1.6.3 Standard Audio
+  *    1.7 Animations
+  *    1.8 Owl Carousel
+  *    1.9 Font 7 Stroke Icons
+  *    1.10 Flaticon Social Icons
+  *  2. Components
+  *    2.1 Forms
+  *        2.1.1 Inputs
+  *        2.1.2 Textarea
+  *        2.1.3 Buttons
+  *        2.1.4 Form Group
+  *    2.2 Social Icons
+  *    2.3 Tags Box
+  *    2.4 Buttons
+  *  3. Layout
+  *    3.1 Global
+  *    3.4 Sections
+  *        3.4.1 Header
+  *            3.4.1.1 Header Responsive
+  *            3.4.1.2 Navigation Menu
+  *            3.4.1.3 Mobile Navigation
+  *            3.4.1.4 Buttons CTA (Call To Actions)
+  *         3.4.2 Offer Banner
+  *         3.4.3 About
+  *         3.4.4 Features
+  *         3.4.5 Portfolio
+  *             3.4.5.1 Portfolio Menu
+  *             3.4.5.2 Portfolio Grid
+  *         3.4.6 Parallax Features
+  *         3.4.7 Testimonials
+  *         3.4.8 Blog
+  *         3.4.9 Team
+  *         3.4.10 Prices
+  *         3.4.11 Contact
+  *         3.4.12 Footer
+  *    3.5 Sidebar
+  * -----------------------------------------------------------------------------
+  **/
+ 
+ // Modules
+ @import "modules/_reset",
+         "modules/_config",
+         "modules/_color-skin",
+         "modules/_class-tools",
+         "modules/_bootstrap-grid",
+         "modules/_responsive-embed",
+         "modules/_animations",
+         "modules/_owl-carousel",
+         "modules/_font-7-stroke",
+         "modules/_flaticon-social-icons";
+ 
+ // Components
+ @import "components/_forms",
+         "components/_social-icons",
+         "components/_tags-box",
+         "components/_buttons";
+ 
+ // Layout
+ @import "layout/_global",
+         "layout/_header",
+         "layout/_header-responsive",
+         "layout/_sections",
+         "layout/_sidebar",
+         "layout/_offer",
+         "layout/_about",
+         "layout/_features",
+         "layout/_portfolio",
+         "layout/_parallax-features",
+         "layout/_testimonials",
+         "layout/_blog",
+         "layout/_team",
+         "layout/_sag",
+         "layout/_institution",
+         "layout/_prices",
+         "layout/_contact",
+         "layout/_footer";
+ 

@@ -1,0 +1,57 @@
+/**
+ *
+ *  Sections Style
+ *
+ *  @package ohkimur_layout
+ *
+ **/
+
+section.site-section {
+  padding: 100px 0;
+  background: $section-bg;
+  // z-index: 1;
+
+  // Section Header
+  header.section-header {
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $secondary;
+    }
+
+    hr.normal {
+      margin: 40px auto;
+    }
+  }
+
+  // Section Focus
+  &.section-focus {
+    background-color: $section-focus;
+
+    &.next-section-indicator:after {
+      border-top-color: $section-focus;
+    }
+  }
+
+  // Next Section Indicator
+  &.next-section-indicator {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: -30px;
+      left: 50%;
+      z-index: 3;
+      transform: translate(-50%);
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+
+      border-top: 30px solid $background-color;
+    }
+
+  }
+}

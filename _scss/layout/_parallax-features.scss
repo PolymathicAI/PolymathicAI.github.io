@@ -1,0 +1,144 @@
+/**
+ *
+ *  Parallax Section Style
+ *
+ *  @package ohkimur_layout
+ *
+ **/
+
+section.parallax-features-section {
+  position: relative;
+  padding-bottom: 50px;
+  color: $light-blue;
+
+  // Section Header
+  header.section-header {
+    h2, h3, h4 {
+      color: $white;
+    }
+
+    hr {
+      background: $white;
+    }
+  }
+
+  // Section Features
+  .section-features {
+    margin-top: 80px;
+
+    // Phone
+    .phone {
+      img {
+        margin-bottom: -90%;
+      }
+    }
+
+    // Floating Features
+    .text-left {
+      margin-top: 10%;
+
+      .icon-wrap {
+        margin-right: 30px;
+        float: left;
+      }
+    }
+
+    .text-right {
+      margin-top: 10%;
+
+      .icon-wrap {
+        margin-left: 30px;
+        float: right;
+      }
+    }
+
+    // Feature
+    .feature {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+
+      // Text Wrap
+      .text-wrap {
+        display: inline-block;
+        width: calc(100% - 100px);
+
+        h3 {
+          color: $primary;
+          font-size: 1.25rem;
+          margin-bottom: 10px;
+        }
+
+        p {
+          color: $simple-gray;
+          font-size: 0.875rem;
+          // font-weight: lighter;
+        }
+
+      }
+
+      // Icon Wrap
+      .icon-wrap {
+        display: block;
+
+        .circle {
+          width: 70px;
+          height: 70px;
+          font-size: 2rem;
+          background-color: transparentize($white, 0.8);
+        }
+
+      }
+
+      &, p, .icon-wrap .circle {
+        transition: all $transition-links $transition-links-type;
+      }
+
+      // Feature Hover
+      &:hover {
+
+        p {
+          color: $white;
+        }
+
+        .icon-wrap {
+          .circle {
+            background-color: $primary;
+          }
+        }
+
+      }
+
+    }
+
+    // Resonsive Media
+    @media (max-width: 991px) {
+      .phone {
+        display: none;
+      }
+
+      .text-left {
+        margin-top: 10%;
+
+        .icon-wrap {
+          margin-right: 30px;
+          float: left;
+        }
+      }
+
+      .text-right {
+        margin-top: 10%;
+        text-align: left;
+
+        .icon-wrap {
+          margin-left: 0;
+          margin-right: 30px;
+          float: left;
+        }
+      }
+
+    }
+
+  }
+
+}

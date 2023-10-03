@@ -1,0 +1,32 @@
+<!-- Newsletter Widget -->
+<div class="widget newsletter-widget">
+
+  <!-- Widget Header -->
+  <header class="widget-header">
+    <h4 class="widget-title">Newsletter</h4>
+  </header>
+
+  <!-- Widget Content -->
+  <div class="widget-content">
+
+    <!-- MailChimp Email Form -->
+    <form class="newsletter-email-signup" action="http://twitter.us2.list-manage.com/subscribe/post?u={{ site.mailchimp.user-id }}&amp;id={{ site.mailchimp.list-id }}" method="post" novalidate>
+      <div class="field-group">
+        <label class="hide" for="name">Name</label>
+        <input type="text" value="" name="name" placeholder="Name">
+      </div>
+    	<div class="field-group">
+    		<label class="hide" for="email">Email</label>
+    		<input type="email" value="" name="email" placeholder="Email">
+    	</div>
+
+  	  <!-- bot signup protection - real people won't fill this in -->
+      <input type="text" class="hide" name="b_{{ site.mailchimp.user-id }}_{{ site.mailchimp.list-id }}" tabindex="-1" value="">
+
+      <input type="submit" value="Subscribe" name="subscribe" class="button button-focus button-subscribe">
+
+    </form>
+
+  </div>
+
+</div>

@@ -1,0 +1,28 @@
+<!-- Categories Widget -->
+<div class="widget categories-widget">
+
+  <!-- Widget Header -->
+  <header class="widget-header">
+    <h4 class="widget-title">Categories</h4>
+  </header>
+
+  <!-- Widget Content -->
+  <div class="widget-content">
+
+    <ul class="categories-box">
+    {% assign cat_list = site.categories %}
+      {% if cat_list.first[0] == null %}
+        {% for category in cat_list %}
+          <li><a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }} <span class="cat-count">{{ cat_list[category].size }}</span></a></li>
+        {% endfor %}
+      {% else %}
+        {% for category in cat_list %}
+          <li><a href="{{ site.baseurl }}/category/{{ category[0] | slugify }}">{{ category[0] }} <span class="cat-count">{{ category[1].size }}</span></a></li>
+        {% endfor %}
+      {% endif %}
+    {% assign cat_list = nil %}
+    </ul>
+
+  </div>
+
+</div>

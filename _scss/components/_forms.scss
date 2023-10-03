@@ -1,0 +1,69 @@
+/**
+ *
+ *  Forms & Inputs Style
+ *
+ *  @package ohkimur_components
+ *
+ **/
+
+form {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+// Forms fields
+input, textarea, button {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-family: $font-family;
+  padding: 15px;
+  outline: 0;
+  color: $global-text;
+  border: 1px solid $simple-gray;
+  background: transparentize($white, 0.9);
+  transition: all $transition-links $transition-links-type;
+
+  // Placeholders
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $simple-gray;
+    transition: color $transition-links $transition-links-type;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $simple-gray;
+    transition: color $transition-links $transition-links-type;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $simple-gray;
+    transition: color $transition-links $transition-links-type;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $simple-gray;
+    transition: color $transition-links $transition-links-type;
+  }
+
+  &:hover,
+  &:active {
+    color: darken($global-text, 0.2);
+    border-color: darken($global-text, 0.2);
+
+    // Placeholders
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: darken($global-text, 0.2);
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: darken($global-text, 0.2);
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: darken($global-text, 0.2);
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: darken($global-text, 0.2);
+    }
+
+  }
+
+}

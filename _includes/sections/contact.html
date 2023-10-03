@@ -1,0 +1,87 @@
+<!-- Contact Section -->
+<section class="site-section contact-section next-section-indicator parallax" id="contact" data-scrollax-parent="true">
+
+  <!-- Parallax Contact Image -->
+  <div class="cover" data-scrollax="properties: { 'translateY': '48%' }">
+    <img src="{{ site.baseurl }}/images/contact-image.jpg" />
+  </div>
+
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>{{ site.contact-title }}</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>{{ site.contact-description }}</p>
+      </div>
+
+    </div>
+
+    <!-- Form Container -->
+    <div class="row form-container">
+
+      <!-- Contact Form -->
+      <div class="col-md-8 col-md-push-2">
+        <form id="sera-contact-form" action="https://formspree.io/{{ site.email }}" method="POST"
+          class="contact-form container-fluid">
+          <div class="col-md-6">
+            <input type="text" name="name" placeholder="Name" />
+          </div>
+          <div class="col-md-6">
+            <input type="text" name="website" placeholder="Website" />
+          </div>
+          <div class="col-md-6">
+            <input type="text" name="email" placeholder="Email" />
+          </div>
+          <div class="col-md-6">
+            <input type="text" name="subject" placeholder="Subject" />
+          </div>
+          <div class="col-md-12">
+            <textarea name="message" rows="8" cols="40" placeholder="Message"></textarea>
+          </div>
+          <div class="col-md-12 form-action">
+            <button type="submit" class="send-button">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Google Map Embed -->
+<!-- <div class="google-map">
+
+  <script async src="https://maps.googleapis.com/maps/api/js?key={{ site.key-api }}&callback=initMap">
+  </script>
+  <div id="map" style='overflow:hidden;height:490px;width:100%;'></div>
+  <script type='text/javascript'>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      const lat = {{ site.map-lat}};
+      const lng = {{ site.map-lng }};
+      
+      const location = { lat, lng };
+      // The map, centered at Uluru
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: location,
+      });
+      // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+      });
+    }
+  </script>
+
+</div> -->

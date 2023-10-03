@@ -1,0 +1,294 @@
+/**
+ *
+ *  Global Style
+ *
+ *  @package ohkimur_layout
+ *
+ **/
+
+body {
+
+  // Typography
+  font: {
+    family: $font-family, Arial, sans-serif;
+    size: $global-font-size;
+    weight: normal;
+  }
+
+  color: $global-text;
+
+  // Background
+  background-color: $background-color;
+
+  // Overflow No Scroll
+  .site-header .container {
+    &:before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      background-color: transparent;
+      transition: background-color $transition-links $transition-links-type;
+      z-index: 99;
+    }
+  }
+
+  // No Scroll - Lock body scrolling.
+  &.no-scroll {
+    height: 100vh;
+    overflow-y: hidden;
+
+    .site-header .container {
+      &:before {
+        width: auto;
+        height: auto;
+        background-color: $black-transparent;
+      }
+    }
+
+  }
+
+}
+
+// Text Format
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+.thin {
+  font-weight: lighter;
+}
+
+// Heading
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 2.1875rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.85rem;
+}
+
+// Paragraphs
+p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Horizontal Lines
+hr {
+  clear :both;
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: $simple-gray;
+
+  &.separator {
+    width: 60%;
+  }
+
+  &.small {
+    width: 40px;
+    height: 2px;
+    background-color: $primary;
+  }
+
+  &.medium {
+    width: 70px;
+    height: 1px;
+    background-color: $primary;
+  }
+
+  &.normal {
+    position: relative;
+    border: none;
+    width: 100px;
+    height: 4px;
+    background-color: $secondary;
+
+    &:after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 4px;
+      background: $primary;
+      top: 0;
+      right: 0;
+    }
+  }
+
+}
+
+// Links
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: all $transition-links $transition-links-type;
+
+  &:hover,
+  &:active {
+    color: lighten($primary, 20%);
+  }
+}
+
+// Images
+img {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: auto !important;
+}
+
+// Quotes
+blockquote {
+  display: block;
+  position: relative;
+  width: auto;
+  float: left;
+  font-size: 2.2em;
+  font-weight: lighter;
+  line-height: 1.35;
+  padding: 0 10%;
+  margin: 1.2em auto 1em auto;
+  z-index: 1;
+
+  small {
+    display: block;
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-top: 3%;
+    float: right;
+  }
+
+  &:before {
+    content: '\0022';
+    position: absolute;
+    font-size: 7em;
+    font-weight: 900;
+    opacity: 0.1;
+    top: -6rem;
+    left: 5%;
+    z-index: -1;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 2em;
+
+    small {
+      font-size: 1.2rem;
+    }
+
+    &:before {
+      top: -3rem;
+      left: 3%;
+    }
+  }
+}
+
+// Page Loader
+.page-loader {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+  right: 0;
+  bottom: 0;
+	left: 0;
+	opacity: 1;
+  background: $light-blue;
+	transition: all 0.7s $transition-links-type;
+  z-index: 99999999999;
+
+  // Load Icon
+	.load-icon {
+		display: block;
+    position: relative;
+		width: 70px;
+		height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+		&:before, &:after {
+			content: '';
+			display: block;
+			position: absolute;
+			background: rgba($primary, 0.2);
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+
+		&:before { animation: sera-loader-in .85s linear 0s alternate infinite; }
+		&:after { animation: sera-loader-out .85s linear 0s alternate infinite; }
+	}
+
+  // After Complete Loading Destroy
+	&.load-complete {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+// Go to top
+.go-to-top-button {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid $primary;
+  background: rgba($light-blue, 0.2);
+  transform: translate3d(0, calc(130% + 50px), 0);
+  transition: all $transition-links $transition-links-type;
+  z-index: 9999;
+
+  // Arrow Icon
+  i {
+    font-size: 3.2rem;
+  }
+
+  &:hover {
+    color: $white;
+    background: $primary;
+  }
+
+  // Active Destroy
+  &.active {
+    transform: translate3d(0, 0, 0);
+  }
+}

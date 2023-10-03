@@ -1,0 +1,125 @@
+/**
+ *
+ *  Team
+  Section Style
+ *
+ *  @package ohkimur_layout
+ *
+ **/
+
+section.team-section {
+  background-color: #fff !important;
+
+  // Team Members Container
+  .team-members-container {
+    margin-top: 80px;
+
+    .col-md-3 {
+      @media (max-width: 600px) and (min-width: 430px) {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+
+      @media (max-width: 430px) {
+        width: 100%;
+      }
+    }
+
+    // Member
+    .team-member {
+      background: $white;
+      margin-bottom: 30px;
+      transition: all $transition-links $transition-links-type;
+
+      .img-wrapper {
+        display: block;
+        position: relative;
+        overflow: hidden;
+
+        &:before,
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          height: 100%;
+          background: transparentize($primary, 0.2);
+          z-index: 1;
+          opacity: 0;
+          transform: translate(-50%, -50%);
+          transition: all $transition-links $transition-links-type;
+        }
+
+        &:after {
+          content: "\e623";
+          font-family: '7-stroke';
+          font-size: 4rem;
+          width: auto;
+          height: auto;
+          color: $white;
+          background: transparent;
+        }
+      }
+
+      .team-member-content {
+        padding: 30px 30px 20px 30px;
+
+        h3.name {
+          font-size: 1.25rem;
+          line-height: 1.4;
+          color: $secondary;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+
+        h4.tagline {
+          font-size: 0.875rem;
+        }
+
+        .social-icons {
+          display: block;
+          width: 100%;
+          text-align: center;
+          font-size: 1.4rem;
+          margin-top: 30px;
+
+          .icons {
+            display: inline-block;
+
+            li {
+              margin-bottom: 10px;
+
+              a {
+                color: $global-text;
+
+                &:hover,
+                &:active {
+                  color: $primary;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Hover Mode
+      // SG: Took out the hover.
+      // &:hover {
+      //   box-shadow: 0px 4px 9px 0px $shadow-color;
+
+      //   .img-wrapper {
+      //     &:before,
+      //     &:after {
+      //       opacity: 1;
+      //     }
+      //   }
+      // }
+
+    }
+
+  }
+
+}

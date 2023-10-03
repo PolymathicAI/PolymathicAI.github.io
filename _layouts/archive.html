@@ -1,0 +1,44 @@
+---
+layout: page
+---
+
+{% for post in page.posts %}
+
+  <!-- Blog Article -->
+  <div class="post-full">
+    <article class="blog-article clearfix">
+
+      <!-- Article Header -->
+      <header class="article-header">
+        <div class="img-wrap">
+          <img src="{{ site.baseurl }}/images/blog/{{ post.image }}" alt="Article Blog Image">
+        </div>
+        <div class="article-title">
+          <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+          <h4 class="category">{{ post.categories | first }}</h4>
+        </div>
+      </header>
+
+      <!-- Article Content -->
+      <div class="article-content">
+        <div class="article-date text-center">
+          <div class="date parent">
+            <div class="date-wrap child-center">
+              <div class="day">{{ post.date | date: "%d" }}</div>
+              <div class="month">{{ post.date | date: "%b" }}</div>
+            </div>
+          </div>
+          <div class="time">{{ post.date | date: "%H:%M" }}</div>
+        </div>
+        <div class="article-text">
+          {{ post.content | truncatewords:75 }}
+        </div>
+        <div class="show-more">
+          <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a>
+        </div>
+      </div>
+
+    </article>
+  </div>
+
+{% endfor %}

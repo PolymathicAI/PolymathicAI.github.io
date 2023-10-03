@@ -1,0 +1,30 @@
+/**
+ *
+ *  Tags Box Style
+ *
+ *  @package ohkimur_components
+ *
+ **/
+
+ul.tag-cloud-box {
+
+  li {
+    display: inline-block;
+    float: left;
+    margin: 0 10px 10px 0;
+
+    a {
+      display: block;
+      padding: 8px 12px;
+      color: $simple-gray;
+      border: 1px solid $simple-gray;
+
+      &:hover {
+        color: $white;
+        border-color: $primary;
+        background: $primary;
+      }
+    }
+  }
+
+}

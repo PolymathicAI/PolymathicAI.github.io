@@ -1,0 +1,61 @@
+<!-- Testimonials Section -->
+<section class="site-section testimonials-section section-focus" id="testimonials">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>{{ site.testimonials-title }}</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>{{ site.testimonials-description }}</p>
+      </div>
+
+    </div>
+
+    <!-- Clients -->
+    <div class="row clients">
+
+      <!-- Testimonials Carousel -->
+      <div id="testimonials-carousel" class="col-md-8 col-md-push-2">
+
+        {% for client in site.testimonials %}
+
+        <!-- Client Testimonial -->
+        <div class="client-testimonial text-center">
+          <!-- Testimonials Face -->
+          <div class="testimonial-face">
+
+            <div class="face">
+              <img src="{{ site.baseurl }}/images/avatars/{{ client.avatar }}" />
+            </div>
+
+            <div class="info">
+              <h3 class="name">{{ client.name }}</h3>
+              <a class="link" target="_blank" href="{{ client.url }}">{{ client.url-text }}</a>
+            </div>
+
+          </div>
+
+          <!-- Testimonials Quote -->
+          <div class="testimonial-quote">
+            <p class="quote">{{ client.cite }}</p>
+            <div class="logo">
+              <img src="{{ site.baseurl }}/images/logos/{{ client.logo-img }}" alt="{{ client.url-text }} Logo" />
+            </div>
+          </div>
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

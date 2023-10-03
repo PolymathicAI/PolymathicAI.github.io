@@ -1,0 +1,56 @@
+<!-- Team Section -->
+<section class="site-section team-section section-focus" id="team">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>{{ site.team-title }}</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>{{ site.team-description }}</p>
+      </div>
+
+    </div>
+
+    <!-- Team Members -->
+    <div class="row team-members-container">
+
+      {% for member in site.team %}
+
+      <!-- Member -->
+      <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
+        <div class="team-member">
+          <div class="img-wrapper">
+            <!-- img with fixed height equal to 200px -->
+            <img src="{{ site.baseurl }}/images/avatars/{{ member.avatar }}"
+              style="height: 160px !important; width: auto !important; display: block; margin: 0 auto;">
+          </div>
+          <div class="team-member-content">
+            <h3 class="name" style="text-align: center;">{{ member.name }}</h3>
+            <!-- <h4 class="tagline">{{ member.tagline }}</h4> -->
+            <!-- <div class="social-icons">
+              <ul class="icons">
+                <li><a href="{{ member.youtube }}" target="_blank"><i class="fi flaticon-youtube"></i></a></li>
+                <li><a href="{{ member.pinterest }}" target="_blank"><i class="fi flaticon-pinterest"></i></a></li>
+                <li><a href="{{ member.facebook }}" target="_blank"><i class="fi flaticon-facebook"></i></a></li>
+                <li><a href="{{ member.twitter }}" target="_blank"><i class="fi flaticon-twitter"></i></a></li>
+                <li><a href="{{ member.google-plus }}" target="_blank"><i class="fi flaticon-google-plus"></i></a></li>
+                <li><a href="{{ member.vimeo }}" target="_blank"><i class="fi flaticon-vimeo"></i></a></li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>

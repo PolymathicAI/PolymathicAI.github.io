@@ -1,0 +1,20 @@
+<!-- Importing Scripts -->
+
+<!-- jQuery CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- If CDN fails than use local jQuery -->
+<script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/jquery-3.0.0.min.js"><\/script>')</script>
+
+<!-- Owl Carousel -->
+<script src="{{ site.baseurl }}/js/carousel.min.js" charset="utf-8"></script>
+
+<!-- Parallaxing & SmoothScroll -->
+<script src="{{ site.baseurl }}/js/scrollax.min.js" charset="utf-8"></script>
+
+{% if site.smooth-scroll %}
+<script src="{{ site.baseurl }}/js/smoothscroll.js" charset="utf-8"></script>
+{% endif %}
+
+<!-- Main JS -->
+<script src="{{ site.baseurl }}/js/main.js" charset="utf-8"></script>

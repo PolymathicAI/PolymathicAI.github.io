@@ -1,0 +1,182 @@
+/**
+ *
+ *  Testimonials Section Style
+ *
+ *  @package ohkimur_layout
+ *
+ **/
+
+section.testimonials-section {
+  overflow: hidden;
+
+  // Client Testimonial
+  .client-testimonial {
+    display: block;
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+
+    // Client Face
+    .testimonial-face {
+      width: 30%;
+      height: auto;
+      margin: 0 auto;
+
+      // Resonsive Media
+      @media (max-width: 767px) {
+        width: 60%;
+      }
+
+      @media (max-width: 991px) and (min-width: 767px) {
+        width: 40%
+      }
+
+      .face {
+        padding: 20px;
+
+        img {
+          border-radius: 100%;
+        }
+      }
+
+      // Client Info
+      .info {
+
+        h3.name {
+          color: $secondary;
+          font-size: 1.5625rem;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+
+        a.link {
+          font-size: 0.875rem;
+        }
+
+      }
+
+    }
+
+    // Client Quote
+    .testimonial-quote {
+      position: relative;
+      width: calc(100% - 30px);
+      padding: 30px 12%;
+      margin: 40px 15px 0 15px;
+      border-radius: 3px;
+      background: $light-gray;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -18px;
+        left: 50%;
+        z-index: 3;
+        transform: translate(-50%);
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+
+        border-bottom: 18px solid $light-gray;
+      }
+
+      // Quite
+      .quote {
+        position: relative;
+        color: $secondary;
+        font-style: italic;
+        font-size: 1rem;
+        line-height: 1.4;
+
+        &:before,
+        &:after {
+          display: block;
+          position: absolute;
+          content: "\"";
+          font-size: 3.125rem;
+          font-weight: bold;
+        }
+
+        &:before {
+          left: -2rem;
+          top: 0;
+        }
+
+        &:after {
+          right: -1rem;
+          bottom: -1rem;
+        }
+      }
+
+      // Logo
+      .logo {
+        display: block;
+        position: relative;
+        width: 30%;
+        height: auto;
+        margin: 20px auto 0 auto;
+
+        // Resonsive Media
+        @media (max-width: 767px) {
+          width: 50%;
+        }
+
+        @media (max-width: 991px) and (min-width: 767px) {
+          width: 40%
+        }
+      }
+
+    }
+
+  }
+
+  // Style Pagination Owl Carousel
+  .owl-theme {
+
+    .owl-controls {
+    	margin-top: 10px;
+    	text-align: center;
+
+      &.clickable .owl-buttons div:hover {
+      	opacity: 1;
+      	text-decoration: none;
+      }
+
+      .owl-buttons div {
+      	color: $white;
+      	display: inline-block;
+      	zoom: 1;
+      	margin: 5px;
+      	padding: 5px 10px;
+      	font-size: 0.85rem;
+      	border-radius: 30px;
+      	background: $simple-gray;
+      	opacity: 0.5;
+      }
+
+      .owl-page {
+        display: inline-block;
+        zoom: 1;
+
+        span {
+        	display: block;
+        	width: 30px;
+        	height: 5px;
+        	margin: 20px 4px 10px 4px;
+        	border-radius: 3px;
+        	background: $simple-gray;
+        }
+
+        &.active,
+        &:hover {
+          span {
+            background: $primary;
+          }
+        }
+      }
+    }
+  }
+
+}

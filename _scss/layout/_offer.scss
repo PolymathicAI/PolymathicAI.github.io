@@ -1,0 +1,32 @@
+/**
+ *
+ *  Offer Style
+ *
+ *  @package ohkimur_layout
+ *
+ **/
+
+section.offer-section {
+  padding: 40px 0;
+  color: $white;
+  background-color: $primary;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    padding: 1.125rem 0;
+  }
+
+  @media (max-width: 992px) {
+    h2 {
+      text-align: center;
+      line-height: 1.4;
+      padding: 0;
+      padding-bottom: 40px;
+    }
+  }
+
+  .button-cta {
+    margin-bottom: 0;
+  }
+}

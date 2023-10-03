@@ -1,0 +1,101 @@
+/**
+ *
+ *  Features Section Style
+ *
+ *  @package ohkimur_layout
+ *
+ **/
+
+section.features-section {
+
+  .features {
+    margin-top: 80px;
+  }
+
+  // Feature
+  .feature {
+
+    @media (max-width: 992px) {
+      margin-bottom: 80px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .icon {
+      .circle {
+        width: calc(50% - 15px);
+        padding-bottom: calc(50% - 23px);
+        margin: 0 auto;
+        margin-bottom: 40px;
+        border: 4px solid $primary;
+        transition: all $transition-links $transition-links-type;
+
+        .circle {
+          width: 50%;
+          padding-bottom: 50%;
+          border: 0;
+          background: $simple-gray;
+
+          i {
+            font-size: 3rem;
+            color: $secondary;
+            transition: all $transition-links $transition-links-type;
+
+            &:before {
+              padding-left: 3%;
+            }
+          }
+        }
+      }
+    }
+
+    // Feature Content
+    .content {
+
+      h3 {
+        color: $secondary;
+        text-transform: uppercase;
+        margin-bottom: 1.25rem;
+      }
+
+      h3, p {
+        transition: color $transition-links $transition-links-type;
+      }
+    }
+
+    // Hover Mode
+    &:hover {
+
+      .icon {
+        .circle {
+          border-color: $simple-gray;
+
+          .circle {
+            background: $primary;
+
+            i {
+              color: $white;
+            }
+          }
+        }
+      }
+
+      .content {
+
+        h3 {
+          color: $primary;
+        }
+
+        p {
+          color: $secondary;
+        }
+
+      }
+
+    }
+
+  }
+
+}

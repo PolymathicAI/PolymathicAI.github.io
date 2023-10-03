@@ -1,0 +1,37 @@
+/**
+ *
+ *  Social Icons Style
+ *
+ *  @package ohkimur_components
+ *
+ **/
+
+.social-icons {
+  display: inline-block;
+  font-size: 1.35rem;
+
+  ul.icons {
+
+    &.global-text-color-icons {
+      li {
+        a {
+          color: $global-text;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    li {
+      float: left;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+}

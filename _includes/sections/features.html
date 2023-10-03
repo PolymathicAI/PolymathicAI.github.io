@@ -1,0 +1,45 @@
+<!-- Features Section -->
+<section class="site-section section-focus features-section" id="features">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>{{ site.features-title }}</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>{{ site.features-description }}</p>
+      </div>
+
+    </div>
+
+    <!-- Features -->
+    <div class="row features">
+
+      {% for feature in site.features %}
+
+      <div class="col-md-4 col-md-push-0 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1 feature">
+        <div class="icon parent">
+          <div class="circle parent">
+            <div class="circle child-center">
+              <i class="{{ feature.icon }} child-center"></i>
+            </div>
+          </div>
+        </div>
+        <div class="content text-center">
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.description }}</p>
+        </div>
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>

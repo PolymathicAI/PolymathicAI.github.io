@@ -1,0 +1,245 @@
+/**
+ *
+ *  Blog Section Style
+ *
+ *  @package ohkimur_layout
+ *
+ **/
+
+section.blog-section {
+
+  // Blog Page
+  &.page-layout {
+    padding-top: 30px;
+
+    .blog-articles-container {
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+    }
+
+    article.blog-article {
+
+      // Article Boxes
+      .article-boxes {
+        float: left;
+        width: 100%;
+        padding: 50px 0;
+
+        // Box
+        .box {
+          display: block;
+          width: 100%;
+          float: left;
+          margin-bottom: 30px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          // Title
+          span.title {
+            float: left;
+            color: $secondary;
+            font-weight: bold;
+            width: 100px;
+          }
+
+          @media (max-width: 768px) {
+            span.title {
+              width: 100%;
+              font-size: 1.2rem;
+              padding-top: 0;
+              margin-bottom: 20px;
+            }
+
+            &.share-article {
+              ul {
+                a {
+                  font-size: 2.5rem;
+                }
+              }
+            }
+          }
+
+          .box-content {
+            float: left;
+          }
+        }
+
+        // Tags Article
+        .tags-article {
+          span.title {
+            padding-top: 8px;
+          }
+        }
+
+        // Share Article
+        .share-article {
+          span.title {
+            padding-top: 0.2rem;
+          }
+        }
+
+      }
+    }
+  }
+
+  // Blog Articles Container
+  .blog-articles-container {
+    margin-top: 80px;
+
+    // Resonsive Media
+    .col-md-4 {
+      @media (max-width: 430px) {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    // Blog Article
+    article.blog-article {
+      display: block;
+      position: relative;
+      width: 100%;
+      float: left;
+      margin-bottom: 30px;
+
+      &.blog-single-page {
+        header.article-header {
+          .article-title {
+            margin: 50px 0;
+
+            h3.title {
+              color: $secondary;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+
+      // Article Header
+      header.article-header {
+        display: block;
+        position: relative;
+        width: 100%;
+        float: left;
+
+        .img-wrap {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+
+        .article-title {
+          display: block;
+          width: 100%;
+          margin: 30px 0;
+
+          h3.title {
+            font-size: 1.6rem;
+            line-height: 1.4;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            a {
+              color: $secondary;
+
+              &:hover,
+              &:active {
+                color: $primary;
+              }
+            }
+          }
+
+          h4.category {
+            color: $primary;
+            text-transform: capitalize;
+          }
+        }
+
+      }
+
+      // Article Content
+      .article-content {
+        display: block;
+        position: relative;
+        float: left;
+        width: 100%;
+
+        // Article Date
+        .article-date {
+          width: 100px;
+          float: left;
+          padding-right: 30px;
+          color: $white;
+          text-transform: uppercase;
+
+          .date {
+            width: 100%;
+            padding-bottom: 100%;
+            margin-bottom: 5px;
+            background: $primary;
+
+            .day {
+              font-size: 1.875rem;
+            }
+
+            .month {
+              font-size: 1rem;
+            }
+          }
+
+          .time {
+            width: 100%;
+            padding: 10px 0;
+            background: $primary;
+          }
+
+        }
+
+        // Article Text
+        .article-text {
+          width: 100%;
+          font-size: 0.9rem;
+          float: left;
+
+          p {
+            line-height: 1.4;
+          }
+        }
+
+        // Show More
+        .show-more {
+          display: block;
+          width: 100%;
+          margin-top: 20px;
+          text-align: center;
+          float: left;
+
+          .button {
+            float: left;
+            margin: 0 0 0 100px;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  // View All Posts
+  .view-posts {
+    hr.normal {
+      margin: 20px auto;
+    }
+
+    .button-cta {
+      margin-bottom: 0;
+      float: inherit !important;
+    }
+  }
+
+}

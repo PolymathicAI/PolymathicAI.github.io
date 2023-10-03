@@ -1,0 +1,67 @@
+<!-- Portfolio Section -->
+<section class="site-section portfolio-section next-section-indicator" id="portfolio">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>{{ site.portfolio-title }}</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>{{ site.portfolio-description }}</p>
+      </div>
+
+    </div>
+
+    <!-- Filter Menu -->
+    <div class="row filter-menu-wrapper">
+      <div class="col-md-8 col-md-push-2">
+        <div class="filter-menu">
+          <ul>
+            <li data-filter="all" class="current">All</li>
+
+            {% for category in site.portfolio-categories %}
+              <li data-filter=".{{ category | replace:' ','-' | downcase }}" >{{ category }}</li>
+            {% endfor %}
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="row portfolio-grid">
+
+      {% for item in site.portfolio %}
+
+      <div class="col-md-4 col-sm-6 item visible {% for category in item.categories %} {{ category | replace:' ','-' | downcase }}{% endfor %}">
+        <figure class="img-wrap">
+          <img src="{{ site.baseurl }}/images/portfolio/{{ item.image }}" alt="Portfolio Item Image" />
+        </figure>
+        <div class="item-content">
+          <h3>{{ item.title }}</h3>
+          <h4>{{ item.categories | first }}</h4>
+          <div class="links">
+            <ul>
+              <li><a href="{{ item.url }}" class="item-link"><i class="pe-7s-link"></i></a></li>
+              <li><a href="#" class="item-like"><i class="pe-7s-like"></i></a></li>
+              <li><a href="{{ site.baseurl }}/images/portfolio/{{ item.image }}" class="item-expand"><i class="pe-7s-exapnd2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+
+      <!-- Overlay Lightbox -->
+      <div id="overlay" class="overlay"></div>
+
+    </div>
+
+  </div>
+</section>

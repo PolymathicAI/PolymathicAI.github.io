@@ -1,0 +1,45 @@
+<!DOCTYPE html >
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader"><span class="load-icon"></span></div>
+
+    {% include header-page.html %}
+
+    <!-- Page Section -->
+    <section class="site-section blog-section page-layout" id="start">
+      <div class="container">
+
+        <!-- Page Layout -->
+        <div class="row">
+
+          <!-- Content -->
+          <div class="col-md-8 blog-articles-container">
+
+            {{ content }}
+
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-md-4 hidden-xs hidden-sm">
+
+            {% include sidebar.html %}
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+  </body>
+
+</html>

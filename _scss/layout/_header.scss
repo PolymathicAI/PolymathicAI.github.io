@@ -1,0 +1,234 @@
+/**
+ *
+ *  Header Style
+ *
+ *  @package ohkimur_layout
+ *
+ **/
+
+ header.site-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: 1080px;
+  z-index: 1;
+
+  // Blog Header
+  &.blog-header {
+    height: 300px;
+
+    .parallax-wrapper {
+      height: 300px;
+    }
+
+    .container {
+      height: 600px;
+    }
+
+    .header-banner {
+      height: calc(400px - 250px);
+    }
+  }
+
+@media (max-width: 1000px) {
+  &.blog-header {
+    height: 200px;
+
+    .parallax-wrapper {
+      height: 200px;
+    }
+
+    /* Adjust other properties as needed based on the new height. */
+    /* The following are just examples and may not be what you need. */
+    .container {
+      height: 400px;
+    }
+
+    .header-banner {
+      height: calc(370px - 250px);
+    }
+  }
+}
+
+  // Parallax-wrapper
+  .parallax-wrapper {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    max-height: 1080px;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    position: relative;
+    height: 100vh;
+    max-height: 1080px;
+  }
+
+  // Site Navigation Bar
+  .site-navigation-bar {
+    position: relative;
+    height: 100px;
+    min-height: 100px;
+    z-index: 2;
+
+    // Logo
+    .logo {
+      img {
+        display: block;
+        float: left;
+        max-width: 300% !important;
+      }
+    }
+
+    // Navigation Bar
+    .navigation-bar {
+
+      nav.nav-menu {
+        position: relative;
+        display: block;
+        float: right;
+
+        ul {
+          li {
+            float: left;
+            margin-right: 30px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            &.current-menu-item {
+              a {
+                color: $primary_bright;
+                position: relative;
+
+                &:before {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  width: 50%;
+                  height: 1px;
+                  left: 50%;
+                  bottom: -10px;
+                  transform: translateX(-50%);
+                  background-color: $primary;
+                }
+              }
+            }
+
+            a {
+              display: block;
+              color: $white;
+              padding: 10px 0;
+
+              &:hover,
+              &:active {
+                color: $primary;
+              }
+
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+
+  // Site Header Banner
+  .header-banner {
+    height: calc(100vh - 250px);
+    max-height: calc(1080px - 250px);
+    z-index: 2;
+    color: $white;
+
+    .heading-content {
+      width: 100%;
+      text-transform: none;
+
+      .heading-title {
+        hr.small {
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+      }
+
+      .buttons-header {
+        margin-top: 40px;
+
+        .button-cta {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // Arrow Down Section
+  .arrow-down-section {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+    z-index: 3;
+
+    .arrow-down {
+      display: block;
+      position: relative;
+      font-size: 4rem;
+      line-height: 4rem;
+      color: $white;
+      width: 64px;
+      height: 64px;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: rotate(45deg);
+      }
+
+      // Stroke
+      &:before {
+        border: 1px solid $primary;
+        transform: rotate(45deg) scale(1.25); // SG: removing the pulsing animation
+        // animation: sera-pulse $animation-arrow-header-time $animation-arrow-header-type infinite alternate; 
+      }
+
+      // Background
+      &:after {
+        transition: background-color $transition-links $transition-links-type;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      &:hover {
+        i {
+          transform: scale(1.3);
+        }
+
+        &:after {
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+      }
+
+      i {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform $transition-links $transition-links-type;
+
+        &:before {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+}

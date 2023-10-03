@@ -1,0 +1,56 @@
+/**
+ *
+ *  Footer Style
+ *
+ *  @package ohkimur_layout
+ *
+ **/
+
+footer.site-footer {
+  position: relative;
+  color: $footer-color;
+  background-color: $footer-background-color;
+  width: 100%;
+
+  // Footer Information
+  .footer-info {
+    padding: 20px 0;
+
+    .footer-logo {
+      position: relative;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    .footer-info-text {
+      font-size: 0.875rem;
+      padding: 35px 0;
+    }
+
+    // Social Media Icons
+    .social-icons {
+      a {
+        color: $global-text;
+
+        &:hover,
+        &:active {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  // Footer Copyright
+  .footer-copyright {
+    font-size: 0.8125rem;
+    border-top: 1px solid $normal-gray;
+    padding: 30px 0;
+
+    .footer-text {
+      width: 100%;
+    }
+  }
+
+}

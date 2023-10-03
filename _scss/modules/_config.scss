@@ -1,0 +1,44 @@
+/**
+ *
+ *  Theme Style Configuration
+ *
+ *  @package ohkimur_module
+ *
+ *
+ *
+ *
+ *  ##### Typography
+ *  $font-family: 'Lato'; // Google Font
+ *  $global-font-size: 16px; // Default Global Font Size
+ *
+ *  ##### Animations Timing
+ *  $transition-links: 300ms; // Default Global Animation Timing
+ *  $animation-arrow-header-time: 2.5s;
+ *
+ *  ##### Animations Types
+ *  $transition-links-type: ease-in-out; // Default Global Transition Type
+ *  $animation-arrow-header-type: ease-in-out;
+ *
+ *  ##### Mobile Menu Settings
+ *  $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+ *
+ *
+ *
+ *
+ **/
+
+// Typography
+$font-family: 'Lato'; // Google Font
+$global-font-size: 16px;
+
+// Animations Timing
+$transition-links: 300ms;
+$animation-arrow-header-time: 2.5s;
+
+// Animations Types
+$transition-links-type: ease-in-out;
+$animation-arrow-header-type: ease-in-out;
+
+// Mobile Menu Settings
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+$menuItems: 12;

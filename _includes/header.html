@@ -1,0 +1,92 @@
+<!-- Site Header -->
+<header class="site-header parallax" id="home" data-scrollax-parent="true">
+
+  <!-- Parallax Header Image -->
+  <div class="parallax-wrapper">
+    <div class="cover" data-scrollax="properties: { 'translateY': '48%' }">
+      <img src="{{ site.baseurl }}/images/bkg1.jpg" />
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Site Navigation Bar -->
+    <div class="row site-navigation-bar parent">
+
+      <!-- Logo -->
+      <div class="col-sm-2 col-xs-4 logo child-center-v">
+        <a href="{{ site.baseurl }}/index.html"><img src="{{ site.baseurl }}/images/logo.png" width="200"></a>
+      </div>
+
+      <!-- Toggle Mobile Menu -->
+      <div class="col-xs-8 toggle-menu child-center-v">
+
+        <!-- Burger -->
+        <div class="navTrigger">
+          <i></i><i></i><i></i>
+        </div>
+
+      </div>
+
+      <!-- Navigation Bar -->
+      <div class="col-sm-10 col-xs-12 navigation-bar child-center-v">
+
+        <!-- Navigation Menu -->
+        <nav id="navMenu" class="nav-menu">
+          <ul class="menu">
+            <li class="current-menu-item"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Goals</a></li>
+            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+            <!-- <li><a href="#testimonials">Testimonials</a></li> -->
+            <!-- <li><a href="#blog">Blog</a></li> -->
+            <li><a href="#team">Partners</a></li>
+            <!-- <li><a href="#prices">Prices</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+    </div>
+
+    <!-- Site Header Banner -->
+    <div class="row header-banner parent" data-scrollax="properties: { 'translateY': '48%', 'opacity': '1.4' }">
+
+      <div class="heading-content text-center child-center-v">
+
+        <!-- Heading Title -->
+        <div class="row heading-title">
+          <h2>{{ site.headter-tagline }}</h2>
+          <hr class="small">
+          <h1 class="thin">{{ site.header-title }}</h1>
+        </div>
+
+        <!-- Header Buttons -->
+        <!-- <div class="row buttons-header">
+          <div class="col-lg-3 col-lg-push-3 col-md-4 col-md-push-2 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1"><a
+              href="{{ site.header-focus-button.url }}" class="button-cta button-focus">{{
+              site.header-focus-button.title }}</a></div>
+          <div class="col-lg-3 col-lg-push-3 col-md-4 col-md-push-2 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1"><a
+              href="{{ site.header-secondary-button.url }}" class="button-cta">{{ site.header-secondary-button.title
+              }}</a></div>
+        </div> -->
+
+      </div>
+
+    </div>
+
+    <!-- Arrow Down -->
+    <div class="row arrow-down-section" data-scrollax="properties: { 'opacity': '0.6' }">
+
+      <div class="wrapper-arrow child-center">
+        <a href="#about" class="arrow-down">
+          <i class="pe-7s-angle-down"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</header>

@@ -1,0 +1,500 @@
+#
+# Sera - OnePage Jekyll Theme
+# Configuration File
+#
+
+# Information for compile
+exclude: ["Gemfile", "README.md"]
+
+# Sass configuration
+sass:
+  sass_dir: _scss
+
+# Information for deploy
+baseurl: ""
+
+# the base hostname & protocol for your site
+url: "http://localhost:4000"
+
+####################################
+######   Optional Features    ######
+####################################
+smooth-scroll: false
+
+####################################
+###########   Plugins    ###########
+####################################
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: "archive"
+  permalinks:
+    category: "/category/:name/"
+    tag: "/tag/:name/"
+
+#######################################################
+#######################################################
+###############   HEADER INFORMATIONS   ###############
+#######################################################
+#######################################################
+
+# This is your site title
+title: Polymathic - Advancing science through multi-disciplinary AI
+# Website language
+lang: en-US
+# Header Title
+header-title: Polymathic AI
+# Header Tagline
+headter-tagline: Advancing Science through Multi-Disciplinary AI
+# SG: the site logo is set in logo.svg
+# I chagned it to text.
+####################################
+######   CTA Header Buttons   ######
+####################################
+
+# SG: Took these out.
+# # Focus Buttons
+# header-focus-button:
+#   title: Download Now
+#   url: https://themeforest.net/collections/6069390-sera
+
+# # Secondary Buttons
+# header-secondary-button:
+#   title: Discover More
+#   url: http://themeforest.net/user/ohkimur
+
+#
+# This is your email adress, contact from send here all emails from contact section
+# IMPORTANT: you can modify contact form from this static template, but now works contact form works with a free external server
+# To configure this contact form, first please send a fictive email afeter you enter below your email and verify that :)
+#
+email: your_email@example.com
+
+# # Offer Banner Link
+# # Default link is a link to all Sera OnePage products
+# banner-link: https://themeforest.net/collections/6069390-sera
+
+####################################
+######  Global Social Links   ######
+####################################
+youtube: "#"
+pinterest: "#"
+facebook: "#"
+twitter: "#"
+google-plus: "#"
+vimeo: "#"
+
+#########################
+######   Widgets   ######
+#########################
+
+#
+# About Blog Author Widget
+#
+about-widget:
+  author-avatar: avatar-02.jpg
+  author-name: John Doe
+  author-tagline: Blog Author
+  author-info: I wonder where this goes!
+  author-social-links:
+    youtube: "#"
+    pinterest: "#"
+    facebook: "#"
+    twitter: "#"
+    google-plus: "#"
+
+# # Google Map JS api
+# key-api: YOUR_GOOGLE_MAP_API_KEY
+# map-text: Sera Google Map
+# map-lat: 44.4267674
+# map-lng: 26.102538399999958
+
+# Enter your Mailchimp User ID and Campaign ID
+# @TODO: Add in a link for where to find these
+mailchimp:
+  user-id: REPLACEME
+  list-id: REPLACEME
+
+####
+#
+# Hi you now use Sera - OnePage Jekyll Theme created by Ohkimur
+#
+# Below are each section from the website in order from top to bottom
+# @TODO Edit each sections with your real information and each section from Sera will autocomplete with your information
+#
+####
+
+#####################################
+#############   About   #############
+#####################################
+about-title: Our Mission
+about-description: Get on it Francois!
+
+#####################################
+#############  Features  ############
+#####################################
+features-title: Goals and Features
+features-description: Through cutting-edge research and collaborative innovation, we're setting new benchmarks in the application of foundation models in science. Our goals are designed to address the pressing challenges and unlock unprecedented opportunities. Below are key features that define our mission.
+#
+# Features
+#
+features:
+  # Feature
+  - title: Innovative Technologies
+    description: Leveraging state-of-the-art methods to push the boundaries of what foundation models can achieve in scientific research.
+    icon: pe-7s-airplay
+
+  # Feature
+  - title: Interdisciplinary Research
+    description: Fostering collaboration across scientific domains to address complex issues through the power of foundation models.
+    icon: pe-7s-vector
+
+  # Feature
+  - title: Open-Source Solutions
+    description: Creating open-source foundation models and tools that are accessible to researchers around the globe.
+    icon: pe-7s-help2
+
+
+#####################################
+############  Portfolio  ############
+#####################################
+# portfolio-title: Portfolio
+# portfolio-description: Maecenas tempus nec mi et placerat. Duis at odio vitae ex gravida volutpat. Nulla finibus aliquet diam ut eleifend. Mauris consequat interdum quam. Mauris dui sapien, efficitur et cursus id, molestie fringilla turpis.
+
+# #
+# # Portfolio Grid
+# #
+# portfolio-categories:
+#   [Websites, Logo, Graphic Design, Development, Video, Photography]
+# portfolio:
+#   # Portfolio Item
+#   - title: S<span class="thin">era</span> Style
+#     categories: [Websites, Graphic Design]
+#     image: img-01.jpg
+#     url: "#"
+
+#   # Portfolio Item
+#   - title: S<span class="thin">era</span> Style
+#     categories: [Graphic Design, Logo, Websites]
+#     image: img-02.jpg
+#     url: "#"
+
+#   # Portfolio Item
+#   - title: S<span class="thin">era</span> Style
+#     categories: [Graphic Design, Logo, Photography]
+#     image: img-03.jpg
+#     url: "#"
+
+#   # Portfolio Item
+#   - title: S<span class="thin">era</span> Style
+#     categories: [Websites, Video, Photography]
+#     image: img-04.jpg
+#     url: "#"
+
+#   # Portfolio Item
+#   - title: S<span class="thin">era</span> Style
+#     categories: [Development, Logo]
+#     image: img-05.jpg
+#     url: "#"
+
+#   # Portfolio Item
+#   - title: S<span class="thin">era</span> Style
+#     categories: [Development, Video]
+#     image: img-06.jpg
+#     url: "#"
+
+#   # Portfolio Item
+#   - title: S<span class="thin">era</span> Style
+#     categories: [Websites, Graphic Design]
+#     image: img-07.jpg
+#     url: "#"
+
+#   # Portfolio Item
+#   - title: S<span class="thin">era</span> Style
+#     categories: [Websites, Video]
+#     image: img-08.jpg
+#     url: "#"
+
+#   # Portfolio Item
+#   - title: S<span class="thin">era</span> Style
+#     categories: [Photography, Logo]
+#     image: img-09.jpg
+#     url: "#"
+
+#####################################
+##########  Core Features  ##########
+#####################################
+# core-title: Core Features
+# core-description: Duis at odio vitae ex gravida volutpat. Nulla finibus aliquet diam ut eleifend. Mauris consequat interdum quam. Mauris dui sapien, efficitur et cursus id, molestie fringilla turpis aliquet diam ut eleifend.
+
+# #
+# # Core Features Left
+# #
+# core-features-left:
+#   # Feature
+#   - name: Creative
+#     description: Lorem ipsum dolor sit amet, consectetuer adipiscing diam.
+#     icon: pe-7s-light
+
+#   # Feature
+#   - name: Minimalism
+#     description: Lorem ipsum dolor sit amet, consectetuer adipiscing diam.
+#     icon: pe-7s-drop
+
+#   # Feature
+#   - name: Clean Coding
+#     description: Lorem ipsum dolor sit amet, consectetuer adipiscing diam.
+#     icon: pe-7s-coffee
+
+#   # Feature
+#   - name: Friendly
+#     description: Lorem ipsum dolor sit amet, consectetuer adipiscing diam.
+#     icon: pe-7s-smile
+
+# #
+# # Core Features Right
+# #
+# core-features-right:
+#   # Feature
+#   - name: Branding
+#     description: Lorem ipsum dolor sit amet, consectetuer adipiscing diam.
+#     icon: pe-7s-wine
+
+#   # Feature
+#   - name: Web Design
+#     description: Lorem ipsum dolor sit amet, consectetuer adipiscing diam.
+#     icon: pe-7s-monitor
+
+#   # Feature
+#   - name: Graphic Design
+#     description: Lorem ipsum dolor sit amet, consectetuer adipiscing diam.
+#     icon: pe-7s-crop
+
+#   # Feature
+#   - name: Photography
+#     description: Lorem ipsum dolor sit amet, consectetuer adipiscing diam.
+#     icon: pe-7s-camera
+
+#####################################
+########### Testimonials ############
+#####################################
+# testimonials-title: Testimonials
+# testimonials-description: Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed, suscipit et nisi.
+
+# #
+# # Testimonials
+# #
+# testimonials:
+#   # Client
+#   - name: Johnatan Doe
+#     url: http://themeforest.net
+#     url-text: ThemeForest.net
+#     avatar: avatar-01.jpg
+#     cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+#     logo-img: themeforest.png
+
+#   # Client
+#   - name: Adam Smith
+#     url: http://codecanyon.net
+#     url-text: CodeCanyon.net
+#     avatar: avatar-02.jpg
+#     cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+#     logo-img: codecanyon.png
+
+#   # Client
+#   - name: Irene Warner
+#     url: http://videohive.net
+#     url-text: VideoHive.net
+#     avatar: avatar-03.jpg
+#     cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+#     logo-img: videohive.png
+
+#   # Client
+#   - name: Richard Ryan
+#     url: http://audiojungle.net
+#     url-text: AudioJungle.net
+#     avatar: avatar-04.jpg
+#     cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+#     logo-img: audiojungle.png
+
+#####################################
+############# Our Blog ##############
+#####################################
+blog-title: Recent News
+# blog-description: Look at the amazingness that oozes out of us!
+
+#####################################
+############### Team ################
+#####################################
+team-title: The Team
+# team-description: Meet our members. We are so cool!
+#
+# Team Members
+#
+team:
+  # Team Member
+  - name: Alberto Bietti
+    avatar: albert_bietti.jpg
+
+  - name: Bruno Regaldo
+    avatar: bruno_regaldo_saint_blancard.jpg
+
+  # Team Member
+  - name: Francois Lanusse
+    avatar: francois_lanusse.jpg
+
+
+  # Team Member
+  - name: Geraud Krawezik
+    avatar: geraud_krawezik.jpg
+
+  - name: Keiya Hirashima
+    avatar: keiya_hirashima.jpg
+
+  - name: Kyunghyun Cho
+    avatar: kyunghyun_cho.jpg
+
+  - name: Leopoldo Sarra
+    avatar: leopoldo_sarra.jpg
+
+  # Team Member
+  - name: Liam Parker
+    avatar: liam_parker.jpg
+
+  # Team Member
+  - name: Mariel Pettee
+    avatar: mariel_pettee.jpg
+
+  - name: Michael Eickenberg
+    avatar: michael_eickenberg.jpg
+
+  - name: Michael McCabe
+    avatar: michael_mccabe.jpg
+
+  - name: Miles Cranmer
+    avatar: miles_cranmer.jpg
+
+  - name: Nick Lourie
+    avatar: nick_lourie.jpg
+
+  - name: Ruben Ohana
+    avatar: ruben_ohana.jpg
+
+  - name: Shirley Ho
+    avatar: shirley_ho.jpg
+
+  - name: Siavash Golkar
+    avatar: siavash_golkar.jpg
+
+  - name: Tiberiu Tesileanu
+    avatar: tiberiu_tesileanu.jpg
+
+
+  
+
+#####################################
+########## Institutions #############
+#####################################
+institution-title: Participating Institutions
+# institution-description: We are proud to collaborate with leading institutions dedicated to groundbreaking research in science and technology. Together, we are forming a nexus of intellectual rigor and technological innovation.
+
+institution:
+  # Institution Members
+  - name: Berkeley Lab
+    avatar: berkeley.png
+    
+  # Institution Member
+  - name: Flatiron<br>Institute
+    avatar: fi.jpg
+
+  # Institution Member
+  - name: New York University
+    avatar: nyu.png
+
+  # Institution Member
+  - name: Princeton University
+    avatar: princeton.png
+
+  # Institution Member
+  - name: University of Cambridge
+    avatar: cambridge.png
+
+#####################################
+############### SAG ################
+#####################################
+sag-title: The Scientific Advisory Group
+# sag-description: Meet our SAG. They are cool too!
+#
+# Team Members
+#
+sag:
+  # Team Member
+  - name: John Doe
+    # avatar: avatar-01.jpg
+
+  # Team Member
+  - name: Adam Smith
+    # avatar: avatar-02.jpg
+
+  # Team Member
+  - name: Irene Warner
+    # avatar: avatar-03.jpg
+
+  # Team Member
+  - name: Richard Ryan
+    # avatar: avatar-04.jpg
+
+#####################################
+########## Pricing Tables ###########
+#####################################
+# pricing-title: Pricing Tables
+# pricing-description: Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed, suscipit et nisi. Nulla a tellus at turpis gravida congue non sed nisl. Pellentesque scelerisque eu neque et tincidunt.
+
+# #
+# # Plan Personal
+# #
+# plan-personal-price: $99
+# plan-personal-offer-1-title: 01 PSD Pack
+# plan-personal-offer-1-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+# plan-personal-offer-2-title: 100 Support Tickets
+# plan-personal-offer-2-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+# plan-personal-url: "#"
+
+# #
+# # Plan Business
+# #
+# plan-business-price: $499
+# plan-business-offer-1-title: 05 PSD Pack
+# plan-business-offer-1-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+# plan-business-offer-2-title: 1000 Support Tickets
+# plan-business-offer-2-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+# plan-business-url: "#"
+
+# #
+# # Plan Ultimate
+# #
+# plan-ultimate-price: $999
+# plan-ultimate-offer-1-title: 10 PSD Pack
+# plan-ultimate-offer-1-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+# plan-ultimate-offer-2-title: Support Unlimited
+# plan-ultimate-offer-2-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+# plan-ultimate-url: "#"
+
+#####################################
+############   Contact   ############
+#####################################
+contact-title: Contact Us
+contact-description: Let's pioneer the future of science together. Contact us to join the conversation.
+
+#####################################
+#############   Footer   ############
+#####################################
+footer-description: © 2023 Polymathic. All rights reserved.
+# SG: removed the following from footer section
+# footer-copyright-text: Ohkimur
+# footer-copyright-url: https://github.com/ohkimur
+# footer-copyright-year: 2021
