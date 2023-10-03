@@ -398,13 +398,8 @@ team:
 ########## Institutions #############
 #####################################
 institution-title: Participating Institutions
-# institution-description: We are proud to collaborate with leading institutions dedicated to groundbreaking research in science and technology. Together, we are forming a nexus of intellectual rigor and technological innovation.
 
 institution:
-  # Institution Members
-  - name: Berkeley Lab
-    avatar: berkeley.png
-    
   # Institution Member
   - name: Flatiron<br>Institute
     avatar: fi.jpg
@@ -414,12 +409,17 @@ institution:
     avatar: nyu.png
 
   # Institution Member
+  - name: University of Cambridge
+    avatar: cambridge.png
+
+  # Institution Member
   - name: Princeton University
     avatar: princeton.png
 
-  # Institution Member
-  - name: University of Cambridge
-    avatar: cambridge.png
+  # Institution Members
+  - name: Berkeley Lab
+    avatar: berkeley.png
+
 
 #####################################
 ############### SAG ################
