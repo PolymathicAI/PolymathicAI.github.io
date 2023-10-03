@@ -87,6 +87,12 @@ section.team-section {
           text-transform: uppercase;
           margin-bottom: 5px;
           color: $primary_dark;
+          @media (max-width: 500px) and (min-width: 410px) {
+            font-size: 1.1rem !important;
+          }
+          @media (max-width: 409px) {
+            font-size: 1rem !important;
+          }
         }
 
         h4.tagline {
