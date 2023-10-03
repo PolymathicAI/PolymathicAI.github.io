@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "12 Cool tips in design"
+title:  "Blog Post Placeholder"
 tagline: Single Page
 date: 2016-05-02 15:32
 categories: [Web Design]

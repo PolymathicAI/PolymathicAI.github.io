@@ -424,26 +424,26 @@ institution:
 #####################################
 ############### SAG ################
 #####################################
-sag-title: The Scientific Advisory Group
+sag-title: Scientific Advisory Group
 # sag-description: Meet our SAG. They are cool too!
 #
 # Team Members
 #
 sag:
   # Team Member
-  - name: John Doe
+  - name: Placeholder 1
     # avatar: avatar-01.jpg
 
   # Team Member
-  - name: Adam Smith
+  - name: Placeholder 2
     # avatar: avatar-02.jpg
 
   # Team Member
-  - name: Irene Warner
+  - name: Placeholder 3
     # avatar: avatar-03.jpg
 
   # Team Member
-  - name: Richard Ryan
+  - name: Placeholder 4
     # avatar: avatar-04.jpg
 
 #####################################

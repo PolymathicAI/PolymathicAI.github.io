@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Flat polygon secrets"
+title: "Blog Post Placeholder"
 tagline: Single Page
 date: 2016-05-15 10:43
 categories: [Graphic Design]

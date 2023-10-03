@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to tell a story"
+title: "Blog Post Placeholder"
 tagline: Single Page
 date: 2016-05-26 13:23
 categories: [Storyline]
