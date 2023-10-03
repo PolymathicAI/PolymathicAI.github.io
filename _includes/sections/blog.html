@@ -24,42 +24,42 @@
       <!-- Jekyll LOOP -->
       {% for post in site.posts limit:3 %}
 
-        <!-- Blog Article -->
-        <div class="col-md-4 col-md-push-0 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1">
-          <article class="blog-article clearfix">
+      <!-- Blog Article -->
+      <div class="col-md-4 col-md-push-0 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1">
+        <article class="blog-article clearfix">
 
-            <!-- Article Header -->
-            <header class="article-header">
-              <div class="img-wrap">
-                <img src="images/blog/{{ post.image }}" alt="Article Blog Image">
-              </div>
-              <div class="article-title">
-                <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-                <h4 class="category">{{ post.date | date: "%b" }} {{ post.date | date: "%d" }} </h4>
-              </div>
-            </header>
-
-            <!-- Article Content -->
-            <div class="article-content">
-              <!-- <div class="article-date text-center"> -->
-                <!-- <div class="date parent"> -->
-                  <!-- <div class="date-wrap child-center"> -->
-                    <!-- <div class="day">{{ post.date | date: "%d" }}</div> -->
-                    <!-- <div class="month">{{ post.date | date: "%b" }}</div> -->
-                  <!-- </div> -->
-                <!-- </div> -->
-                <!-- <div class="time">{{ post.date | date: "%H:%M" }}</div> -->
-              <!-- </div> -->
-              <div class="article-text">
-                <p>{{ post.excerpt | strip_html }}</p>
-              </div>
-              <div class="show-more">
-                <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a>
-              </div>
+          <!-- Article Header -->
+          <header class="article-header">
+            <div class="img-wrap">
+              <img src="images/blog/{{ post.image }}" alt="Article Blog Image">
             </div>
+            <div class="article-title">
+              <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+              <h4 class="category">{{ post.date | date: "%b" }} {{ post.date | date: "%d" }} </h4>
+            </div>
+          </header>
 
-          </article>
-        </div>
+          <!-- Article Content -->
+          <div class="article-content">
+            <!-- <div class="article-date text-center"> -->
+            <!-- <div class="date parent"> -->
+            <!-- <div class="date-wrap child-center"> -->
+            <!-- <div class="day">{{ post.date | date: "%d" }}</div> -->
+            <!-- <div class="month">{{ post.date | date: "%b" }}</div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="time">{{ post.date | date: "%H:%M" }}</div> -->
+            <!-- </div> -->
+            <div class="article-text">
+              <p>{{ post.excerpt | strip_html }}</p>
+            </div>
+            <div class="show-more">
+              <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a>
+            </div>
+          </div>
+
+        </article>
+      </div>
 
       {% endfor %}
       <!-- /LOOP-->
@@ -68,7 +68,7 @@
 
     <!-- View All Posts CTA -->
     <div class="row view-posts text-center">
-      <!-- <hr class="normal"> -->
+      <hr class="normal">
       <a href="blog.html" class="button-cta button-focus col-md-3 col-sm-5 col-xs-8">View all posts</a>
     </div>
 
