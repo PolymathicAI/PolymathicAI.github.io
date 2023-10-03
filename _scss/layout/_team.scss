@@ -37,6 +37,10 @@ section.team-section {
         position: relative;
         overflow: hidden;
 
+        img {
+          filter: grayscale(100%);
+        }
+
         &:before,
         &:after {
           content: '';
