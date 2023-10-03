@@ -14,15 +14,17 @@ section.team-section {
   .team-members-container {
     margin-top: 80px;
 
-    .col-md-3 {
-      @media (max-width: 600px) and (min-width: 430px) {
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
-      }
+    // .col-md-3 {
+    //   @media (max-width: 600px) and (min-width: 430px) {
+    //     width: 70%;
+    //     margin-left: 15%;
+    //     margin-right: 15%;
+    //   }
 
-      @media (max-width: 430px) {
-        width: 100%;
+      @media (max-width: 600px) {
+        width: 30%;
+        margin-left: 10%;
+        margin-right: 10%;
       }
     }
 
@@ -70,6 +72,11 @@ section.team-section {
 
       .team-member-content {
         padding: 30px 30px 20px 30px;
+
+        
+        @media (max-width: 600) {
+          padding: 15px 30px 5px 30px;
+        }
 
         h3.name {
           font-size: 1.25rem;
