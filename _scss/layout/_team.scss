@@ -14,18 +14,18 @@ section.team-section {
   .team-members-container {
     margin-top: 80px;
 
-    // .col-md-3 {
+    .col-md-3 {
     //   @media (max-width: 600px) and (min-width: 430px) {
     //     width: 70%;
     //     margin-left: 15%;
     //     margin-right: 15%;
     //   }
 
-      @media (max-width: 600px) {
-        width: 30%;
-        margin-left: 10%;
-        margin-right: 10%;
-      }
+        @media (max-width: 600px) {
+          width: 30%;
+          margin-left: 10%;
+          margin-right: 10%;
+        }
     }
 
     // Member
