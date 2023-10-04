@@ -156,10 +156,10 @@ a {
   text-decoration: none;
   transition: all $transition-links $transition-links-type;
 
-  &:hover,
-  &:active {
-    color: lighten($primary, 20%);
-  }
+  // &:hover,
+  // &:active {
+  //   color: lighten($primary, 20%);
+  // }
 }
 
 // Images
