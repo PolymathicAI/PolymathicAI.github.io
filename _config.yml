@@ -443,7 +443,7 @@ sag:
 
   - name: David<br>Spergel
     url: https://www.simonsfoundation.org/people/David-Spergel/
-    affil: &nbsp;<br>Simons Foundation <br> &nbsp;
+    affil: <br>Simons Foundation <br> &nbsp;
 
   - name: Olga<br>Troyanskaya
     affil: Flatiron Institute<br>Princeton University
