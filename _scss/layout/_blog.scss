@@ -128,9 +128,10 @@ section.blog-section {
         float: left;
 
         .img-wrap {
-          display: block;
+          display: flex;
           width: 100%;
           height: auto;
+          justify-content: center;
         }
 
         .article-title {
