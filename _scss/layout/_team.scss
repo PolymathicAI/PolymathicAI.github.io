@@ -15,15 +15,19 @@ section.team-section {
     margin-top: 80px;
 
     .col-md-3 {
-      @media (max-width: 600px) and (min-width: 430px) {
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
-      }
+    //   @media (max-width: 600px) and (min-width: 430px) {
+    //     width: 70%;
+    //     margin-left: 15%;
+    //     margin-right: 15%;
+    //   }
 
-      @media (max-width: 430px) {
-        width: 100%;
-      }
+        @media (max-width: 600px) {
+          width: 30%;
+          margin-left: 10%;
+          margin-right: 10%;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
     }
 
     // Member
@@ -71,6 +75,11 @@ section.team-section {
       .team-member-content {
         padding: 30px 30px 20px 30px;
 
+        
+        @media (max-width: 600px) {
+          padding: 15px 0px 5px 0px !important;
+        }
+
         h3.name {
           font-size: 1.25rem;
           line-height: 1.4;
@@ -78,6 +87,12 @@ section.team-section {
           text-transform: uppercase;
           margin-bottom: 5px;
           color: $primary_dark;
+          @media (max-width: 500px) and (min-width: 410px) {
+            font-size: 1.1rem !important;
+          }
+          @media (max-width: 409px) {
+            font-size: 1rem !important;
+          }
         }
 
         h4.tagline {
