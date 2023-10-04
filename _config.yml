@@ -426,7 +426,7 @@ sag-title: Scientific Advisory Group
 #
 sag:
   - name: Colm Caulfield
-    url: ?
+    url: placeholder
 
   - name: Leslie Greengard
     url: https://www.simonsfoundation.org/people/leslie-greengard/
@@ -444,7 +444,7 @@ sag:
     url: https://www.simonsfoundation.org/people/David-Spergel/
 
   - name: Olga Troyanskya
-    url: ?
+    url: placeholder
 
   - name: Laure Zenna
     url: https://www.linkedin.com/in/placeholder1/
