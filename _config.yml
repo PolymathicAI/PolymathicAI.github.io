@@ -396,8 +396,8 @@ institution-title: Participating Institutions
 
 institution:
   # Institution Member
-  - name: Flatiron<br>Institute
-    avatar: fi.jpg
+  - name: Simons<br>Foundation
+    avatar: simons-logo.svg
 
   # Institution Member
   - name: New York University
