@@ -400,7 +400,7 @@ institution:
     avatar: simons-logo.svg
 
   # Institution Member
-  - name: New York University
+  - name: New York<br>University
     avatar: nyu.png
 
   # Institution Member
@@ -439,16 +439,16 @@ sag:
     affil: Meta AI<br>New York University
 
   - name: Stephane Mallat
-    affil: Ecole Normale Superieur<br>Collège de France<br>Flatiron Institute
+    affil: Ecole&nbsp;Normale&nbsp;Supérieure<br>Collège de France<br>Flatiron Institute
 
   - name: David Spergel
     url: https://www.simonsfoundation.org/people/David-Spergel/
     affil: Simons Foundation
 
-  - name: Olga Troyanskya
+  - name: Olga Troyanskaya
     affil: Flatiron Institute<br>Princeton University
 
-  - name: Laure Zenna
+  - name: Laure Zanna
     url: https://www.linkedin.com/in/placeholder1/
     affil: New York University
 
