@@ -425,22 +425,20 @@ sag-title: Scientific Advisory Group
 # Team Members
 #
 sag:
-  # Team Member
-  - name: Placeholder 1
-    link: https://www.linkedin.com/in/placeholder1/
-    # avatar: avatar-01.jpg
+  - name: Leslie Greengard
+    url: https://www.linkedin.com/in/placeholder1/
 
-  # Team Member
-  - name: Placeholder 2
-    # avatar: avatar-02.jpg
+  - name: David Ha
+    url: https://www.linkedin.com/in/placeholder1/
+    
+  - name: Stephane Mallat
+    url: https://www.linkedin.com/in/placeholder1/
 
-  # Team Member
-  - name: Placeholder 3
-    # avatar: avatar-03.jpg
+  - name: David Spergel
+    url: https://www.linkedin.com/in/placeholder1/
 
-  # Team Member
-  - name: Placeholder 4
-    # avatar: avatar-04.jpg
+  - name: Laure Zenna
+    url: https://www.linkedin.com/in/placeholder1/
 
 #####################################
 ########## Pricing Tables ###########
