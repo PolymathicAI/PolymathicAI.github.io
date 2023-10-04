@@ -427,7 +427,7 @@ sag-title: Scientific Advisory Group
 sag:
   # Team Member
   - name: Placeholder 1
-  - link: https://www.linkedin.com/in/placeholder1/
+    link: https://www.linkedin.com/in/placeholder1/
     # avatar: avatar-01.jpg
 
   # Team Member
