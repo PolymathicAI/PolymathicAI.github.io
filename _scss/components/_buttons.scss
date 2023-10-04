@@ -57,12 +57,12 @@ button {
     border-color: $primary;
   }
 
-  &:hover,
-  &:active {
-    color: $white;
-    border-color: lighten($primary, 20%);
-    background-color: lighten($primary, 20%);
-  }
+  // &:hover,
+  // &:active {
+  //   color: $white;
+  //   border-color: lighten($primary, 20%);
+  //   background-color: lighten($primary, 20%);
+  // }
 
 }
 
