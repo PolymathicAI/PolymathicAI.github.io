@@ -12,7 +12,7 @@ section.sag-section {
 
   // SAG Members Container
   .sag-members-container {
-    margin-top: 80px;
+    margin-top: 40px;
 
     .col-md-3 {
       @media (max-width: 600px) and (min-width: 430px) {
@@ -29,7 +29,7 @@ section.sag-section {
     // Member
     .sag-member {
       background: none;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
       transition: all $transition-links $transition-links-type;
 
       .img-wrapper {
