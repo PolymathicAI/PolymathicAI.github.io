@@ -425,10 +425,16 @@ sag-title: Scientific Advisory Group
 # Team Members
 #
 sag:
+  - name: Colm Caulfield
+    url: ?
+
   - name: Leslie Greengard
     url: https://www.simonsfoundation.org/people/leslie-greengard/
 
   - name: David Ha
+    url: https://www.linkedin.com/in/placeholder1/
+
+  - name: Yann LeCun
     url: https://www.linkedin.com/in/placeholder1/
 
   - name: Stephane Mallat
@@ -436,6 +442,9 @@ sag:
 
   - name: David Spergel
     url: https://www.simonsfoundation.org/people/David-Spergel/
+
+  - name: Olga Troyanskya
+    url: ?
 
   - name: Laure Zenna
     url: https://www.linkedin.com/in/placeholder1/
