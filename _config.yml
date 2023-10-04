@@ -430,25 +430,27 @@ sag:
     affil: University of Cambridge
 
   - name: Leslie Greengard
-    url: https://www.simonsfoundation.org/people/leslie-greengard/
+    affil: Flatiron Institute
 
   - name: David Ha
-    url: https://www.linkedin.com/in/placeholder1/
+    affil: Sakana AI
 
   - name: Yann LeCun
-    url: https://www.linkedin.com/in/placeholder1/
+    affil: Meta AI
 
   - name: Stephane Mallat
-    url: https://www.linkedin.com/in/placeholder1/
+    affil: Ecole Normale Superieur
 
   - name: David Spergel
     url: https://www.simonsfoundation.org/people/David-Spergel/
+    affil: Simons Foundation
 
   - name: Olga Troyanskya
-    url: placeholder
+    affil: Flatiron Institute
 
   - name: Laure Zenna
     url: https://www.linkedin.com/in/placeholder1/
+    affil: New York University
 
 #####################################
 ########## Pricing Tables ###########
