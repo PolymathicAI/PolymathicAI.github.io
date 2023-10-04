@@ -427,6 +427,7 @@ sag-title: Scientific Advisory Group
 sag:
   - name: Colm Caulfield
     url: placeholder
+    affil: University of Cambridge
 
   - name: Leslie Greengard
     url: https://www.simonsfoundation.org/people/leslie-greengard/
