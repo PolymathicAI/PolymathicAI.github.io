@@ -430,23 +430,23 @@ sag:
     affil: University of Cambridge
 
   - name: Leslie Greengard
-    affil: Flatiron Institute
+    affil: Flatiron Institute<br>New York University
 
   - name: David Ha
     affil: Sakana AI
 
   - name: Yann LeCun
-    affil: Meta AI
+    affil: Meta AI<br>New York University
 
   - name: Stephane Mallat
-    affil: Ecole Normale Superieur
+    affil: Ecole Normale Superieur<br>Collège de France<br>Flatiron Institute
 
   - name: David Spergel
     url: https://www.simonsfoundation.org/people/David-Spergel/
     affil: Simons Foundation
 
   - name: Olga Troyanskya
-    affil: Flatiron Institute
+    affil: Flatiron Institute<br>Princeton University
 
   - name: Laure Zenna
     url: https://www.linkedin.com/in/placeholder1/
