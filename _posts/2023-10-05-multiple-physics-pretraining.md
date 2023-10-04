@@ -5,7 +5,7 @@ tagline: Single Page
 date: 2023-10-04 12:00
 categories: [Storyline]
 tags: [Storyline, Physics, Machine Learning, Deep Learning, Surrogate Models, Pretraining, Transfer Learning, Transformers, Time Series, PDEBench]
-image: multiphysics_pretraining.png
+image: multiphysics_ke.png
 ---
 
 However, all of these successes are built from scratch. Learning new systems requires large datasets and larger training times every time. This limits the accessibility of these methods for many physical systems of interest to the largest, most compute-rich organizations.
@@ -27,7 +27,7 @@ For this approach to be useful, we not only need to build models capable of tran
 
 Our pretraining approach can be described in two steps:
 
-!["Multiphysics Pretraining"](multiphysics_pretraining.png)
+!["Multiphysics Pretraining"](images/blog/multiphysics_ke.png)
 
 
 1. Project the state variables from multiple physical systems into a shared normalized embedding space.
