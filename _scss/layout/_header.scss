@@ -15,40 +15,21 @@ header.site-header {
 
   // Blog Header
   &.blog-header {
-    height: 300px;
+    height: 100px;
 
     .parallax-wrapper {
-      height: 300px;
+      height: 100px;
     }
 
     .container {
-      height: 600px;
+      height: 100px;
     }
 
     .header-banner {
-      height: calc(400px - 250px);
+      height: 100px;
     }
   }
 
-  @media (max-width: 1000px) {
-    &.blog-header {
-      height: 200px;
-
-      .parallax-wrapper {
-        height: 200px;
-      }
-
-      /* Adjust other properties as needed based on the new height. */
-      /* The following are just examples and may not be what you need. */
-      .container {
-        height: 400px;
-      }
-
-      .header-banner {
-        height: calc(370px - 250px);
-      }
-    }
-  }
 
   // Parallax-wrapper
   .parallax-wrapper {
@@ -154,6 +135,7 @@ header.site-header {
           margin-top: 40px;
           margin-bottom: 40px;
         }
+
         h2 {
           line-height: 140%;
         }
