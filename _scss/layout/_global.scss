@@ -290,13 +290,13 @@ blockquote {
     font-size: 3.2rem;
   }
 
-  &:hover {
-    color: $white;
-    background: $primary;
-  }
+  // &:hover {
+  //   color: $white;
+  //   background: $primary;
+  // }
 
-  // Active Destroy
-  &.active {
-    transform: translate3d(0, 0, 0);
-  }
+  // // Active Destroy
+  // &.active {
+  //   transform: translate3d(0, 0, 0);
+  // }
 }
