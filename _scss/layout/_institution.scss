@@ -33,9 +33,12 @@ section.institution-section {
       transition: all $transition-links $transition-links-type;
 
       .img-wrapper {
-        display: block;
+        display: flex;         /* Enables flex layout */
         position: relative;
         overflow: hidden;
+        height: 150px;         /* Fixed height */
+        align-items: center;   /* Vertically aligns the child elements to the center */
+        justify-content: center;
 
         &:before,
         &:after {

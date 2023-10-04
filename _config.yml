@@ -427,30 +427,30 @@ sag-title: Scientific Advisory Group
 sag:
   - name: Colm Caulfield
     url: placeholder
-    affil: University of Cambridge
+    affil: <br>University of Cambridge<br>
 
   - name: Leslie Greengard
-    affil: Flatiron Institute<br>New York University
+    affil: Flatiron Institute<br>New York University<br>
 
   - name: David Ha
-    affil: Sakana AI
+    affil: <br>Sakana AI<br>
 
   - name: Yann LeCun
-    affil: Meta AI<br>New York University
+    affil: Meta AI<br>New York University<br>
 
   - name: Stephane Mallat
     affil: Ecole&nbsp;Normale&nbsp;Supérieure<br>Collège de France<br>Flatiron Institute
 
   - name: David Spergel
     url: https://www.simonsfoundation.org/people/David-Spergel/
-    affil: Simons Foundation
+    affil: <br>Simons Foundation<br>
 
   - name: Olga Troyanskaya
-    affil: Flatiron Institute<br>Princeton University
+    affil: Flatiron Institute<br>Princeton University<br>
 
   - name: Laure Zanna
     url: https://www.linkedin.com/in/placeholder1/
-    affil: New York University
+    affil: <br>New York University<br>
 
 #####################################
 ########## Pricing Tables ###########
