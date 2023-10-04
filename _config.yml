@@ -439,11 +439,11 @@ sag:
     affil: Meta AI<br>New York University
 
   - name: Stephane<br>Mallat
-    affil: Ecole&nbsp;Normale&nbsp;Supérieure<br>Collège de France<br>Flatiron Institute
+    affil: École&nbsp;Normale&nbsp;Supérieure<br>Collège de France<br>Flatiron Institute
 
   - name: David<br>Spergel
     url: https://www.simonsfoundation.org/people/David-Spergel/
-    affil: Simons Foundation
+    affil: &nbsp;<br>Simons Foundation <br> &nbsp;
 
   - name: Olga<br>Troyanskaya
     affil: Flatiron Institute<br>Princeton University
