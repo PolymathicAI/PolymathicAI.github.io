@@ -97,6 +97,7 @@ header.site-header {
               a {
                 color: $primary_bright;
                 position: relative;
+                font-weight: bold;
 
                 &:before {
                   content: '';
@@ -150,6 +151,7 @@ header.site-header {
 
         h2 {
           line-height: 140%;
+          font-weight: 300;
         }
       }
 
