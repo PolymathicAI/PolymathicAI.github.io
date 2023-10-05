@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Announcing Polymathic AI"
-shorttitle: "Announcing Polymathic"
-date: 2023-10-09
-smallimage: hello-world-s.jpg
-image: hello-world.jpg
+title: "Blog Post Placeholder"
+tagline: Single Page
+date: 2016-05-15 10:43
+categories: [Graphic Design]
+tags: [Flat, Graphic, Design, Tips, Polygon]
+image: img-02.jpg
 ---
 
 We are so cool!
