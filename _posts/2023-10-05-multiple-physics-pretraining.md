@@ -28,9 +28,8 @@ For this approach to be useful, we not only need to build models capable of tran
 Our pretraining approach can be described in two steps:
 
 <p align="center">
-  !["Multiphysics Pretraining"](/images/blog/multiphysics_ke.png)
+  <img src="/images/blog/multiphysics_ke.png" alt="Multiphysics Pretraining">
 </p>
-
 
 1. Project the state variables from multiple physical systems into a shared normalized embedding space.
 2. Train a single scalable transformer model to predict the next step of a spatiotemporal series based on a small number of snapshots describing the history.
