@@ -58,8 +58,6 @@ After pretraining, our models are able to compete with or beat modern baselines 
 
 While this parity is impressive, we still expect fine-tuned, dedicated models to outperform general ones in most cases. The real question we would like to answer is whether this pretraining process actually improves the ability of the model to learn new physics. PDEBench has a natural division in the provided fluid data between incompressible flow (Incompressible Navier-Stokes, Shallow Water) and compressible flow (Compressible Navier-Stokes). To explore the question, we pretrain new models without including compressible flow at all, then choose two distinct fine-tuning datasets. We call one “near” and the other “far”.
 
-We then make two compressible datasets. We call one “near” and one “far”. 
-
 <p align="center" style="margin-bottom: 10px;">
   <img src="/images/blog/multiphysics_ke.png" alt="Visualizing the physics gap." width="85%">
 <!--   <figcaption  style="padding-left:32px; padding-right:20px; line-height:1.3"> Looking at individual fields (density, in this case), the incompressible flow included in the training set (left) has strong resemblence to the compressible simulation with low mach number (center) with similar diffusion levels, but the high mach number flow (right) develops significantly more complex, small-scale features as a result of both lower diffusion and more compressible behavior. </figcaption> -->
