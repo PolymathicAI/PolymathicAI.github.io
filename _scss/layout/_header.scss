@@ -62,10 +62,20 @@ header.site-header {
 
   // Site Navigation Bar
   .site-navigation-bar {
-    position: relative;
-    height: 100px;
-    min-height: 100px;
-    z-index: 2;
+    // position: relative;
+    // height: 100px;
+    // min-height: 100px;
+    // z-index: 2;
+    // Sticky menu
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0px;
+    min-height: 60px;
+    background: $primary_dark;
+    z-index: 99999999999999;
 
     // Logo
     .logo {
