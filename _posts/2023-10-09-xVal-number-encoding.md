@@ -29,22 +29,37 @@ For this reason, we developed **xVal**: a continuous way to encode numbers in la
 **xVal** works by treating numbers differently than other kinds of language. Each number in a text dataset is pre-processed: its value is stored in a separate vector, and in its place, we leave a single token: [NUM]. We then encode the pre-processed text into a finite series of word tokens, but multiply the embeddings of any [NUM] tokens by their corresponding value. When the model is asked to decode a [NUM] token, we use a dedicated token head in our transformer architecture to predict that token’s numerical value as a scalar value trained with Mean Squared Error (MSE) loss. 
 
 <p align="center">
-  <img src="/images/blog/xVal.jpg" alt="Schematic of xval encoding and decoding" width="85%">
+  <img src="/images/blog/xVal.jpg" alt="Schematic of xval encoding and decoding" width="95%">
 </p>
  
 We run a series of experiments to test how xVal performs on various datasets in comparison with four other numerical encoding strategies defined in [1] and summarized in this table below. These strategies range from encoding each digit of a number as separate tokens to encoding the entire number as a single token. 
+
+<p align="center">
+  <img src="/images/blog/encodings.png" alt="Comparison table with other number encodings." width="95%">
+</p>
 
 
 First, we evaluate these encoding schemes on simple arithmetic datasets, e.g. various combinations of addition and multiplication. We find that xVal outperforms the other methods on multi-operand tasks like ((1.32 * 32.1) + (1.42-8.20)) = 35.592.  When multiplying large multi-digit integers, it performs at the same level as the other encodings, but is less prone to large outliers in its predictions. 
 
 Next, we evaluate the same encoding schemes on a subset of the ERA5 global climate dataset [2] consisting of temperature readings from all over the world. In this setting, xVal excels due to its implicit bias towards continuous predictions. It achieves the best performance in the least amount of training time. It also avoids the pitfalls of over-predicting particular numbers due to imbalances of those tokens in the training data, as seen for the other encodings in the horizontal stripes in the figure below.  
 
+<p align="center">
+  <img src="/images/blog/buggy.png" alt="Comparison on the temperature dataset." width="95%">
+</p>
+
+
 Finally, we evaluate the encoding schemes on simulations of planets orbiting a central mass. Following training, we ask the model to predict the masses of the planets and qualities of their orbits: their semi-major axes a and orbital eccentricities e, as well as the sampling rate Δt. Here, we see strong interpolation performance by xVal: its out-of-distribution predictions are better than any other encoding scheme.  
 
+<p align="center">
+  <img src="/images/blog/planets.png" alt="Comparison on the planets dataset." width="95%">
+</p>
 
 
 Looking more closely at its predictions, we can see that the implicit bias of continuity plays a key role in its interpolation abilities. In the figure below, we evaluate its predictions about an orbit’s semi-major axis. There is no sample in the training data with a ∈ (1, 1.16). Upon testing, only xVal successfully approximates these values continuously within this gap in the training data. 
  
+ <p align="center">
+  <img src="/images/blog/generalization.png" alt="Comparison of theh ood generalization." width="45%">
+</p>
 
 LLMs have opened up creative ways of reading and writing by responding to text-based prompts in a much more tailored way than what we’ve seen before. By efficiently enforcing continuity end-to-end for numbers in a language model, xVal is an innovation that could help enable a foundation model connecting multiple areas of science. 
 
