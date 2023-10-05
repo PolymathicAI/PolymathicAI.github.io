@@ -398,25 +398,31 @@ institution:
   # Institution Member
   - name: Simons<br>Foundation
     avatar: simons-logo.svg
+    url: https://www.simonsfoundation.org/
 
   # Institution Member
   - name: New York<br>University
     avatar: nyu.png
+    url: https://www.nyu.edu/
 
   # Institution Member
   - name: University of Cambridge
     avatar: cambridge.png
+    url: https://www.cam.ac.uk
 
   - name: Schmidt Futures
     avatar: schmidt.png
+    url: https://www.schmidtfutures.com/
 
   # Institution Member
   - name: Princeton University
     avatar: princeton.png
+    url: https://www.princeton.edu/
 
   # Institution Members
   - name: Berkeley Lab
     avatar: berkeley.png
+    url: https://www.lbl.gov/
 
 
 #####################################
