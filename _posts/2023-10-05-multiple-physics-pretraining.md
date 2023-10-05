@@ -13,9 +13,9 @@ Deep learning has begun to make its mark in scientific applications. From the mo
 
 #### Does this need to be the case?
 
-The fields of natural language processing and computer vision have been revolutionized by the emergence of “foundation models”. These are large neural networks that have been pretrained on massive datasets using task-agnostic objective functions. The remarkable thing about this approach is that access to these larger datasets allows the models to learn broadly useful, generalizable features that are representative of shared patterns across the full domain. When researchers in these fields need to solve a new problem, they are able to fine-tune these models quickly and without massive amounts of data because many intrinsic properties of the data are already understood by the model. This improves both the accuracy and the accessibility of large-scale deep learning. 
+The fields of natural language processing and computer vision have been revolutionized by the emergence of “foundation models”. These are large neural networks that have been pretrained on massive datasets without the use of explicit labels. The remarkable thing about this approach is that access to these larger unlabeled datasets allows the models to learn broadly useful, generalizable features that are representative of shared patterns across the full domain. When researchers in these fields need to solve a new problem, they are able to fine-tune these models quickly and with less data because many intrinsic properties of the data distribution are already understood by the model. This improves both the accuracy and the accessibility of large-scale deep learning. 
 
-At a fundamental level, many physical systems also share underlying principles. For example, many phenomena in fluids can fundamentally be represented as transport. More broadly, many of the equations describing physical behavior are derived from universal properties like conservation laws or invariances which persist across diverse disciplines like fluids, climate science, astrophysics, and chemistry. 
+At a fundamental level, many physical systems also share underlying principles. Many of the equations describing physical behavior are derived from universal properties like conservation laws or invariances which persist across diverse disciplines like fluids, climate science, astrophysics, and chemistry. This surfaces when look at individual disciplines. For example, the Navier-Stokes equations describing transport in viscous fluids can be derived up to several material assumptions from conservation of mass, momentum, and energy.
 
 The success of pretraining in other fields and the existence of these shared principles gives rise to an interesting question:
 
@@ -30,7 +30,7 @@ Learning multiple physics in a single model is non-trivial. Unlike in vision and
 Our pretraining approach can be described in two steps:
 
 <p align="center">
-  <img src="/images/blog/mpp_arch_v5.png" alt="Multiphysics Pretraining">
+  <img src="/images/blog/mpp_arch_v5.png" alt="Multiphysics Pretraining" width="85%">
 </p>
 
 1. Project the state variables from multiple physical systems into a shared normalized embedding space.
@@ -55,7 +55,7 @@ Now, the most important detail is whether this pretraining actually improves lea
 We then make two compressible datasets. We call one “near” and one “far”. 
 
 <p align="center" style="margin-bottom: 10px;">
-  <img src="/images/blog/multiphysics_ke.png" alt="Visualizing the physics gap." width="50%" height="50%">
+  <img src="/images/blog/multiphysics_ke.png" alt="Visualizing the physics gap." width="85%">
   <figcaption  style="padding-left:32px; padding-right:20px; line-height:1.3">On a field snapshot level, the incompressible flow included in the training set (left) has strong resemblence to the compressible simulation at low mach number (center) with similar diffusion levels, but the high mach number flow (right) develops significantly more complex, small-scale features as a result of both lower diffusion and more compressible behavior. </figcaption>
 </p>
 
