@@ -20,20 +20,24 @@ layout: page
     </header>
 
     <!-- Buttons -->
-    <p>
-      <a href={{ page.link }} class="button-post">Paper</a>
-    </p>
-
+    {% if page.link != nil %}
+      <p>
+        <a href={{ page.link }} class="button-post">Paper</a>
+      </p>
+    {% endif %}
     <!-- Article Content -->
     <div class="article-content post-article-content">
 
       {{ page.content }}
-      <!-- Authors -->
-      <hr/>
-      <div class="post-article-text">Authors:</div>
-      <div class="post-article-text post-article-authors">
-        {{page.authors}}
-      </div>
+
+      {% if page.authors != nil %}
+        <!-- Authors -->
+        <hr/>
+        <div class="post-article-text">Authors:</div>
+        <div class="post-article-text post-article-authors">
+          {{page.authors}}
+        </div>
+      {% endif %}
     </div>
 
     <!-- Article Tool Boxes -->

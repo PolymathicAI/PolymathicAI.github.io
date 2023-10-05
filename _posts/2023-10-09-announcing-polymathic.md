@@ -7,7 +7,6 @@ image: hello-world.jpg
 smallimage: hello-world-s.jpg
 blurb: Some blurb goes here.
 shortblurb: Shorter blurb goes here.
-link: https://polymathic-ai.org/index.html#home
 ---
 
 We are so cool!
