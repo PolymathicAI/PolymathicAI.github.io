@@ -5,7 +5,7 @@ tagline: Single Page
 date: 2023-10-04 12:00
 categories: [Storyline]
 tags: [Storyline, Physics, Machine Learning, Deep Learning, Surrogate Models, Pretraining, Transfer Learning, Transformers, Time Series, PDEBench]
-image: multiphysics_ke.png
+image: physics_circle.png
 ---
 
 However, all of these successes are built from scratch. Learning new systems requires large datasets and larger training times every time. This limits the accessibility of these methods for many physical systems of interest to the largest, most compute-rich organizations.
@@ -28,7 +28,7 @@ For this approach to be useful, we not only need to build models capable of tran
 Our pretraining approach can be described in two steps:
 
 <p align="center">
-  <img src="/images/blog/multiphysics_ke.png" alt="Multiphysics Pretraining">
+  <img src="/images/blog/mpp_arch_v5.png" alt="Multiphysics Pretraining">
 </p>
 
 1. Project the state variables from multiple physical systems into a shared normalized embedding space.
@@ -51,6 +51,10 @@ Our models are able to compete with or beat modern baselines on all 2D time-depe
 Now, the most important detail is whether this pretraining actually improves learning on new tasks. We do this by completely removing compressible fluid simulations from the training corpus and evaluating whether training on only incompressible Navier-Stokes, incompressible shallow water, and diffusion-reaction simulations provides an advantage in learning the compressible simulations.
 
 We then make two compressible datasets. We call one “near” and one “far”. 
+
+<p align="center">
+  <img src="/images/blog/multiphysics_ke.png" alt="Visualizing the physics gap.">
+</p>
 
 
 “Near” is generated from a compressible simulation, but operates at regimes that don’t have much new behavior. “Far” is simulated at high mach number, a regime where compressible effects are very strong. 
