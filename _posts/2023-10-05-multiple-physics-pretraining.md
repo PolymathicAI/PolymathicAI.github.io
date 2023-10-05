@@ -2,7 +2,7 @@
 layout: post
 title: "Accelerating Surrogate Model Development with Multiple Physics Pretraining"
 shorttitle: "Learning Multiple Physics"
-date: 2023-10-09
+date: 2023-10-05
 smallimage: physics_circle-s.png
 image: physics_circle.png
 ---
