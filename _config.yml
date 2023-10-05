@@ -130,7 +130,7 @@ mailchimp:
 #############   About   #############
 #####################################
 about-title: Our Mission
-about-description:  To help bring about a new generation of machine learning models for scientific applications, capable of leveraging knowledge across the boundaries of scientific disciplines. Our team aims to develop and deploy such foundation models that can be used by researchers around the world to accelerate scientific discovery.
+about-description: To usher in a new class of machine learning for scientific data, building models which can leverage shared concepts across disciplines. We aim to develop, train, and release such foundation models for use by researchers worldwide.
 
 #####################################
 #############  Features  ############
