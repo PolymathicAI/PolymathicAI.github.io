@@ -5,6 +5,8 @@ shorttitle: "Learning Multiple Physics"
 date: 2023-10-05
 smallimage: physics_circle-s.png
 image: physics_circle.png
+blurb: Some blurb goes here.
+shortblurb: Shorter blurb goes here.
 ---
 
 Deep learning has begun to make its mark in scientific applications. From the molecular scale to planetary and even cosmological scales, researchers have developed deep learning surrogates to accelerate their simulations. However, each of these surrogates is currently built from scratch. Learning new systems requires large datasets and larger training times every time researchers want to model new dynamics. This limits the accessibility of these methods for many physical systems of interest to the largest, most compute-rich organizations.

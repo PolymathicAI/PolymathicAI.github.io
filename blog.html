@@ -33,7 +33,7 @@ title: Read Our <strong>Blog</strong>
           <div class="time">{{ post.date | date: "%H:%M" }}</div> -->
       <!-- </div> -->
       <div class="article-text post-article-text">
-        {{ post.content | truncatewords:75 }}
+        {{ post.blurb }}
       </div>
       <div class="show-more">
         <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a>
