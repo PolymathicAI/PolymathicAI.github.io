@@ -53,7 +53,7 @@ We then make two compressible datasets. We call one “near” and one “far”
 
 <p align="center">
   <img src="/images/blog/multiphysics_ke.png" alt="Visualizing the physics gap.">
-  <figcaption>On a field snapshot level, the incompressible flow included in the training set (left) has strong resemblence to the compressible simulation at low mach number (center) with similar diffusion levels, but the high mach number flow (right) develops significantly more complex, small-scale features as a result of both lower diffusion and more compressible behavior. </figcaption>
+  <figcaption  style="padding-left:32px; padding-right:20px; line-height:1.3">On a field snapshot level, the incompressible flow included in the training set (left) has strong resemblence to the compressible simulation at low mach number (center) with similar diffusion levels, but the high mach number flow (right) develops significantly more complex, small-scale features as a result of both lower diffusion and more compressible behavior. </figcaption>
 </p>
 
 
