@@ -9,8 +9,8 @@ blurb: We introduce xVal, a new number encoding scheme for LLMs. Using xVal with
 shortblurb: We introduce xVal, a new number encoding scheme for LLMs. Using xVal with a modified number inference method makes LLMs continuous function approximators. This makes them have a better inductive bias for data analysis in scientific domains.
 ---
 
-<p align="center">
-  <img src="/images/blog/xval-splash.png" width="100%">
+<p align="center" style="padding-bottom: 15px;">
+  <img src="/images/blog/xval-splash.jpg" width="100%">
 </p>
 
 
