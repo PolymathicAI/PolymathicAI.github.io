@@ -64,5 +64,5 @@ Looking more closely at its predictions, we can see that the implicit bias of co
 LLMs have opened up creative ways of reading and writing by responding to text-based prompts in a much more tailored way than what we’ve seen before. By efficiently enforcing continuity end-to-end for numbers in a language model, xVal is an innovation that could help enable a foundation model connecting multiple areas of science. 
 
 
-[1] Charton. Linear Algebra with Transformers. arXiv:2112.01898 [cs.LG]. 
+[1] Charton. Linear Algebra with Transformers. arXiv:2112.01898 [cs.LG]<br>
 [2] Hersbach et. al. https://rmets.onlinelibrary.wiley.com/doi/full/10.1002/qj.3803 
