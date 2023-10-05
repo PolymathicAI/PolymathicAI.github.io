@@ -19,6 +19,7 @@
     </div>
 
     <!-- Team Members -->
+    <input type="text" id="searchInput" placeholder="Filter..." oninput="filterFunction(this.value)" style="opacity: 50%;">
     <div class="row team-members-container">
 
       {% for member in site.team %}
