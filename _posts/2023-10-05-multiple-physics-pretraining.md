@@ -4,11 +4,11 @@ title: "Accelerating Surrogate Model Development with Multiple Physics Pretraini
 authors: Michael McCabe, Bruno Régaldo-Saint Blancard, Liam Holden Parker, Ruben Ohana, Miles Cranmer, Alberto Bietti, Michael Eickenberg, Siavash Golkar, Geraud Krawezik, Francois Lanusse, Mariel Pettee, Tiberiu Tesileanu, Kyunghyun Cho, Shirley Ho
 shorttitle: "Learning Multiple Physics"
 date: 2023-10-05 10:01
-smallimage: physics_circle-s.png
-image: physics_circle.png
+smallimage: waves-s.jpg
+image: waves.jpg
 blurb: Some blurb goes here.
 shortblurb: Shorter blurb goes here.
-splashimage: /images/blog/physics_circle.png
+splashimage: /images/blog/waves.jpg
 link: https://arxiv.org/abs/2310.02994
 ---
 
