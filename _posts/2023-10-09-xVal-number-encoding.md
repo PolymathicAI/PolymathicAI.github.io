@@ -65,6 +65,10 @@ Looking more closely at its predictions, we can see that the implicit bias of co
 
 By efficiently enforcing continuity end-to-end for numbers in a language model, xVal is an innovation that could help enable future foundation models connecting multiple domains of science. 
 
+*-- Mariel Pettee*
+
+---
+
 [1] Dziri, Nouha, et al. Faith and Fate: Limits of Transformers on Compositionality. arXiv:2305.18654 [cs.CL].
 
 [2] Charton. Linear Algebra with Transformers. arXiv:2112.01898 [cs.LG]. 
