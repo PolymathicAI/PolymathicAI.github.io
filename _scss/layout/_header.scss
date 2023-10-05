@@ -15,14 +15,14 @@ header.site-header {
 
   // Blog Header
   &.blog-header {
-    height: 100px;
+    height: 60px;
 
     @media (max-width: 1000px) {
       height: 60px;
     }
 
     .parallax-wrapper {
-      height: 100px;
+      height: 60px;
       background-color: #130007;
 
       @media (max-width: 1000px) {
