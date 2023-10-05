@@ -7,12 +7,8 @@ image: xVal.jpg
 smallimage: xVal-s.jpg
 blurb: We introduce xVal, a new number encoding scheme for LLMs. Using xVal with a modified number inference method makes LLMs continuous function approximators. This makes them have a better inductive bias for data analysis in scientific domains.
 shortblurb: We introduce xVal, a new number encoding scheme for LLMs. Using xVal with a modified number inference method makes LLMs continuous function approximators. This makes them have a better inductive bias for data analysis in scientific domains.
+splashimage: /images/blog/xval-splash.jpg
 ---
-
-<p align="center" style="padding-bottom: 15px;">
-  <img src="/images/blog/xval-splash.jpg" width="100%">
-</p>
-
 
 Large Language Models (LLMs) these days can write essays, summarize research papers, generate recipes and travel itineraries, and debug your code — but ask ChatGPT to multiply two four-digit numbers, and it will fail over 90% of the time.
 
