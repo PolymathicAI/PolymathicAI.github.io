@@ -22,7 +22,7 @@ The success of pretraining in other fields and the existence of these shared pri
 
 *Can we learn these shared features ahead of time through pretraining and accelerate the development of models for new physical systems?*
 
-Transfer learning is well-studied in the physical sciences, but to make it as applicable to the physical sciences as it is in vision or language, we also need to develop models that understand multiple types of physics. The more physics a model understands, the more fields can make use of its weights as an initialization for their own models. 
+Transfer learning is well-studied in the physical sciences, but to make it as applicable to the physical sciences as it is in vision and language today, we need to develop models that understand multiple types of physics. The more physics a model understands, the more fields can make use of its weights as an initialization for their own models.
 
 Learning multiple physics in a single model is non-trivial. Unlike in vision and video when input channels represent pixel intensities, in physics, input channels represent entirely different fields with different behaviors which may vary both in behavior and scale depending on the physical system under study. In this work, we develop a pretraining approach that helps us avoid these issues and train a single model on diverse physical behavior.
 
