@@ -77,3 +77,17 @@ button,
   }
 
 }
+.button-post{
+  display: inline-block;
+  margin-bottom: 0.25em;
+  padding: 0.5em 1em;
+  font-size: .75em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-width: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: $primary;
+  color:white;
+}
