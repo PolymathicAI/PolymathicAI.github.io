@@ -9,6 +9,11 @@ blurb: We introduce xVal, a new number encoding scheme for LLMs. Using xVal with
 shortblurb: We introduce xVal, a new number encoding scheme for LLMs. Using xVal with a modified number inference method makes LLMs continuous function approximators. This makes them have a better inductive bias for data analysis in scientific domains.
 ---
 
+<p align="center">
+  <img src="/images/blog/xval-splash.png" width="100%">
+</p>
+
+
 Large Language Models (LLMs) these days can write essays, summarize research papers, generate recipes and travel itineraries, and debug your code — but ask ChatGPT to multiply two four-digit numbers, and it will fail over 90% of the time.
 
 Why? It turns out that numbers are quite different from other kinds of language! Numbers have specific meanings, but unlike letters or words, these meanings exist on a continuous scale with infinitely many values that operate using a complex system of rules.  
@@ -21,7 +26,6 @@ One key reason why we haven’t yet seen major models like this emerge is that s
 Every proposal for how to treat numbers in language models struggles with how to translate the infinite space of numbers into a finite number of vocabulary elements. LLMs break down language into pieces called “tokens”, sort of like tiles in a game of Scrabble. Adding numbers into the mix is like adding an infinite number of Scrabble tiles, making the game impossible to play. Existing strategies show improved predictions on problems whose answers lie within the training dataset, but none can effectively generalize outside of numbers already seen. 
 
 For this reason, we developed **xVal**: a continuous way to encode numbers in language models for scientific applications that uses just a single token to represent any number. This strategy has three major benefits: 
-
 * Continuity: It embeds key information about how numbers continuously relate to one another, making its predictions more appropriate for scientific applications. 
 * Interpolation: It makes better out-of-distribution predictions than other numerical encodings. 
 * Efficiency: By using just a single token to represent any number, it requires less memory, compute resources, and training time to achieve good results.
