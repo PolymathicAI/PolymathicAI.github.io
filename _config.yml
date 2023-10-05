@@ -433,7 +433,7 @@ institution:
 
   # Institution Member
   - name: Princeton University
-    avatar: princeton.png
+    avatar: princeton.svg
     url: https://www.princeton.edu/
 
   # Institution Members
