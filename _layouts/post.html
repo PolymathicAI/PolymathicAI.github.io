@@ -13,7 +13,7 @@ layout: page
       </div>
       <div class="article-title">
         <h3 class="title">{{ page.title }}</h3>
-        <h4 class="category">{{ page.categories | first }}</h4>
+        <h4 class="category">{{ page.date | date: "%b" }} {{ page.date | date: "%d" }}</h4>
       </div>
     </header>
 
@@ -49,14 +49,14 @@ layout: page
         <div class="social-icons box-content">
           <ul class="icons global-text-color-icons">
             <li>
-              <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}" 
-              onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+              <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+                onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
                 <i class="fi flaticon-facebook"></i>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/home?status={{ site.url }}{{ site.baseurl }}{{ page.url }}" 
-              onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+              <a href="https://twitter.com/home?status={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+                onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
                 <i class="fi flaticon-twitter"></i>
               </a>
             </li>
