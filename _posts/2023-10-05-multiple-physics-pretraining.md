@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Accelerating Surrogate Model Development with Multiple Physics Pretraining"
-shorttitle: "Multiple Physics Pretraining"
+shorttitle: "Learning Multiple Physics"
 date: 2023-10-04 12:00
-image: physics_circle.png
+image: physics_circle-s.png
 ---
 
 However, all of these successes are built from scratch. Learning new systems requires large datasets and larger training times every time. This limits the accessibility of these methods for many physical systems of interest to the largest, most compute-rich organizations.
