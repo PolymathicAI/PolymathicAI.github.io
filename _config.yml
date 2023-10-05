@@ -457,26 +457,31 @@ sag:
 
   - name: Leslie<br>Greengard
     affil: Flatiron Institute<br>New York University<br>
+    url: https://math.nyu.edu/~greengar/
 
   - name: David<br>Ha
     affil: Sakana AI
+    url: https://blog.otoro.net/
 
   - name: Yann<br>LeCun
     affil: Meta AI<br>New York University
+    url: http://yann.lecun.com/
 
   - name: Stephane<br>Mallat
     affil: École&nbsp;Normale&nbsp;Supérieure<br>Collège de France<br>Flatiron Institute
+    url: https://www.di.ens.fr/~mallat/mallat.html
 
   - name: David<br>Spergel
-    url: https://www.simonsfoundation.org/people/David-Spergel/
     affil: <br>Simons Foundation <br> &nbsp;
+    url: https://www.simonsfoundation.org/people/David-Spergel/
 
   - name: Olga<br>Troyanskaya
     affil: Flatiron Institute<br>Princeton University
+    url: https://www.cs.princeton.edu/people/profile/ogt
 
   - name: Laure<br>Zanna
-    url: https://www.linkedin.com/in/placeholder1/
     affil: New York University
+    url: https://laurezanna.github.io/
 
 #####################################
 ########## Pricing Tables ###########
