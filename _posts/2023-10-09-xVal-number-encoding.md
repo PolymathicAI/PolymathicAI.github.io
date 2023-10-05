@@ -27,7 +27,7 @@ For this reason, we developed **xVal**: a continuous way to encode numbers in la
 * **Interpolation:** It makes better out-of-distribution predictions than other numerical encodings. 
 * **Efficiency:** By using just a single token to represent any number, it requires less memory, compute resources, and training time to achieve good results.
 
-xVal works by treating numbers differently than other kinds of text inputs. Each number in a text dataset is pre-processed: its value is stored in a separate vector, and in its place, we leave a single token: [NUM]. We then encode the pre-processed text into a finite series of word tokens, but multiply the embeddings of [NUM] tokens by their corresponding numerical values. When the model is asked to decode a [NUM] token, it uses a dedicated token head in its transformer architecture trained with Mean Squared Error (MSE) loss to predict that token’s value as a scalar. 
+xVal works by treating numbers differently than other kinds of text inputs. Each number in a text dataset is pre-processed: its value is stored in a separate vector, and in its place, we leave a single token: `[NUM]`. We then encode the pre-processed text into a finite series of word tokens, but multiply the embeddings of `[NUM]` tokens by their corresponding numerical values. When the model is asked to decode a `[NUM]` token, it uses a dedicated token head in its transformer architecture trained with Mean Squared Error (MSE) loss to predict that token’s value as a scalar. 
 
 <p align="center">
   <img src="/images/blog/xVal.jpg" alt="Schematic of xval encoding and decoding" width="95%" style="mix-blend-mode: darken;">
@@ -64,8 +64,11 @@ Looking more closely at its predictions, we can see that the implicit bias of co
 By efficiently enforcing continuity end-to-end for numbers in a language model, xVal is an innovation that could help enable future foundation models connecting multiple domains of science. 
 
 [1] Dziri, Nouha, et al. Faith and Fate: Limits of Transformers on Compositionality. arXiv:2305.18654 [cs.CL].
+
 [2] Charton. Linear Algebra with Transformers. arXiv:2112.01898 [cs.LG]. 
+
 [3] Hersbach et. al. The ERA5 Global Reanalysis. Quarterly Journal of the Royal Meteorological Society, 146(730):1999–2049, 2020. doi: https://doi.org/10.1002/qj.3803. 
-[4] Rein, H. and Liu, S.-F. Rebound: an open-source multi-purpose n-body code for collisional dynamics. A&A, 537:A128, 2012. https://doi.org/ 10.1051/0004-6361/201118085.      
+
+[4] Rein, H. and Liu, S.-F. Rebound: an open-source multi-purpose n-body code for collisional dynamics. A&A, 537:A128, 2012. https://doi.org/10.1051/0004-6361/201118085.      
 
 Image by Omar Flores via Unsplash.
