@@ -29,15 +29,18 @@ section.institution-section {
     // Member
     .institution-member {
       background: $white;
-      margin-bottom: 30px;
+      margin-bottom: 60px;
       transition: all $transition-links $transition-links-type;
 
       .img-wrapper {
-        display: flex;         /* Enables flex layout */
+        display: flex;
+        /* Enables flex layout */
         position: relative;
         overflow: hidden;
-        height: 150px;         /* Fixed height */
-        align-items: center;   /* Vertically aligns the child elements to the center */
+        height: 150px;
+        /* Fixed height */
+        align-items: center;
+        /* Vertically aligns the child elements to the center */
         justify-content: center;
 
         &:before,
