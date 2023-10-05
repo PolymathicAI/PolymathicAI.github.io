@@ -9,20 +9,21 @@ blurb: Some blurb goes here.
 shortblurb: Shorter blurb goes here.
 ---
 
-Deep learning has begun to make its mark in scientific applications. From the molecular scale to planetary and even cosmological scales, researchers have developed deep learning surrogates to accelerate their simulations. However, each of these surrogates is currently built from scratch. Learning new systems requires large datasets and larger training times every time researchers want to model new dynamics. This limits the accessibility of these methods for many physical systems of interest to the largest, most compute-rich organizations.
+Deep learning has begun to make its mark in scientific applications. From the molecular scale to planetary and even cosmological scales, researchers have developed deep learning surrogates to accelerate their simulations. However, each of these surrogates is currently built from scratch. Learning new systems requires large datasets and larger training times every time researchers want to model new dynamics. This large upfront cost limits the accessibility of these methods for many physical systems of interest to the largest, most compute-rich organizations.
 
 #### Does this need to be the case?
 
-The fields of natural language processing and computer vision have been revolutionized by the emergence of “foundation models”. These are large neural networks that have been pretrained on massive datasets using task-agnostic objective functions to learn features that are broadly useful across wide ranges of tasks. These features have proven to be unexpectedly effective on a wide range of tasks. Most importantly, fine-tuning these features to new tasks drastically reduces the required data and training time compared to building new models from scratch, making their use more widely accessible. 
+The fields of natural language processing and computer vision have been revolutionized by the emergence of “foundation models”. These are large neural networks that have been pretrained on massive datasets using task-agnostic objective functions. The remarkable thing about this approach is that access to these larger datasets allows the models to learn broadly useful, generalizable features that are representative of shared patterns across the full domain. When researchers in these fields need to solve a new problem, they are able to fine-tune these models quickly and without massive amounts of data because many intrinsic properties of the data are already understood by the model. This improves both the accuracy and the accessibility of large-scale deep learning. 
 
-At a fundamental level, many physical systems also share underlying principles. The transport equations describe wide ranges of phenomena in fluids. More universal properties like conservation laws and invariances persist across diverse disciplines including fluids, climate science, astrophysics, and chemistry. 
+At a fundamental level, many physical systems also share underlying principles. For example, many phenomena in fluids can fundamentally be represented as transport. More broadly, many of the equations describing physical behavior are derived from universal properties like conservation laws or invariances which persist across diverse disciplines like fluids, climate science, astrophysics, and chemistry. 
 
 The success of pretraining in other fields and the existence of these shared principles gives rise to an interesting question:
 
 *Can we learn these shared features ahead of time through pretraining and accelerate the development of models for new physical systems?*
 
-For this approach to be useful, we not only need to build models capable of transfer — this is something we already do today — we also need models capable of learning multiple physical dynamics simultaneously to maximize their coverage.
+Transfer learning is well-studied in the physical sciences, but to make it as applicable to the physical sciences as it is in vision or language, we also need to develop models that understand multiple types of physics. The more physics a model understands, the more fields can make use of its weights as an initialization for their own models. 
 
+Learning multiple physics in a single model is non-trivial. Unlike in vision and video when input channels represent pixel intensities, in physics, input channels represent entirely different fields with different behaviors which may vary both in behavior and scale depending on the physical system under study. In this work, we develop a pretraining approach that helps us avoid these issues and train a single model on diverse physical behavior.
 
 #### Multiple Physics Pretraining 
 
@@ -68,4 +69,3 @@ Comparing our approach to existing spatiotemporal foundation models and training
 #### Next Steps 
 
 Our work so far is still limited by the resolution and diversity of the training data. Creating true foundation models for general physics is going to require broader, deeper datasets capturing more behavior and at higher resolutions. There remains work to be done, but we’ve shown a path forward by introducing a new pretraining approach that allows us to train models that both learn multiple sets of diverse physics and effectively transfer to new physics. 
-. 
