@@ -42,7 +42,7 @@ From here, these can be processed by conventional transformers, but we have a pa
 
 #### Single Models can Simultaneously Learn Diverse Physics
 
-We test out this strategy using a benchmark dataset called PDEBench (highlight citation). This dataset was developed for systems governed by partial differential equations (PDEs) with a significant emphasis on fluid mechanics. 
+We test out this strategy using a benchmark dataset called [PDEBench](https://github.com/pdebench/PDEBench). This dataset was developed for systems governed by partial differential equations (PDEs) with a significant emphasis on fluid mechanics. 
 
 Our models are able to compete with or beat modern baselines on all 2D time-dependent tasks in the benchmark despite the added difficulty of multi-task training.  In fact, we outperform the single-physics, dedicated baselines in all but one case, and in many cases, the performance of our models over the baseline is nearly an order of magnitude. 
 
