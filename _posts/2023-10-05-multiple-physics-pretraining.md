@@ -29,14 +29,14 @@ Learning multiple physics in a single model is non-trivial. Unlike in vision and
 
 Our pretraining approach can be described in two steps:
 
+1. Project the state variables from multiple physical systems into a shared normalized embedding space.
+2. Train a single scalable transformer model to predict the next step of a spatiotemporal series based on a small number of snapshots describing the history.
+
 <p align="center">
   <img src="/images/blog/mpp_arch_v5.png" alt="Multiphysics Pretraining" width="85%">
 </p>
 
-1. Project the state variables from multiple physical systems into a shared normalized embedding space.
-2. Train a single scalable transformer model to predict the next step of a spatiotemporal series based on a small number of snapshots describing the history.
-
-For step one, we first use a recent method from the time-series forecasting literature called [Reversible Instance Normalization](https://openreview.net/forum?id=cGDAkQo1C0p). This method unifies the scales of different datasets for ingestion into the network then re-injects the scale information back into the output. These fields are then individually projected into a shared space with field-specific weights. 
+For step one, we first use a recent method from the time-series forecasting literature called [Reversible Instance Normalization](https://openreview.net/forum?id=cGDAkQo1C0p). This method unifies the scales of different datasets for ingestion into the network then re-injects the scale information back into the output. These fields are then individually projected into a shared space with field-specific weights (right side of figure above). 
 
 From here, these can be processed by conventional transformers. However, we have a particular demand for scalability since many physical systems we are interested in are quite large. To minimize the computational load, we use an attention mechanism that looks only at one axis (time, height, width, ect) at a time to trade a bit of expressiveness for a significant computational savings.
 
