@@ -35,7 +35,7 @@ Our pretraining approach can be described in two steps:
 1. Project the state variables from multiple physical systems into a shared normalized embedding space.
 2. Train a single scalable transformer model to predict the next step of a spatiotemporal series based on a small number of snapshots describing the history.
 
-For step one, we use a recent method from the time-series forecasting literature called Reversible Instance Normalization (text link to paper). This method unifies the scales of different datasets for ingestion into the network then re-injects the scale information back into the output.  These fields are then individually projected into a shared space.
+For step one, we use a recent method from the time-series forecasting literature called [Reversible Instance Normalization](https://openreview.net/forum?id=cGDAkQo1C0p). This method unifies the scales of different datasets for ingestion into the network then re-injects the scale information back into the output.  These fields are then individually projected into a shared space.
 
 From here, these can be processed by conventional transformers, but we have a particular demand for scalability since many physical systems we’d be interested in are quite large. To minimize the computational demand, we use an attention mechanism that looks only at one axis (time, height, width, ect) at a time to trade a bit of expressiveness for a significant amount of cost.
 
@@ -54,7 +54,7 @@ Now, the most important detail is whether this pretraining actually improves lea
 We then make two compressible datasets. We call one “near” and one “far”. 
 
 <p align="center" style="margin-bottom: 10px;">
-  <img src="/images/blog/ke.png" alt="Visualizing the physics gap.">
+  <img src="/images/blog/multiphysics_ke.png" alt="Visualizing the physics gap." width="50%" height="50%">
   <figcaption  style="padding-left:32px; padding-right:20px; line-height:1.3">On a field snapshot level, the incompressible flow included in the training set (left) has strong resemblence to the compressible simulation at low mach number (center) with similar diffusion levels, but the high mach number flow (right) develops significantly more complex, small-scale features as a result of both lower diffusion and more compressible behavior. </figcaption>
 </p>
 
