@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Accelerating Surrogate Model Development with Multiple Physics Pretraining"
-tagline: Single Page
+shorttitle: "Multiple Physics Pretraining"
 date: 2023-10-04 12:00
-categories: [Storyline]
-tags: [Storyline, Physics, Machine Learning, Deep Learning, Surrogate Models, Pretraining, Transfer Learning, Transformers, Time Series, PDEBench]
 image: physics_circle.png
 ---
 
