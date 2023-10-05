@@ -407,6 +407,9 @@ institution:
   - name: University of Cambridge
     avatar: cambridge.png
 
+  - name: Schmidt Futures
+    avatar: schmidt.png
+
   # Institution Member
   - name: Princeton University
     avatar: princeton.png
