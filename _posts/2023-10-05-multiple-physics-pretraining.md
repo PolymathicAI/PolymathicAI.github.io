@@ -27,7 +27,9 @@ For this approach to be useful, we not only need to build models capable of tran
 
 Our pretraining approach can be described in two steps:
 
-!["Multiphysics Pretraining"](images/blog/multiphysics_ke.png)
+<p align="center">
+  !["Multiphysics Pretraining"](/images/blog/multiphysics_ke.png)
+</p>
 
 
 1. Project the state variables from multiple physical systems into a shared normalized embedding space.
