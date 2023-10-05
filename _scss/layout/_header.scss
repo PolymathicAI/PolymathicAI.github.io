@@ -17,6 +17,10 @@ header.site-header {
   &.blog-header {
     height: 100px;
 
+    @media (max-width: 1000px) {
+      height: 60px;
+    }
+
     .parallax-wrapper {
       height: 100px;
       background-color: #130007;
