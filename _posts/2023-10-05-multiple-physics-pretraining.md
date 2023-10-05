@@ -36,31 +36,33 @@ Our pretraining approach can be described in two steps:
 1. Project the state variables from multiple physical systems into a shared normalized embedding space.
 2. Train a single scalable transformer model to predict the next step of a spatiotemporal series based on a small number of snapshots describing the history.
 
-For step one, we use a recent method from the time-series forecasting literature called [Reversible Instance Normalization](https://openreview.net/forum?id=cGDAkQo1C0p). This method unifies the scales of different datasets for ingestion into the network then re-injects the scale information back into the output.  These fields are then individually projected into a shared space.
+For step one, we first use a recent method from the time-series forecasting literature called [Reversible Instance Normalization](https://openreview.net/forum?id=cGDAkQo1C0p). This method unifies the scales of different datasets for ingestion into the network then re-injects the scale information back into the output. These fields are then individually projected into a shared space with field-specific weights. 
 
-From here, these can be processed by conventional transformers, but we have a particular demand for scalability since many physical systems we’d be interested in are quite large. To minimize the computational demand, we use an attention mechanism that looks only at one axis (time, height, width, ect) at a time to trade a bit of expressiveness for a significant amount of cost.
+From here, these can be processed by conventional transformers. However, we have a particular demand for scalability since many physical systems we are interested in are quite large. To minimize the computational load, we use an attention mechanism that looks only at one axis (time, height, width, ect) at a time to trade a bit of expressiveness for a significant computational savings.
 
 #### Single Models can Simultaneously Learn Diverse Physics
 
 We test out this strategy using a benchmark dataset called [PDEBench](https://github.com/pdebench/PDEBench). This dataset was developed for systems governed by partial differential equations (PDEs) with a significant emphasis on fluid mechanics. 
 
-Our models are able to compete with or beat modern baselines on all 2D time-dependent tasks in the benchmark despite the added difficulty of multi-task training.  In fact, we outperform the single-physics, dedicated baselines in all but one case, and in many cases, the performance of our models over the baseline is nearly an order of magnitude. 
-
-
+After pretraining, our models are able to compete with or beat modern baselines on all 2D time-dependent tasks in the benchmark despite the added difficulty of multi-task training.  In fact, our multiple physics models outperform the single-physics, dedicated baselines in a significant majority of cases and our results only improve with scale.
 
 #### Learning Multiple Physics Transfers to New Systems
 
-Now, the most important detail is whether this pretraining actually improves learning on new tasks. We do this by completely removing compressible fluid simulations from the training corpus and evaluating whether training on only incompressible Navier-Stokes, incompressible shallow water, and diffusion-reaction simulations provides an advantage in learning the compressible simulations.
+While this parity is impressive, we still expect fine-tuned, dedicated models to outperform general ones in most cases. The real question we would like to answer is whether this pretraining process actually improves the ability of the model to learn new physics. PDEBench has a natural division in the provided fluid data between incompressible flow (Incompressible Navier-Stokes, Shallow Water) and compressible flow (Compressible Navier-Stokes). To explore the question, we pretrain new models without including compressible flow at all, then choose two distinct fine-tuning datasets. We call one “near” and the other “far”.
 
 We then make two compressible datasets. We call one “near” and one “far”. 
 
 <p align="center" style="margin-bottom: 10px;">
   <img src="/images/blog/multiphysics_ke.png" alt="Visualizing the physics gap." width="85%">
-  <figcaption  style="padding-left:32px; padding-right:20px; line-height:1.3">On a field snapshot level, the incompressible flow included in the training set (left) has strong resemblence to the compressible simulation at low mach number (center) with similar diffusion levels, but the high mach number flow (right) develops significantly more complex, small-scale features as a result of both lower diffusion and more compressible behavior. </figcaption>
+  <figcaption  style="padding-left:32px; padding-right:20px; line-height:1.3"> Looking at individual fields (density, in this case), the incompressible flow included in the training set (left) has strong resemblence to the compressible simulation with low mach number (center) with similar diffusion levels, but the high mach number flow (right) develops significantly more complex, small-scale features as a result of both lower diffusion and more compressible behavior. </figcaption>
 </p>
 
+Both datasets are generated by a compressible flow solver, but while "Near" (center) is selected to be qualitatively very similar to the incompressible Navier-Stokes data in the training set (left), "Far" is generated in a different flow regime that exhibits wildly different behavior across scales. While it's not visible from snapshots, it is also
 
-“Near” is generated from a compressible simulation, but operates at regimes that don’t have much new behavior. “Far” is simulated at high mach number, a regime where compressible effects are very strong. 
+<p align="center" style="margin-bottom: 10px;">
+  <img src="/images/blog/CNS_Xfer_Both.png" alt="Results of fine-tuning experiments." width="85%">
+  <figcaption  style="padding-left:32px; padding-right:20px; line-height:1.3"> Looking at individual fields (density, in this case), the incompressible flow included in the training set (left) has strong resemblence to the compressible simulation with low mach number (center) with similar diffusion levels, but the high mach number flow (right) develops significantly more complex, small-scale features as a result of both lower diffusion and more compressible behavior. </figcaption>
+</p>
 
 Comparing our approach to existing spatiotemporal foundation models and training from scratch, we show that our approach is able to significantly outperform both in the low-data regime. 
 
