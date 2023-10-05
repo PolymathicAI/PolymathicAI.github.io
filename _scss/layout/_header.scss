@@ -41,6 +41,11 @@ header.site-header {
     max-height: 1400px;
     top: 0;
     left: 0;
+
+    @media (max-width: 1000px) {
+      height: 60px;
+    }
+
   }
 
   .container {
