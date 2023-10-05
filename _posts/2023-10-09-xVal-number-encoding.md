@@ -29,7 +29,7 @@ For this reason, we developed **xVal**: a continuous way to encode numbers in la
 **xVal** works by treating numbers differently than other kinds of language. Each number in a text dataset is pre-processed: its value is stored in a separate vector, and in its place, we leave a single token: [NUM]. We then encode the pre-processed text into a finite series of word tokens, but multiply the embeddings of any [NUM] tokens by their corresponding value. When the model is asked to decode a [NUM] token, we use a dedicated token head in our transformer architecture to predict that token’s numerical value as a scalar value trained with Mean Squared Error (MSE) loss. 
 
 <p align="center">
-  <img src="/images/blog/xval.jpg" alt="Schematic of xval encoding and decoding" width="85%">
+  <img src="/images/blog/xVal.jpg" alt="Schematic of xval encoding and decoding" width="85%">
 </p>
  
 We run a series of experiments to test how xVal performs on various datasets in comparison with four other numerical encoding strategies defined in [1] and summarized in this table below. These strategies range from encoding each digit of a number as separate tokens to encoding the entire number as a single token. 
