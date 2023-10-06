@@ -17,7 +17,7 @@ One of the main goals of our initiative is to create systems that connect knowle
 A particularly important area in science in which to deploy cross-modal connections is in large-scale, astronomical galaxy surveys. The current generation of these surveys contains between ten of millions to billions of galaxies, and different telescopes and instruments give us access to different kinds of observations. In particular in this work, we consider imaging surveys, which give us color images of galaxies, and spectroscopic surveys, which instead of images, measure optical spectra of galaxies  (i.e. a quantitative measure of the light from the galaxy as a function of wavelength). Both types of observations are complementary; they give us different information about these galaxies. 
 
 <p align="center">
-  <img src="/images/blog/desi-image-spectrum.png" alt="DESI Image and Spectrum" width="85%">
+  <img src="/images/blog/desi-image-spectrum.png" alt="DESI Image and Spectrum" width="85%" style="mix-blend-mode: darken;">
 </p>
 
 However, the scale of these datasets, combined with the lack of high-quality labels and representations of these galaxies, renders the detailed analysis of these surveys challenging for researchers. Machine learning has been applied as a potential solution for a long time to discover structure in this data.  Yet, so far, most machine learning work in this area has treated these different types of observations completely separately, despite all being related to the same underlying physical objects. 
@@ -27,7 +27,7 @@ Our system, AstroCLIP, takes inspiration from CLIP (Contrastive Language Image P
 In the process, we also introduce the first transformer-based model for galaxy spectra, along with an effective pre-training strategy for this model.
 
 <p align="center">
-  <img src="/images/blog/astro_clip_v3.pdf" alt="AstroCLIP Method" width="85%">
+  <img src="/images/blog/astro_clip_v3.pdf" alt="AstroCLIP Method" width="85%" style="mix-blend-mode: darken;">
 </p>
 
 #### Method
@@ -44,7 +44,7 @@ The figure above shows on the left how the contrastive loss naturally will tend 
 We show that our embedding scheme is able to align representations of galaxies both in-modality and cross-modality around meaningful shared semantics. Specifically, we query our embedding space with either the image or spectrum representation of a galaxy, and show that the retrieved galaxies by cosine similarity of their embeddings are extremely close to the original one. Below, we present all four retrieval types (spectrum-spectrum, image-image, spectrum-image, and image-spectrum, from left to right) for four randomly chosen query galaxies in our testing set (highlighted in red on the left).
 
 <p align="center">
-  <img src="/images/blog/query-retrieval.png" alt="Query and Retrieval" width="85%">
+  <img src="/images/blog/query-retrieval.png" alt="Query and Retrieval" width="85%" style="mix-blend-mode: darken;">
 </p>
 
 As one can see, the retrieved examples are galaxies of similar types, both for in-modality retrieval (b and c) and cross-modal retrieval (d and e).
@@ -52,11 +52,11 @@ As one can see, the retrieved examples are galaxies of similar types, both for i
 We also present a couple of examples for the retrieved spectra, for both spectra queries (in-modality) and image queries (cross-modality) below:
 
 <p align="center">
-  <img src="/images/blog/spectra_retrieval_spectrum.png" alt="Spectrum-Spectrum Retrieval" width="85%">
+  <img src="/images/blog/spectra_retrieval_spectrum.png" alt="Spectrum-Spectrum Retrieval" width="85%" style="mix-blend-mode: darken;">
 </p>
 
 <p align="center">
-  <img src="/images/blog/spectra_retrieval_im_cross.png" alt="Image-Spectrum Retrieval" width="85%">
+  <img src="/images/blog/spectra_retrieval_im_cross.png" alt="Image-Spectrum Retrieval" width="85%" style="mix-blend-mode: darken;">
 </p>
 
 These results demonstrate a strong correlation between the semantic content of the query, such as the red quiescent galaxy or a blue star forming galaxy, and the semantic content of the retrieved images or spectra. 
@@ -69,11 +69,11 @@ In particular, we use simple k-Nearest Neighbour (k-NN) regression of our embedd
 Additionally, in-modality similarity appears to outperform cross-modality similarity as an input for the k-NN regression, indicating that, although our our contrastive training aims to connect embeddings between modalities, it has the emergent property of helping to structure the embeddings space within respective modalities. This is particularly evident for the redshift prediction (c, top panel) by similarity between spectra which is near perfect, even though redshift is not an information perfectly contained in images. This means that redshift has naturally emerged as a fundamental property which helps the spectral encoder to structure its embedding space.
 
 <p align="center">
-  <img src="/images/blog/redshift.png" alt="Redshift Prediction" width="85%">
+  <img src="/images/blog/redshift.png" alt="Redshift Prediction" width="85%" style="mix-blend-mode: darken;">
 </p>
 
 <p align="center">
-  <img src="/images/blog/stellar-mass.png" alt="Stellar Mass Prediction" width="85%">
+  <img src="/images/blog/stellar-mass.png" alt="Stellar Mass Prediction" width="85%" style="mix-blend-mode: darken;">
 </p>
 
 #### Conclusions
