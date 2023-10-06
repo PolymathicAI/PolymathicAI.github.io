@@ -60,7 +60,7 @@ Finally, we evaluate the encoding schemes on simulations of planets orbiting a c
 Looking more closely at its predictions, we can see that the implicit bias of continuity plays a key role in its interpolation abilities. In the figure below, we evaluate its predictions of an orbit’s semi-major axis. There is no sample in the training data with *a* ∈ (1, 1.16). Upon testing, only xVal successfully approximates these values continuously within this gap in the training data. 
  
  <p align="center">
-  <img src="/images/blog/generalization.png" alt="Comparison of theh ood generalization." width="45%" style="mix-blend-mode: darken; min-width: 200px max-width:85% !important">
+  <img src="/images/blog/generalization.png" alt="Comparison of theh ood generalization." width="450px" style="mix-blend-mode: max-width:90%">
 </p>
 
 By efficiently enforcing continuity end-to-end for numbers in a language model, xVal is an innovation that could help enable future foundation models connecting multiple domains of science. 
