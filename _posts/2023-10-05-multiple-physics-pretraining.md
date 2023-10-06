@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Accelerating Surrogate Model Development with Multiple Physics Pretraining"
-authors: Michael McCabe, Bruno Régaldo-Saint Blancard, Liam Holden Parker, Ruben Ohana, Miles Cranmer, Alberto Bietti, Michael Eickenberg, Siavash Golkar, Geraud Krawezik, Francois Lanusse, Mariel Pettee, Tiberiu Tesileanu, Kyunghyun Cho, Shirley Ho
+authors: Michael McCabe, Bruno Régaldo-Saint Blancard, Liam Holden Parker, Ruben Ohana, Miles Cranmer, Alberto Bietti, Michael Eickenberg, Siavash Golkar, Geraud Krawezik, Francois Lanusse, Mariel Pettee, Tiberiu Tesileanu, Kyunghyun Cho, Shirley&nbsp;Ho
 shorttitle: "Learning Multiple Physics"
 date: 2023-10-05 10:01
 smallimage: waves-s.jpg

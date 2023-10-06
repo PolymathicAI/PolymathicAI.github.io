@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "xVal: A continuous number encoding for LLMs"
-authors: Siavash Golkar, Mariel Pettee, Michael Eickenberg, Alberto Bietti, Miles Cranmer, Geraud Krawezik, Francois Lanusse, Michael McCabe, Ruben Ohana, Liam Parker, Bruno Régaldo-Saint Blancard, Tiberiu Tesileanu, Kyunghyun Cho, Shirley Ho
+authors: Siavash Golkar, Mariel Pettee, Michael Eickenberg, Alberto Bietti, Miles Cranmer, Geraud Krawezik, Francois Lanusse, Michael McCabe, Ruben Ohana, Liam Parker, Bruno Régaldo-Saint Blancard, Tiberiu Tesileanu, Kyunghyun Cho, Shirley&nbsp;Ho
 shorttitle: "xVal Number Encoding"
 date: 2023-10-05 10:02
 image: xval-splash.jpg
