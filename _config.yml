@@ -373,7 +373,7 @@ team:
   - full_name: Keiya Hirashima
     avatar: keiya_hirashima.jpg
     website: https://kyafuk.github.io/utokyo-hirashima/index.html
-    bio: Keiya Hirashima is a fourth-year PhD student in Astronomy at the University of Tokyo, Japan, and spending time at Flatiron Institute. He is striving to synergize Machine Learning, HPC, and galactic evolution insights. With a foundation in computer science, he is currently exploring CNN-based and transformer-based models for: (1) surrogate models to replace computationally intensive multi-scale simulations, and (2) the morphological classification of galaxies. He earned his B.E. in Informatics and Mathematical Science from Kyoto University. Beyond research, he enjoys pole vault and bouldering.
+    bio: "Keiya Hirashima is a fourth-year PhD student in Astronomy at the University of Tokyo, Japan, and spending time at Flatiron Institute. He is striving to synergize Machine Learning, HPC, and galactic evolution insights. With a foundation in computer science, he is currently exploring CNN-based and transformer-based models for: (1) surrogate models to replace computationally intensive multi-scale simulations, and (2) the morphological classification of galaxies. He earned his B.E. in Informatics and Mathematical Science from Kyoto University. Beyond research, he enjoys pole vault and bouldering."
 
   - full_name: Shirley Ho
     avatar: shirley_ho.jpg
