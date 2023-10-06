@@ -84,4 +84,4 @@ https://arxiv.org/abs/2103.00020
 [3] Stein. Self-Supervised Similarity Search for Large Scientific Datasets. https://arxiv.org/pdf/2110.13151.pdf
 
 ---
-Title image from the Dark Energy Spectroscopic Survey (DESI).
+Title image from Pawel Czerwinski. 
