@@ -4,10 +4,10 @@ title: "AstroCLIP: Connecting Diverse Observational Modalities in Astrophysics"
 authors: Francois Lanusse, Liam Parker, Siavash Golkar, Miles Cranmer, Alberto Bietti, Michael Eickenberg, Geraud Krawezik, Michael McCabe, Ruben Ohana, Mariel Pettee, Bruno Regaldo-Saint Blancard, Tiberiu Tesileanu, Kyunghyun Cho, Shirley Ho
 shorttitle: "AstroCLIP"
 date: 2023-10-05 10:01
-smallimage: waves-s.jpg
+smallimage: desi survey.jpg
 image: desi survey.jpg
 blurb: 
-shortblurb: AstroCLIP facilitates the construction of astronomical foundation models that bridge the gap between diverse astronomical observational modalities. 
+shortblurb: We present a self-supervised learning strategy that bridges diverse observational modalities in astrophysics. By aligning cross-modal representations of galaxies in a shared embedding space, we are able to perform accurate cross-modal look-up as well as competitive zero- and few-shot predictions on downstream tasks.  
 splashimage: /images/blog/desi survey.jpg
 link: https://arxiv.org/abs/2310.02994
 ---
