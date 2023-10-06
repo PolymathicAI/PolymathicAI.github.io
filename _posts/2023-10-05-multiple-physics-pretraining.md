@@ -48,7 +48,7 @@ From here, these can be processed by conventional transformers. However, we have
 We test out this strategy using a benchmark dataset called [PDEBench](https://github.com/pdebench/PDEBench). This dataset was developed for systems governed by partial differential equations (PDEs) with a significant emphasis on fluid mechanics. 
 
 <p align="center" style="margin-bottom: 10px;">
-  <img src="/images/blog/pretraining_bars.png" alt="NRMSE across models and physics." width="85%">
+  <img src="/images/blog/pretraining_bars.png" alt="NRMSE across models and physics." width="600px" style="max-width:90%">
 <!--   <figcaption  style="padding-left:32px; padding-right:20px; line-height:1.3"> Looking at individual fields (density, in this case), the incompressible flow included in the training set (left) has strong resemblence to the compressible simulation with low mach number (center) with similar diffusion levels, but the high mach number flow (right) develops significantly more complex, small-scale features as a result of both lower diffusion and more compressible behavior. </figcaption> -->
 </p>
 
