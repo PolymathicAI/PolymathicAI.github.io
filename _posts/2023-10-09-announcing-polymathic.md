@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Announcing Polymathic AI"
-shorttitle: "Announcing Polymathic AI"
+title: "Announcing Polymathic&nbsp;AI"
+shorttitle: "Announcing Polymathic&nbsp;AI"
 date: 2023-10-05 10:00
 image: hello-world.jpg
 smallimage: hello-world-s.jpg
