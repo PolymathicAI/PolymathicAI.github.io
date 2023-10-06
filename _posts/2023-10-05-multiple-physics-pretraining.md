@@ -78,7 +78,7 @@ Here's an example of the long-term rollout after training on only one-step-ahead
 
 <div style="display:flex;align-items: center;flex-direction: column;">
 <div style="width:800px;max-width:95%;"><div style="position:relative;padding-bottom:56.25%;">
- <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" frameborder="0" width="100%" height="100%" allowfullscreen="" allow="autoplay" src="https://www.youtube.com/embed/VIDEO_ID">
+ <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" frameborder="0" width="100%" height="100%" allowfullscreen="" allow="autoplay" src="https://www.youtube.com/embed/ndyFDhs62Bo">
 </iframe>
 </div>
 </div>
