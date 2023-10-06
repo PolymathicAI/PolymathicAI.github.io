@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Announcing Polymathic AI"
-shorttitle: "Announcing Polymathic AI"
+title: "Announcing Polymathic&nbsp;AI"
+shorttitle: "Announcing Polymathic&nbsp;AI"
 date: 2023-10-05 10:00
 image: hello-world.jpg
 smallimage: hello-world-s.jpg
@@ -23,7 +23,7 @@ This approach has the potential to democratize AI in science by providing off-th
 To reach this goal, we are bringing together a [team](/#team) of pure machine learning researchers with domain scientists, covering a wide variety of disciplines. In addition, we are guided by a [scientific advisory group](/#sag) of world leading experts.
 
 There is much preliminary research required to build a true foundation model for science.
-We are concentrating our efforts on the fundamentals of this space, and have thus far published research on key architectural components, from adapting language models for numerical data[[1]](/2023/10/05/xVal-number-encoding.html) to demonstrating transferability of surrogate models trained on diverse physical systems[[2]](2023/10/05/multiple-physics-pretraining.html) to learning shared embeddings for multi-modal scientific data[TODO].
+We are concentrating our efforts on the fundamentals of this space, and have thus far published research on key architectural components, from adapting language models for numerical data[[1]](/2023/10/05/xVal-number-encoding.html) to demonstrating transferability of surrogate models trained on diverse physical systems[[2]](/2023/10/05/multiple-physics-pretraining.html) to learning shared embeddings for multi-modal scientific data[TODO].
 We encourage you to find out more at [this link](/blog.html).
 
 We are excited about the potential of this research direction to redefine the landscape of scientific machine learning, and Polymathic AI represents an ambitious step towards realizing that goal.
