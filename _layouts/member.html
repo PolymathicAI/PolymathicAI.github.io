@@ -1,0 +1,34 @@
+---
+layout: page
+---
+{%assign current_member =  site.team | where: "full_name", page.full_name|sample %}
+
+<!-- Blog Article -->
+<div class="post-full">
+  <article class="blog-article blog-single-page clearfix">
+
+    <!-- Article Header -->
+    <a href={{current_member.website}}>
+
+    <header class="article-header">
+      <div class="article-title">
+
+        <div align="center" style="padding-bottom: 20px;">
+          <img src={{ site.baseurl }}/images/avatars/{{ current_member.avatar }}>
+        </div>
+
+        <h3 class="title" style="text-align: center;">{{ current_member.full_name }}</h3>
+      </div>
+    </header>
+    </a>
+    <!-- Member Content -->
+    <div class="article-content post-article-content" >
+
+      {{ current_member.bio }}
+
+      <div class="text-center">
+        <a href={{ current_member.website }} class="button-post"  >Link to website</a>
+      </div>
+    </div>    
+  </article>
+</div>

@@ -104,9 +104,8 @@ module Jekyll
         base_path = @site.layouts[template].path
         base_path.slice! @site.layouts[template].name
         self.read_yaml(base_path, @site.layouts[template].name)
-  
+        
         self.data['title'] = raw_title
-  
         # add all the information defined in _data for the current record to the
         # current page (so that we can access it with liquid tags)
         if page_data_prefix
