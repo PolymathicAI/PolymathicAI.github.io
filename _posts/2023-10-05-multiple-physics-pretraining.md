@@ -12,7 +12,7 @@ splashimage: /images/blog/waves.jpg
 link: https://arxiv.org/abs/2310.02994
 ---
 
-In recent years, the use of deep learning in science, particular in surrogate modeling has explodes. Across the many scales of physics --- from molecular dynamics to climate and weather and even up to cosmological scales --- researchers have developed deep learning surrogates to accelerate their simulations. Right now, each of these surrogates is built from scratch. Learning new systems requires large datasets and larger training times every time researchers want to model new dynamics. This large upfront cost limits the accessibility of these methods for many physical systems of interest to the largest, most compute-rich organizations.
+In recent years, the use of deep learning in science, particular in surrogate modeling has explodes. Across the many scales of physics -- from molecular dynamics to climate and weather and even up to cosmological scales -- researchers have developed deep learning surrogates to accelerate their simulations. Right now, each of these surrogates is built from scratch. Learning new systems requires large datasets and larger training times every time researchers want to model new dynamics. This large upfront cost limits the accessibility of these methods for many physical systems of interest to the largest, most compute-rich organizations.
 
 #### Does this need to be the case?
 
