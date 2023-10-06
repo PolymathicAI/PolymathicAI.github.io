@@ -25,7 +25,7 @@
       {% for member in site.team %}
 
       <!-- Member -->
-      <a href="{{site.baseurl}}/members/{{member.full_name | replace: ' ', '-''}}.html">
+      <a href="{{site.baseurl}}/members/{{member.full_name | replace: ' ', '-' | downcase}}.html">
       <!-- <a href={{member.website}}> -->
         <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
           <div class="team-member">
