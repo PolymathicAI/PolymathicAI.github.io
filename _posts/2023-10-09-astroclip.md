@@ -16,6 +16,31 @@ One of the main goals of our initiative is to create systems that connect knowle
 
 A particularly important area in science in which to deploy cross-modal connections is in large-scale, astronomical galaxy surveys. The current generation of these surveys contains between ten of millions to billions of galaxies, and different telescopes and instruments give us access to different kinds of observations. In particular in this work, we consider imaging surveys, which give us color images of galaxies, and spectroscopic surveys, which instead of images, measure optical spectra of galaxies  (i.e. a quantitative measure of the light from the galaxy as a function of wavelength). Both types of observations are complementary; they give us different information about these galaxies. 
 
+However, the scale of these datasets, combined with the lack of high-quality labels and representations of these galaxies, renders the detailed analysis of these surveys challenging for researchers. Machine learning has been applied as a potential solution for a long time to discover structure in this data.  Yet, so far, most machine learning work in this area has treated these different types of observations completely separately, despite all being related to the same underlying physical objects. 
+
+Our system, AstroCLIP, takes inspiration from CLIP (Contrastive Language Image Pretraining) [1]. This paper, along with subsequent works, have demonstrated that pre-training models to connect two separate types of data modalities (in that case, text and images) into a shared latent space yields high quality models which can easily be used for zero- and few- shot transfer to downstream tasks. Therefore, our goal is to extract information about the galaxies in these surveys from both image and spectra representations, embed that information into a shared embedding space,, and then align spectra-images pairs around shared semantics. Similar to the findings in text and images approaches, we show that this method allows us to create embeddings that capture  high-level physical information about the galaxies that can be used for downstream tasks with very limited amounts of further data or training. 
+
+In the process, we also introduce the first transformer-based model for galaxy spectra, along with an effective pre-training strategy for this model.
+
+#### Method
+At the core of our work is the idea that different observational modalities can be thought of as filtered views of the same underlying physical processes. They therefore intrinsically possess a shared physical latent space. We aim to construct embeddings of both modalities that maximize the mutual information about the underlying object, and then to use that non-zero mutual information to align representations from different modalities around shared semantics.
+
+To that end, we employ the following pre-training strategy for AstroCLIP:
+Pre-train a transformer-based spectrum encoder with a similar structure to GPT-2 [2] to learn to infer masked, contiguous segments of the spectrum in a self-supervised regime.
+Take a convolutional image model [3] pre-trained to match galaxy images that have undergone physical augmentations and corruptions.
+Fine-tune both models under a contrastive objective to maximize the similarity between image-spectra pairs of the same galaxy while minimizing the similarity between pairs of different galaxies. 
+
+The figure above shows on the left how the contrastive loss naturally will tend to force the embeddings of corresponding pairs of observations of the same galaxy to be close to each other in the embedding space. This forces image and spectra embeddings to align with the underlying physical information, shared by both data modalities.Having pre-trained AstroCLIP, we demonstrate the two main capacities of this pretrained model: 
+
+#### Semantically Aligned Embedding Space
+We show that our embedding scheme is able to align representations of galaxies both in-modality and cross-modality around meaningful shared semantics. Specifically, we query our embedding space with either the image or spectrum representation of a galaxy, and show that the retrieved galaxies by cosine similarity of their embeddings are extremely close to the original one. Below, we present all four retrieval types (spectrum-spectrum, image-image, spectrum-image, and image-spectrum, from left to right) for four randomly chosen query galaxies in our testing set (highlighted in red on the left).
+
+As one can see, the retrieved examples are galaxies of similar types, both for in-modality retrieval (b and c) and cross-modal retrieval (d and e).
+
+We also present a couple of examples for the retrieved spectra, for both spectra queries (in-modality) and image queries (cross-modality) below:
+
+These results demonstrate a strong correlation between the semantic content of the query, such as the red quiescent galaxy or a blue star forming galaxy, and the semantic content of the retrieved images or spectra. 
+
 
 ---
 Title image from the Dark Energy Spectroscopic Survey (DESI).
