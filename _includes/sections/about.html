@@ -14,9 +14,17 @@
       <!-- Section Content -->
       <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
         <p>{{ site.about-description }}</p>
+
+        {%assign current_post =  site.posts | where: "explains_mission_statement", true |sample %}
+        <div style="padding-top: 10px;">
+          <a href="{{ site.baseurl }}{{ current_post.url}}" class="button">Read More</a>
+        </div>
       </div>
 
+      
     </div>
+
+
 
   </div>
 </section>
