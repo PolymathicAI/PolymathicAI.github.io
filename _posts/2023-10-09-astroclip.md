@@ -5,7 +5,7 @@ authors: Francois Lanusse, Liam Parker, Siavash Golkar, Miles Cranmer, Alberto B
 shorttitle: "AstroCLIP"
 date: 2023-10-05 10:01
 smallimage: waves-s.jpg
-image: waves.jpg
+image: desi survey.jpg
 blurb: 
 shortblurb: AstroCLIP facilitates the construction of astronomical foundation models that bridge the gap between diverse astronomical observational modalities. 
 splashimage: /images/blog/desi survey.jpg
