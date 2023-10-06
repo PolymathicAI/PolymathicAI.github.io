@@ -76,6 +76,10 @@ Here's an example of the long-term rollout after training on only one-step-ahead
 
 [![Compressible Navier-Stokes](http://img.youtube.com/vi/ndyFDhs62Bo/0.jpg)](http://www.youtube.com/watch?v=ndyFDhs62Bo "Compressible Navier-Stokes Rollout")
 
+<p class="video-container" align="center" style="margin-bottom: 10px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ndyFDhs62Bo" frameborder="0" allowfullscreen></iframe>
+</p>
+
 Apart from the numerical diffusion we'd expect to see given the training simulation, the physical behavior is largely plausible. Boundary conditions are respected and the flow seems to be largely continuous. It is imperfect, but promising.
 
 #### Next Steps 
