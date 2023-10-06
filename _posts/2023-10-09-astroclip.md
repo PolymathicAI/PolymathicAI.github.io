@@ -4,7 +4,7 @@ title: "AstroCLIP: Connecting Diverse Observational Modalities in Astrophysics"
 authors: Francois Lanusse, Liam Parker, Siavash Golkar, Miles Cranmer, Alberto Bietti, Michael Eickenberg, Geraud Krawezik, Michael McCabe, Ruben Ohana, Mariel Pettee, Bruno Regaldo-Saint Blancard, Tiberiu Tesileanu, Kyunghyun Cho, Shirley Ho
 shorttitle: "AstroCLIP"
 date: 2023-10-05 10:01
-smallimage: desi survey.jpg
+smallimage: /images/blog/desi survey.jpg
 image: desi survey.jpg
 blurb: 
 shortblurb: We present a self-supervised learning strategy that bridges diverse observational modalities in astrophysics. By aligning cross-modal representations of galaxies in a shared embedding space, we are able to perform accurate cross-modal look-up as well as competitive zero- and few-shot predictions on downstream tasks.  
@@ -41,6 +41,15 @@ We also present a couple of examples for the retrieved spectra, for both spectra
 
 These results demonstrate a strong correlation between the semantic content of the query, such as the red quiescent galaxy or a blue star forming galaxy, and the semantic content of the retrieved images or spectra. 
 
+#### Powerful Feature Extraction for Downstream Tasks
+In addition to constructing a semantically aligned embedding space that spans astrophysical modalities, we also demonstrate that our extracted, high-level representations of galaxies contain powerful physical information that can be zero-shot applied to downstream tasks.
+
+In particular, we use simple k-Nearest Neighbour (k-NN) regression of our embedded images and spectra to infer the particular redshift and the stellar mass of our galaxies. We show that neighbors in our embedded space indeed share similar physical properties, as demonstrated by the ability of our k-NN regressor to make accurate predictions. This indicates that our model is able to organize our galaxy samples according to high-level physical features. 
+
+Additionally, in-modality similarity appears to outperform cross-modality similarity as an input for the k-NN regression, indicating that, although our our contrastive training aims to connect embeddings between modalities, it has the emergent property of helping to structure the embeddings space within respective modalities. This is particularly evident for the redshift prediction (c, top panel) by similarity between spectra which is near perfect, even though redshift is not an information perfectly contained in images. This means that redshift has naturally emerged as a fundamental property which helps the spectral encoder to structure its embedding space.
+
+#### Conclusions
+Our results demonstrate the potential for cross-modal contrastive pre-training to achieve high quality foundation models for astronomical data, which can be used for further downstream tasks even without fine-tuning. We contend that this is a key property to allow the community to build higher-level compositional models that can rely on off-the-shelf frozen embedding models, just as frozen CLIP embeddings have enabled a wide variety of downstream applications. Moreover, we demonstrate that cross-modal connections can be effectively deployed in scientific contexts, and lay the groundwork for future even broader cross-modal scientific connections.
 
 ---
 Title image from the Dark Energy Spectroscopic Survey (DESI).
