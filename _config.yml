@@ -358,22 +358,27 @@ team:
   - full_name: Miles Cranmer
     avatar: miles_cranmer.jpg
     website: https://astroautomata.com/
+    bio: Miles Cranmer is an Assistant Professor in Data Intensive Science at the University of Cambridge. He received his PhD in Astrophysics from Princeton University, spending time at Google DeepMind and Flatiron Institute, and before that, his BSc in Physics from McGill University. Miles is interested in the automation of scientific research with machine learning.
 
   - full_name: Michael Eickenberg
     avatar: michael_eickenberg.jpg
     website: https://www.simonsfoundation.org/people/michael-eickenberg/
+    bio: Michael Eickenberg joined the Flatiron Institute’s Center for Computational Mathematics in February 2020. Eickenberg’s work consists in using machine learning methods towards forward and reverse modeling of fMRI brain activity following sensory stimulation. Recently, Eickenberg was a postdoctoral researcher at the Helen Wills Neuroscience Institute at UC Berkeley. He has a Bachelor’s degree in Physics and Mathematics from the University of Luxembourg, a Master’s degree in Mathematics, Computer Vision, and Applied Mathematics from École Normale Supérieure de Cachan, and a Ph.D. in Machine Learning and Modeling Applied to Neuroimaging from Paris-Sud University (Paris XI).
 
   - full_name: Siavash Golkar
     avatar: siavash_golkar.jpg
     website: https://www.simonsfoundation.org/people/siavash-golkar/
+    bio: Siavash Golkar is a research scientist working in the field of machine learning and applications to scientific domains. Siavash received his PhD in 2015 in the field of High Energy Physics, working on topological states of matter. He has since worked as a postdoc at Cambridge University and New York University and as an associate research scientist at the Flatiron Institute. His recent work spans research in ML from continual and transfer learning to applying large transformer models to numerical and scientific datasets.
 
   - full_name: Keiya Hirashima
     avatar: keiya_hirashima.jpg
     website: https://kyafuk.github.io/utokyo-hirashima/index.html
+    bio: Keiya Hirashima is a fourth-year PhD student in Astronomy at the University of Tokyo, Japan, and spending time at Flatiron Institute. He is striving to synergize Machine Learning, HPC, and galactic evolution insights. With a foundation in computer science, he is currently exploring CNN-based and transformer-based models for: (1) surrogate models to replace computationally intensive multi-scale simulations, and (2) the morphological classification of galaxies. He earned his B.E. in Informatics and Mathematical Science from Kyoto University. Beyond research, he enjoys pole vault and bouldering.
 
   - full_name: Shirley Ho
     avatar: shirley_ho.jpg
     website: https://www.shirleyho.me/
+    bio: Shirley Ho is a Group Leader of Cosmology & Machine Learning at Flatiron Institute,  Research Professor of Physics and Affiliated Faculty of Center for Data Science at New York University. She also holds other appointments at Carnegie Mellon University and Princeton University. She is also a Fellow at the International Astrostatistics Association. She was a Senior Scientist at Berkeley Lab from 2016 to 2018 and a Cooper Siegel Chair Professor at Carnegie Mellon University from 2011 to 2016. She was a Seaborg and Chamberlain fellow at Berkeley Lab and UC Berkeley from 2009-2011 under the supervision of Prof. Martin White, Prof. David Schlegel and Prof. Uros Seljak, after receiving a PhD degree from Princeton University 2008, under the supervision of Prof. David Spergel and graduated summa cum laude with a B.A. in Physics and Computer Science from UC Berkeley. She was a National Blavatnik finalist in 2023, and was awarded the Macronix Prize (2014) and Carnegie Science Award (2015). She was also recognized by the European Physical Society Giuseppe and Vanna Cocconi Prize in cosmology 2023 for work in Sloan Digital Sky Survey BOSS survey, NASA Group Achievement Prize in 2020 and 2022 for her work in Planck and Roman Space Telescope. 
 
   - full_name: Geraud Krawezik
     avatar: geraud_krawezik.jpg
@@ -383,29 +388,34 @@ team:
   - full_name: Nick Lourie
     avatar: nick_lourie.jpg
     website: https://nicholaslourie.com/
+    bio: Nicholas Lourie is PhD student at NYU investigating empirical models of deep learning. His research seeks better statistical frameworks for designing, developing, and evaluating neural networks. At NYU, he is advised by He He and Kyunghyun Cho, while in the past he worked at the Allen Institute for AI on machine ethics, common sense, prompt-based learning, and the evaluation of natural language processing models.
 
   - full_name: Michael McCabe
     avatar: michael_mccabe.jpg
     website: https://mikemccabe210.github.io/
+    bio: Michael McCabe joined the institute as a research analyst in 2023. He is a final year PhD Student at the University of Colorado, Boulder advised by Prof. Jed Brown and has broad research interests in machine learning and optimization, especially for physical systems. Michael’s current research goals are integrating ideas from numerical methods into large-scale deep learning architectures to build tools that are better suited to learning physical dynamics  more reliably or efficiently. Throughout his PhD, he has worked with Lawrence Berkeley and Argonne National Laboratories. Outside of work, Michael enjoys climbing, running, and reading.
 
   - full_name: Ruben Ohana
     avatar: ruben_ohana.jpg
     website: https://rubenohana.github.io/
+    bio: Ruben Ohana joined the Center for Computational Mathematics of the Flatiron Institute as a Research Fellow in 2022. His research interests are machine learning for scientific problems, optimization of large models, and bridging gaps between theoretical fields. He obtained his PhD from Ecole Normale Supérieure in 2022, supervised by Florent Krzakala, Alessandro Rudi and Laurent Daudet. In parallel, he was a research scientist at LightOn, and interned at the Criteo AI Lab.  
 
   - full_name: Liam Parker
     avatar: liam_parker.jpg
     website: https://www.linkedin.com/in/liam-parker-96ba14160/
+    bio:  Liam joined the Flatiron Institute as a predoctoral research analyst in 2023. His research focuses on the applications of deep learning in physics and astrophysics. Presently, he focuses on (1) developing transformer-based models for physical systems and (2) simulation-based inference of galaxy clustering. He received his B.S. in physics magna cum laude from Princeton University prior to starting at the Flatiron Institute. Outside of work, Liam enjoys mountaineering, drawing, fingerstyle guitar, and hiking. 
 
   - full_name: Mariel Pettee
     avatar: mariel_pettee.jpg
     website: https://marielpettee.com/
-
+    bio: Dr. Mariel Pettee (Physics PhD, Yale University) is an interdisciplinary scientist and performing artist based in Brooklyn. She is a Chamberlain Postdoctoral Research Fellow at Lawrence Berkeley National Laboratory and a visiting researcher at the Flatiron Institute Center for Computational Astrophysics. Her scientific research encompasses the development of Machine Learning (ML) models for high-energy particle physics and cosmology that have broad applicability across other areas of science and art. Since 2017, she has been one of the pioneers of AI-generated dance, leading multiple independent teams of researchers to develop custom ML models to generate choreography based on 3D motion capture data of her own movements. Prior to her PhD, she earned her Bachelors in Physics & Mathematics from Harvard University and her Masters in Physics at the University of Cambridge as a Harvard-Cambridge Scholar. 
 
 
 
   - full_name: Leopoldo Sarra
     avatar: leopoldo_sarra.jpg
     website: https://mpl.mpg.de/about-us/mpl-people/mpl-people-detailpages/people-template-page-08acb7b35a
+    bio: Leopoldo Sarra is a Flatiron Research Fellow, working in the Foundation Models for Science initiative. His current research interests lie at the intersection of physics and machine learning. In particular, he has been investigating how machine learning techniques can be used to support scientific discovery, exploring how a future "Artificial Scientist" could automatically learn from observations, understand relevant concepts, build new physical models and design new experiments similar to how human scientists do. He received his Ph.D. from the Friedrich-Alexander Universität in Erlangen, Germany, in association with the Max Planck Institute for the Science of Light, after earning his B.Sc. and M.Sc. degrees in Physics at Sapienza University of Rome, Italy.
 
   - full_name: Tiberiu Tesileanu
     avatar: tiberiu_tesileanu.jpg
