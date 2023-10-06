@@ -7,7 +7,7 @@ date: 2023-10-05 10:01
 smallimage: waves-s.jpg
 image: waves.jpg
 blurb: We introduce Multiple Physics Pretraining, a new approach for developing large tuneable physical surrogate models. Our approach uses a built-in normalization and embedding scheme to enable learning multiple physical dynamics with a single model.
-shortblurb: Introducing Multiple Physics Pretraining, a new approach for developing large pretrained physical surrogates.
+shortblurb: Introducing Multiple Physics Pretraining, a new approach for developing large pretrained physical surrogate models. Our approach uses a built-in normalization and embedding scheme to enable learning multiple physical dynamics with a single model.
 splashimage: /images/blog/waves.jpg
 link: https://arxiv.org/abs/2310.02994
 ---
