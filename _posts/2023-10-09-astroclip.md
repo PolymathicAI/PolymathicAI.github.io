@@ -7,7 +7,7 @@ date: 2023-10-05 10:01
 smallimage: /images/blog/desi survey.jpg
 image: desi survey.jpg
 blurb: 
-shortblurb: We present a self-supervised learning strategy that bridges diverse observational modalities in astrophysics. By aligning cross-modal representations of galaxies in a shared embedding space, we are able to perform accurate cross-modal look-up as well as competitive zero- and few-shot predictions on downstream tasks.  
+shortblurb: We present a self-supervised learning strategy that bridges diverse observational modalities in astrophysics. By aligning cross-modal representations of galaxies in a shared space, we are able to perform cross-modal look-up and competitive zero-shot predictions on downstream tasks.  
 splashimage: /images/blog/desi survey.jpg
 link: https://arxiv.org/abs/2310.03024
 ---
