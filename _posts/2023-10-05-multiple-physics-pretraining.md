@@ -7,7 +7,7 @@ date: 2023-10-05 10:01
 smallimage: waves-s.jpg
 image: waves.jpg
 blurb: Some blurb goes here.
-shortblurb: Shorter blurb goes here.
+shortblurb: Introducing Multiple Physics Pretraining, a new approach for developing large pretrained physical surrogates.
 splashimage: /images/blog/waves.jpg
 link: https://arxiv.org/abs/2310.02994
 ---
