@@ -130,7 +130,7 @@ mailchimp:
 #############   About   #############
 #####################################
 about-title: Our Mission
-about-description: To usher in a new class of machine learning for scientific data, building models which can leverage shared concepts across disciplines. We aim to develop, train, and release such foundation models for use by researchers worldwide.
+about-description: To usher in a new class of machine learning for scientific data, building models that can leverage shared concepts across disciplines. We aim to develop, train, and release such foundation models for use by researchers worldwide.
 
 #####################################
 #############  Features  ############
