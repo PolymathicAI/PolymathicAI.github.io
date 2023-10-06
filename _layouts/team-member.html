@@ -1,33 +1,8 @@
+<pre>
+{% raw %}
 ---
-layout: page
+layout: member
+full_name: "{% endraw %}{{page.full_name}}{% raw %}"
 ---
-
-<!-- Blog Article -->
-<div class="post-full">
-  <article class="blog-article blog-single-page clearfix">
-
-    <!-- Article Header -->
-    <a href={{page.website}}>
-
-    <header class="article-header">
-      <div class="article-title">
-
-        <div align="center" style="padding-bottom: 20px;">
-          <img src={{ site.baseurl }}/images/avatars/{{ page.avatar }}>
-        </div>
-
-        <h3 class="title" style="text-align: center;">{{ page.full_name }}</h3>
-      </div>
-    </header>
-    </a>
-    <!-- Member Content -->
-    <div class="article-content post-article-content" >
-
-      {{ page.bio }}
-
-      <div class="text-center">
-        <a href={{ page.website }} class="button-post"  >Link to website</a>
-      </div>
-    </div>    
-  </article>
-</div>
+{% endraw %}
+</pre>
