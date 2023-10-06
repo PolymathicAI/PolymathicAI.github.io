@@ -340,16 +340,6 @@ team:
     website: https://alberto.bietti.me/
     bio: Alberto Bietti is a research scientist at the Center for Computational Mathematics. He received his PhD in applied mathematics from Inria and Université Grenoble Alpes in 2019, and was a Faculty Fellow at the NYU Center for Data Science from 2020 to 2022. He also spent time at Inria Paris, Microsoft Research, and Meta AI. His research focuses on the theoretical foundations of deep learning.
 
-  - full_name: Bruno Regaldo
-    avatar: bruno_regaldo_saint_blancard.jpg
-    website: https://users.flatironinstitute.org/~bregaldosaintblancard/
-    bio: Bruno Régaldo-Saint Blancard is a Research Fellow at the Center for Computational Mathematics, Flatiron Institute. He obtained a PhD in Astrophysics from the École Normale Supérieure (ENS), Paris. Prior to that, he graduated from the École Polytechnique, and obtained a M.S. in Astrophysics from the Observatoire de Paris. Bruno’s research focuses on the development of statistical methods for astrophysics/cosmology and beyond, using signal processing and machine learning. He is interested in various problems including generative modeling, inference, denoising, and source separation.
-
-  - full_name: Francois Lanusse
-    avatar: francois_lanusse.jpg
-    website: https://flanusse.net/
-    bio: Francois Lanusse is an interdisciplinary researcher at the intersection of Deep Learning, Statistical Modeling, and Observational Cosmology. Dr. Lanusse holds a permanent position at the CNRS, and is currently an Associate Research Scientist at the Simons Foundation. He received his PhD in Astrophysics at CEA Paris-Saclay and was subsequently a postdoctoral researcher at Carnegie Mellon University and UC Berkeley.
-
   - full_name: Kyunghyun Cho
     avatar: kyunghyun_cho.jpg
     website: https://kyunghyuncho.me
@@ -385,6 +375,11 @@ team:
     website: https://www.simonsfoundation.org/people/geraud-krawezik/
     bio: Géraud Krawezik joined the foundation in 2021 as a software engineer in the Scientific Computing Core in the Flatiron Institute. He was previously part of the technical team at Lucata, where he was working on graph, artificial intelligence, database, and linear algebra algorithms. Géraud has held several research and development positions, ranging from engineering for parallel scientific software, quantitative programming in finance, to CTO in a consumer electronics startup. Géraud has a PhD in High Performance Computing from Paris Sud University, and has conducted post-doctoral research at UIUC.
 
+  - full_name: Francois Lanusse
+    avatar: francois_lanusse.jpg
+    website: https://flanusse.net/
+    bio: Francois Lanusse is an interdisciplinary researcher at the intersection of Deep Learning, Statistical Modeling, and Observational Cosmology. Dr. Lanusse holds a permanent position at the CNRS, and is currently an Associate Research Scientist at the Simons Foundation. He received his PhD in Astrophysics at CEA Paris-Saclay and was subsequently a postdoctoral researcher at Carnegie Mellon University and UC Berkeley.
+
   - full_name: Nick Lourie
     avatar: nick_lourie.jpg
     website: https://nicholaslourie.com/
@@ -409,6 +404,11 @@ team:
     avatar: mariel_pettee.jpg
     website: https://marielpettee.com/
     bio: Dr. Mariel Pettee (Physics PhD, Yale University) is an interdisciplinary scientist and performing artist based in Brooklyn. She is a Chamberlain Postdoctoral Research Fellow at Lawrence Berkeley National Laboratory and a visiting researcher at the Flatiron Institute Center for Computational Astrophysics. Her scientific research encompasses the development of Machine Learning (ML) models for high-energy particle physics and cosmology that have broad applicability across other areas of science and art. Since 2017, she has been one of the pioneers of AI-generated dance, leading multiple independent teams of researchers to develop custom ML models to generate choreography based on 3D motion capture data of her own movements. Prior to her PhD, she earned her Bachelors in Physics & Mathematics from Harvard University and her Masters in Physics at the University of Cambridge as a Harvard-Cambridge Scholar. 
+
+  - full_name: Bruno Regaldo
+    avatar: bruno_regaldo_saint_blancard.jpg
+    website: https://users.flatironinstitute.org/~bregaldosaintblancard/
+    bio: Bruno Régaldo-Saint Blancard is a Research Fellow at the Center for Computational Mathematics, Flatiron Institute. He obtained a PhD in Astrophysics from the École Normale Supérieure (ENS), Paris. Prior to that, he graduated from the École Polytechnique, and obtained a M.S. in Astrophysics from the Observatoire de Paris. Bruno’s research focuses on the development of statistical methods for astrophysics/cosmology and beyond, using signal processing and machine learning. He is interested in various problems including generative modeling, inference, denoising, and source separation.
 
 
 
