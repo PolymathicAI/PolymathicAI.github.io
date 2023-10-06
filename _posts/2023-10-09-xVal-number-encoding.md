@@ -69,12 +69,12 @@ By efficiently enforcing continuity end-to-end for numbers in a language model, 
 
 ---
 
-[1] Dziri, Nouha, et al. Faith and Fate: Limits of Transformers on Compositionality. arXiv:2305.18654 [cs.CL].
+[1] Dziri, Nouha, et al. Faith and Fate: Limits of Transformers on Compositionality. [arXiv:2305.18654](https://arxiv.org/abs/2305.18654) [cs.CL].
 
-[2] Charton. Linear Algebra with Transformers. arXiv:2112.01898 [cs.LG]. 
+[2] Charton. Linear Algebra with Transformers. [2112.01898](https://arxiv.org/abs/2112.01898) [cs.LG]. 
 
-[3] Hersbach et. al. The ERA5 Global Reanalysis. Quarterly Journal of the Royal Meteorological Society, 146(730):1999–2049, 2020. doi: https://doi.org/10.1002/qj.3803. 
+[3] Hersbach et. al. The ERA5 Global Reanalysis. Quarterly Journal of the Royal Meteorological Society, 146(730):1999–2049, 2020. doi: [https://doi.org/10.1002/qj.3803](https://doi.org/10.1002/qj.3803). 
 
-[4] Rein, H. and Liu, S.-F. Rebound: an open-source multi-purpose n-body code for collisional dynamics. A&A, 537:A128, 2012. https://doi.org/10.1051/0004-6361/201118085.      
+[4] Rein, H. and Liu, S.-F. REBOUND: an open-source multi-purpose N-body code for collisional dynamics. A&A, 537:A128, 2012. [https://doi.org/10.1051/0004-6361/201118085](https://doi.org/10.1051/0004-6361/201118085).      
 
-Image by Omar Flores via Unsplash.
+Image by [Omar Flores](https://unsplash.com/photos/lQT_bOWtysE) via Unsplash.
