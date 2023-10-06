@@ -27,7 +27,7 @@ Our system, AstroCLIP, takes inspiration from CLIP (Contrastive Language Image P
 In the process, we also introduce the first transformer-based model for galaxy spectra, along with an effective pre-training strategy for this model.
 
 <p align="center">
-  <img src="/images/blog/astro_clip_v3.pdf" alt="AstroCLIP Method" width="85%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/im_embedding.png" alt="AstroCLIP Method" width="85%" style="mix-blend-mode: darken;">
 </p>
 
 #### Method
