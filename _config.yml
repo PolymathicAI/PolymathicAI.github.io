@@ -335,73 +335,73 @@ team-title: The Team
 #
 team:
   # Team Member
-  - name: Alberto<br>Bietti
+  - full_name: Alberto Bietti
     avatar: albert_bietti.jpg
-    url: https://alberto.bietti.me/
+    website: https://alberto.bietti.me/
 
-  - name: Kyunghyun<br>Cho
+  - full_name: Kyunghyun Cho
     avatar: kyunghyun_cho.jpg
-    url: https://kyunghyuncho.me
+    website: https://kyunghyuncho.me
 
-  - name: Miles<br>Cranmer
+  - full_name: Miles Cranmer
     avatar: miles_cranmer.jpg
-    url: https://astroautomata.com/
+    website: https://astroautomata.com/
 
-  - name: Michael<br>Eickenberg
+  - full_name: Michael Eickenberg
     avatar: michael_eickenberg.jpg
-    url: https://www.simonsfoundation.org/people/michael-eickenberg/
+    website: https://www.simonsfoundation.org/people/michael-eickenberg/
 
-  - name: Siavash<br>Golkar
+  - full_name: Siavash Golkar
     avatar: siavash_golkar.jpg
-    url: https://www.simonsfoundation.org/people/siavash-golkar/
+    website: https://www.simonsfoundation.org/people/siavash-golkar/
 
-  - name: Keiya<br>Hirashima
+  - full_name: Keiya Hirashima
     avatar: keiya_hirashima.jpg
-    url: https://kyafuk.github.io/utokyo-hirashima/index.html
+    website: https://kyafuk.github.io/utokyo-hirashima/index.html
 
-  - name: Shirley<br>Ho
+  - full_name: Shirley Ho
     avatar: shirley_ho.jpg
-    url: https://www.shirleyho.me/
+    website: https://www.shirleyho.me/
 
-  - name: Geraud<br>Krawezik
+  - full_name: Geraud Krawezik
     avatar: geraud_krawezik.jpg
-    url: https://www.simonsfoundation.org/people/geraud-krawezik/
+    website: https://www.simonsfoundation.org/people/geraud-krawezik/
 
-  - name: Francois<br>Lanusse
+  - full_name: Francois Lanusse
     avatar: francois_lanusse.jpg
-    url: https://flanusse.net/
+    website: https://flanusse.net/
 
-  - name: Nick<br>Lourie
+  - full_name: Nick Lourie
     avatar: nick_lourie.jpg
-    url: https://nicholaslourie.com/
+    website: https://nicholaslourie.com/
 
-  - name: Michael<br>McCabe
+  - full_name: Michael McCabe
     avatar: michael_mccabe.jpg
-    url: https://mikemccabe210.github.io/
+    website: https://mikemccabe210.github.io/
 
-  - name: Ruben<br>Ohana
+  - full_name: Ruben Ohana
     avatar: ruben_ohana.jpg
-    url: https://rubenohana.github.io/
+    website: https://rubenohana.github.io/
 
-  - name: Liam<br>Parker
+  - full_name: Liam Parker
     avatar: liam_parker.jpg
-    url: https://www.linkedin.com/in/liam-parker-96ba14160/
+    website: https://www.linkedin.com/in/liam-parker-96ba14160/
 
-  - name: Mariel<br>Pettee
+  - full_name: Mariel Pettee
     avatar: mariel_pettee.jpg
-    url: https://marielpettee.com/
+    website: https://marielpettee.com/
 
-  - name: Bruno<br>Regaldo
+  - full_name: Bruno Regaldo
     avatar: bruno_regaldo_saint_blancard.jpg
-    url: https://users.flatironinstitute.org/~bregaldosaintblancard/
+    website: https://users.flatironinstitute.org/~bregaldosaintblancard/
 
-  - name: Leopoldo<br>Sarra
+  - full_name: Leopoldo Sarra
     avatar: leopoldo_sarra.jpg
-    url: https://mpl.mpg.de/about-us/mpl-people/mpl-people-detailpages/people-template-page-08acb7b35a
+    website: https://mpl.mpg.de/about-us/mpl-people/mpl-people-detailpages/people-template-page-08acb7b35a
 
-  - name: Tiberiu<br>Tesileanu
+  - full_name: Tiberiu Tesileanu
     avatar: tiberiu_tesileanu.jpg
-    url: https://www.simonsfoundation.org/people/tiberiu-tesileanu/
+    website: https://www.simonsfoundation.org/people/tiberiu-tesileanu/
 
 
   
@@ -533,3 +533,13 @@ footer-description: © 2023 Polymathic AI. All rights reserved. Photo by Hulki O
 # footer-copyright-text: Ohkimur
 # footer-copyright-url: https://github.com/ohkimur
 # footer-copyright-year: 2021
+
+
+page_gen-dirs: true
+page_gen:
+  - data: team
+    template: 'team-member'
+    name: 'full_name'
+    dir: 'team-members'
+    index_files: false
+    debug: true
