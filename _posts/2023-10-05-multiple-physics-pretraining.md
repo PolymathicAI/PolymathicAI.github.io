@@ -74,11 +74,15 @@ We’re trying to develop approaches that are applicable to domains where data g
 
 Here's an example of the long-term rollout after training on only one-step-ahead prediction:
 
-[![Compressible Navier-Stokes](http://img.youtube.com/vi/ndyFDhs62Bo/0.jpg)](http://www.youtube.com/watch?v=ndyFDhs62Bo "Compressible Navier-Stokes Rollout")
+<!-- [![Compressible Navier-Stokes](http://img.youtube.com/vi/ndyFDhs62Bo/0.jpg)](http://www.youtube.com/watch?v=ndyFDhs62Bo "Compressible Navier-Stokes Rollout") -->
 
-<p class="video-container" align="center" style="margin-bottom: 10px;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ndyFDhs62Bo" frameborder="0" allowfullscreen></iframe>
-</p>
+<div style="display:flex;align-items: center;flex-direction: column;">
+<div style="width:800px;max-width:95%;"><div style="position:relative;padding-bottom:56.25%;">
+ <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" frameborder="0" width="100%" height="100%" allowfullscreen="" allow="autoplay" src="https://www.youtube.com/embed/VIDEO_ID">
+</iframe>
+</div>
+</div>
+</div>
 
 Apart from the numerical diffusion we'd expect to see given the training simulation, the physical behavior is largely plausible. Boundary conditions are respected and the flow seems to be largely continuous. It is imperfect, but promising.
 
