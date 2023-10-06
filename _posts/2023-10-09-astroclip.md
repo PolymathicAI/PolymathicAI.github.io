@@ -17,7 +17,7 @@ One of the main goals of our initiative is to create systems that connect knowle
 A particularly important area in science in which to deploy cross-modal connections is in large-scale, astronomical galaxy surveys. The current generation of these surveys contains between ten of millions to billions of galaxies, and different telescopes and instruments give us access to different kinds of observations. In particular in this work, we consider imaging surveys, which give us color images of galaxies, and spectroscopic surveys, which instead of images, measure optical spectra of galaxies  (i.e. a quantitative measure of the light from the galaxy as a function of wavelength). Both types of observations are complementary; they give us different information about these galaxies. 
 
 <p align="center">
-  <img src="/images/blog/desi-image-image.spectrum" alt="DESI Image and Spectrum" width="85%">
+  <img src="/images/blog/desi-image-spectrum.png" alt="DESI Image and Spectrum" width="85%">
 </p>
 
 However, the scale of these datasets, combined with the lack of high-quality labels and representations of these galaxies, renders the detailed analysis of these surveys challenging for researchers. Machine learning has been applied as a potential solution for a long time to discover structure in this data.  Yet, so far, most machine learning work in this area has treated these different types of observations completely separately, despite all being related to the same underlying physical objects. 
