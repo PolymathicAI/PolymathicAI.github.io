@@ -83,3 +83,6 @@ Apart from the numerical diffusion we'd expect to see given the training simulat
 Our work so far is still limited by the resolution and diversity of the training data. While datasets like PDEBench are valuable tools for exploration, creating true foundation models for general physics or even just fluids is going to require broader, deeper datasets capturing more behavior and higher resolutions. There remains significant work to be done, but we’ve shown a new path forward by introducing a pretraining approach that allows us to train models that both learn multiple sets of physics simultaneously and effectively transfer to new physics. 
 
 For more information, check out our preprint on [arXiv](https://arxiv.org/abs/2310.02994)!
+
+---
+Title image by Ivan Bandura via Unsplash.
