@@ -26,7 +26,8 @@ smooth-scroll: false
 ####################################
 plugins:
   - jekyll-archives
-
+  - jekyll-datapage-generator
+  
 jekyll-archives:
   enabled:
     - categories
