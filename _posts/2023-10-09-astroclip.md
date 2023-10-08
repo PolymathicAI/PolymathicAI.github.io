@@ -3,7 +3,7 @@ layout: post
 title: "AstroCLIP: Connecting Diverse Observational Modalities in Astrophysics"
 authors: Francois Lanusse, Liam Parker, Siavash Golkar, Miles Cranmer, Alberto Bietti, Michael Eickenberg, Geraud Krawezik, Michael McCabe, Ruben Ohana, Mariel Pettee, Bruno Regaldo-Saint Blancard, Tiberiu Tesileanu, Kyunghyun Cho, Shirley Ho
 shorttitle: "AstroCLIP"
-date: 2023-10-08 09:31
+date: 2023-10-09 09:31
 smallimage: astroclip.jpeg
 image: astroclip.jpeg
 blurb: We present a self-supervised learning strategy that bridges diverse observational modalities in astrophysics. By aligning cross-modal representations of galaxies in a shared space, we are able to perform cross-modal look-up and competitive zero-shot predictions on downstream tasks.  
