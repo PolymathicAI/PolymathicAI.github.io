@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-{%assign current_member =  site.team | where: "full_name", page.full_name|sample %}
+{%assign current_member = site.team | where: "full_name", page.full_name|sample %}
 
 <!-- Blog Article -->
 <div class="post-full">
@@ -13,20 +13,20 @@ layout: page
       <div class="article-title">
 
         <div align="center" style="padding-bottom: 20px;">
-          <img src={{ site.baseurl }}/images/avatars/{{ current_member.avatar }}>
+          <img src={{ site.baseurl }}/images/avatars/{{ current_member.avatar }} width="350px">
         </div>
 
         <h3 class="title" style="text-align: center;">{{ current_member.full_name }}</h3>
       </div>
     </header>
     <!-- Member Content -->
-    <div class="article-content post-article-text" >
+    <div class="article-content post-article-text">
 
       {{ current_member.bio }}
 
       <div class="text-center" style="padding-top: 30px;">
-        <a href={{ current_member.website }} target="_blank" class="button-post"  >Personal website</a>
+        <a href={{ current_member.website }} target="_blank" class="button-post">Personal website</a>
       </div>
-    </div>    
+    </div>
   </article>
 </div>
