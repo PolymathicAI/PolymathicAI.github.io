@@ -2,7 +2,7 @@
 layout: post
 title: "Announcing Polymathic&nbsp;AI"
 shorttitle: "Announcing Polymathic&nbsp;AI"
-date: 2023-10-09 10:00
+date: 2023-10-09 09:30
 image: hello-world.jpg
 smallimage: hello-world-s.jpg
 blurb: "Polymathic AI: A new initiative to advance science through multi-disciplinary AI"
