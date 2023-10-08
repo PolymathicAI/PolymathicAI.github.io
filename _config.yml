@@ -561,3 +561,7 @@ page_gen:
     dir: 'team-members'
     index_files: false
     debug: true
+
+# Show future posts:
+timezone: America/New_York
+future: true
