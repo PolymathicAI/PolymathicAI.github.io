@@ -3,7 +3,7 @@ layout: post
 title: "xVal: A continuous number encoding for LLMs"
 authors: Siavash Golkar, Mariel Pettee, Michael Eickenberg, Alberto Bietti, Miles Cranmer, Geraud Krawezik, Francois Lanusse, Michael McCabe, Ruben Ohana, Liam Parker, Bruno Régaldo-Saint Blancard, Tiberiu Tesileanu, Kyunghyun Cho, Shirley&nbsp;Ho
 shorttitle: "xVal Number Encoding"
-date: 2023-10-05 10:02
+date: 2023-10-09 10:03
 image: xval-splash.jpg
 smallimage: xVal-s.jpg
 blurb: We introduce xVal, a new number encoding scheme for LLMs. Using xVal with a modified number inference method makes LLMs continuous function approximators. This makes them have a better inductive bias for data analysis in scientific domains.
