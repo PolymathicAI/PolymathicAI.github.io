@@ -10,6 +10,7 @@ blurb: We present a self-supervised learning strategy that bridges diverse obser
 shortblurb: We present a self-supervised learning strategy that bridges diverse observational modalities in astrophysics. By aligning cross-modal representations of galaxies in a shared space, we are able to perform cross-modal look-up and competitive zero-shot predictions on downstream tasks.  
 splashimage: /images/blog/astroclip.jpeg
 link: https://arxiv.org/abs/2310.03024
+permalink: /blog/astroclip/
 ---
 
 One of the main goals of our initiative is to create systems that connect knowledge across the conventional boundaries of science. Indeed, in a wide variety of physical domains, there exist multiple disjoint ways of measuring the same underlying systems, and so far machine learning solutions have been specialized to particular types of measurement. Therefore, developing methods that can extract information from diverse observations and represent it in a shared embedding space is an  exciting avenue of exploration to unify observational modalities.  

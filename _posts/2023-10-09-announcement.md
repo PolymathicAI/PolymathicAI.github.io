@@ -9,6 +9,7 @@ blurb: "Polymathic AI: A new initiative to advance science through multi-discipl
 shortblurb: "Polymathic AI: A new initiative to advance science through multi-disciplinary AI"
 splashimage: /images/blog/hello-world.jpg
 explains_mission_statement: true
+permalink: /blog/announcement/
 ---
 
 The last few years have seen significant advances made in the fields of machine learning for vision and natural language processing (NLP) by training general models on vast and diverse datasets, unlocking a jump in performance and capabilities.
