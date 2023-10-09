@@ -24,7 +24,7 @@ Our system, AstroCLIP, takes inspiration from CLIP (Contrastive Language Image P
 In the process, we also introduce the first transformer-based model for galaxy spectra, along with an effective pre-training strategy for this model.
 
 <p align="center">
-  <img src="/images/blog/im_embedding.png" alt="AstroCLIP Method" width="85%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/im_embedding.png" alt="AstroCLIP Method" width="770px" style="max-width:100%" style="mix-blend-mode: darken;">
 </p>
 
 #### Method
@@ -41,7 +41,7 @@ The figure above shows on the left how the contrastive loss naturally will tend 
 We show that our embedding scheme is able to align representations of galaxies both in-modality and cross-modality around meaningful shared semantics. Specifically, we query our embedding space with either the image or spectrum representation of a galaxy, and show that the retrieved galaxies by cosine similarity of their embeddings are extremely close to the original one. Below, we present all four retrieval types (spectrum-spectrum, image-image, spectrum-image, and image-spectrum, from left to right) for four randomly chosen query galaxies in our testing set (highlighted in red on the left).
 
 <p align="center">
-  <img src="/images/blog/query-retrieval.png" alt="Query and Retrieval" width="85%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/query-retrieval.png" alt="Query and Retrieval" width="770px" style="max-width:100%" style="mix-blend-mode: darken;">
 </p>
 
 As one can see, the retrieved examples are galaxies of similar types, both for in-modality retrieval (b and c) and cross-modal retrieval (d and e).
@@ -49,11 +49,11 @@ As one can see, the retrieved examples are galaxies of similar types, both for i
 We also present a couple of examples for the retrieved spectra, for both spectra queries (in-modality) and image queries (cross-modality) below:
 
 <p align="center">
-  <img src="/images/blog/spectra_retrieval_spectrum.png" alt="Spectrum-Spectrum Retrieval" width="85%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/spectra_retrieval_spectrum.png" alt="Spectrum-Spectrum Retrieval" width="770px" style="max-width:100%" style="mix-blend-mode: darken;">
 </p>
 
 <p align="center">
-  <img src="/images/blog/spectra_retrieval_im_cross.png" alt="Image-Spectrum Retrieval" width="85%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/spectra_retrieval_im_cross.png" alt="Image-Spectrum Retrieval" width="770px" style="max-width:100%" style="mix-blend-mode: darken;">
 </p>
 
 These results demonstrate a strong correlation between the semantic content of the query, such as the red quiescent galaxy or a blue star forming galaxy, and the semantic content of the retrieved images or spectra. 
@@ -66,11 +66,11 @@ In particular, we use simple k-Nearest Neighbour (k-NN) regression of our embedd
 Additionally, in-modality similarity appears to outperform cross-modality similarity as an input for the k-NN regression, indicating that, although our our contrastive training aims to connect embeddings between modalities, it has the emergent property of helping to structure the embeddings space within respective modalities. This is particularly evident for the redshift prediction (c, top panel) by similarity between spectra which is near perfect, even though redshift is not an information perfectly contained in images. This means that redshift has naturally emerged as a fundamental property which helps the spectral encoder to structure its embedding space.
 
 <p align="center">
-  <img src="/images/blog/redshift.png" alt="Redshift Prediction" width="85%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/redshift.png" alt="Redshift Prediction" width="770px" style="max-width:100%" style="mix-blend-mode: darken;">
 </p>
 
 <p align="center">
-  <img src="/images/blog/stellar-mass.png" alt="Stellar Mass Prediction" width="85%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/stellar-mass.png" alt="Stellar Mass Prediction" width="770px" style="max-width:100%" style="mix-blend-mode: darken;">
 </p>
 
 #### Conclusions
