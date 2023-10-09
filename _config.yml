@@ -348,7 +348,7 @@ team:
   - full_name: Miles Cranmer
     avatar: miles_cranmer.jpg
     website: https://astroautomata.com/
-    bio: Miles Cranmer is an Assistant Professor in Data Intensive Science at the University of Cambridge. He received his PhD in Astrophysics from Princeton University, spending time at Google DeepMind and Flatiron Institute, and before that, his BSc in Physics from McGill University. Miles is interested in the automation of scientific research with machine learning.
+    bio: Miles Cranmer is Assistant Professor in Data Intensive Science at the University of Cambridge, joint between the Department of Applied Mathematics and Theoretical Physics and the Instititute of Astronomy. He received his PhD from Princeton University in 2023, spending time at Google DeepMind and Flatiron Institute, and before that, his BSc from McGill University in 2018. Miles is interested in automating scientific research in the physical sciences with machine learning, and works on a variety of pure and applied machine learning projects in pursuit of this goal. His ML research has concentrated on symbolic regression, graph neural networks, and physics-motivated architectures, while his applied projects have looked at multi-scale physics, planetary dynamics, and cosmology.
 
   - full_name: Michael Eickenberg
     avatar: michael_eickenberg.jpg
@@ -382,8 +382,8 @@ team:
 
   - full_name: Nick Lourie
     avatar: nick_lourie.jpg
-    website: https://nicholaslourie.com/
-    bio: Nicholas Lourie is PhD student at NYU investigating empirical models of deep learning. His research seeks better statistical frameworks for designing, developing, and evaluating neural networks. At NYU, he is advised by He He and Kyunghyun Cho, while in the past he worked at the Allen Institute for AI on machine ethics, common sense, prompt-based learning, and the evaluation of natural language processing models.
+    website: https://www.semanticscholar.org/author/Nicholas-Lourie/35219984
+    bio: Nicholas Lourie is a PhD student at NYU investigating empirical models of deep learning. His research seeks better statistical frameworks for designing, developing, and evaluating neural networks. At NYU, he is advised by He He and Kyunghyun Cho, while in the past he worked at the Allen Institute for AI on machine ethics, common sense, prompt-based learning, and the evaluation of natural language processing models.
 
   - full_name: Michael McCabe
     avatar: michael_mccabe.jpg
