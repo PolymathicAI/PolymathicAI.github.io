@@ -19,12 +19,17 @@ layout: page
       </div>
     </header>
 
+    <p>
     <!-- Buttons -->
     {% if page.link != nil %}
-      <p>
         <a href={{ page.link }} class="button-post">Paper</a>
-      </p>
     {% endif %}
+
+    {% if page.link != nil %}
+      <a href={{ page.github_link }} class="button-post">Code</a>
+    {% endif %}
+    </p>
+
     <!-- Article Content -->
     <div class="article-content post-article-content">
 
