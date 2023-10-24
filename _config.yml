@@ -348,7 +348,7 @@ team:
   - full_name: Miles Cranmer
     avatar: miles_cranmer.jpg
     website: https://astroautomata.com/
-    bio: Miles Cranmer is Assistant Professor in Data Intensive Science at the University of Cambridge, joint between the Department of Applied Mathematics and Theoretical Physics and the Instititute of Astronomy. He received his PhD from Princeton University in 2023, spending time at Google DeepMind and Flatiron Institute, and before that, his BSc from McGill University in 2018. Miles is interested in automating scientific research in the physical sciences with machine learning, and works on a variety of pure and applied machine learning projects in pursuit of this goal. His ML research has concentrated on symbolic regression, graph neural networks, and physics-motivated architectures, while his applied projects have looked at multi-scale physics, planetary dynamics, and cosmology.
+    bio: Miles Cranmer is Assistant Professor in Data Intensive Science at the University of Cambridge, joint between the Department of Applied Mathematics and Theoretical Physics and the Instititute of Astronomy. He received his PhD from Princeton University, spending time at Google DeepMind and Flatiron Institute, and before that, his BSc from McGill University. Miles is interested in automating scientific research in the physical sciences with machine learning, and works on a variety of pure and applied machine learning projects in pursuit of this goal. His ML research has concentrated on symbolic regression, graph neural networks, and physics-motivated architectures, while his applied projects have looked at multi-scale physics, planetary dynamics, and cosmology.
 
   - full_name: Michael Eickenberg
     avatar: michael_eickenberg.jpg
