@@ -23,10 +23,13 @@ layout: page
     <div class="article-content post-article-text">
 
       {{ current_member.bio }}
-
+      
+    {% if current_member.website != nil %}
       <div class="text-center" style="padding-top: 30px;">
         <a href={{ current_member.website }} target="_blank" class="button-post">Personal website</a>
       </div>
+    {% endif %}
+
     </div>
   </article>
 </div>
