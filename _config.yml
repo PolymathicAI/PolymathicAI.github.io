@@ -304,7 +304,7 @@ features:
 #     logo-img: codecanyon.png
 
 #   # Client
-#   - name: Irene Warner
+Golkarname: Irene Warner
 #     url: http://videohive.net
 #     url-text: VideoHive.net
 #     avatar: avatar-03.jpg
@@ -357,7 +357,6 @@ team:
 
   - full_name: Siavash Golkar
     avatar: siavash_golkar.jpg
-    website: https://www.simonsfoundation.org/people/siavash-golkar/
     bio: Siavash Golkar is a research scientist working in the field of machine learning and applications to scientific domains. Siavash received his PhD in 2015 in the field of High Energy Physics, working on topological states of matter. He has since worked as a postdoc at Cambridge University and New York University and as an associate research scientist at the Flatiron Institute. His recent work spans research in ML from continual and transfer learning to applying large transformer models to numerical and scientific datasets.
 
   - full_name: Keiya Hirashima
