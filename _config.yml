@@ -391,8 +391,8 @@ team:
 
   - full_name: Rudy Morel
     avatar: rudy_morel.jpg
-    website: 
-    bio: 
+    website: https://www.di.ens.fr/rudy.morel/
+    bio: Rudy Morel is a Research Fellow at the Center for Computational Mathematics (CCM) at the Flatiron Institute. He earned his PhD in Applied Mathematics from the École Normale Supérieure (ENS) in Paris, specializing in applied stochastic processes. Rudy's current research focuses on developing and understanding foundational models for science, with a particular emphasis on multi-scale modeling, generalization properties, and efficient fine-tuning.
 
   - full_name: Ruben Ohana
     avatar: ruben_ohana.jpg
