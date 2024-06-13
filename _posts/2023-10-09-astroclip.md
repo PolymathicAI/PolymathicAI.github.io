@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AstroCLIP Update: Superior performance all around!"
+title: "AstroCLIP: Connecting Diverse Observational Modalities in Astrophysics"
 authors: Francois Lanusse, Liam Parker, Siavash Golkar, Miles Cranmer, Alberto Bietti, Michael Eickenberg, Geraud Krawezik, Michael McCabe, Ruben Ohana, Mariel Pettee, Bruno Regaldo-Saint Blancard, Tiberiu Tesileanu, Kyunghyun Cho, Shirley Ho
 shorttitle: "AstroCLIP"
 date: 2023-10-09 09:31
@@ -11,7 +11,7 @@ shortblurb: We present a self-supervised learning strategy that bridges diverse 
 splashimage: /images/blog/astroclip.jpeg
 link: https://arxiv.org/abs/2310.03024
 github_link: https://github.com/PolymathicAI/AstroCLIP
-permalink: /blog/astroclip_update/
+permalink: /blog/astroclip/
 ---
 
 One of the main goals of our initiative is to create systems that connect knowledge across the conventional boundaries of science. Indeed, in a wide variety of physical domains, there exist multiple disjoint ways of measuring the same underlying systems, and so far machine learning solutions have been specialized to particular types of measurement. Therefore, developing methods that can extract information from diverse observations and represent it in a shared embedding space is an  exciting avenue of exploration to unify observational modalities.  
