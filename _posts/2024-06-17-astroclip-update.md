@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "AstroCLIP Update: Superior performance all around!"
-authors: Liam Parker, Francois Lanusse, Siavash Golkar, Leopoldo Sarra, Miles Cranmer, Alberto Bietti, Michael Eickenberg, Geraud Krawezik, Michael McCabe, Ruben Ohana, Rudy Morel, Mariel Pettee, Bruno Regaldo-Saint Blancard, Tiberiu Tesileanu, Kyunghyun Cho, Shirley Ho
-shorttitle: "AstroCLIP Update"
-date: 2024-06-11 11:00
+title: "AstroCLIP: Connecting Diverse Observational Modalities in Astrophysics"
+authors: Francois Lanusse, Liam Parker, Siavash Golkar, Miles Cranmer, Alberto Bietti, Michael Eickenberg, Geraud Krawezik, Michael McCabe, Ruben Ohana, Mariel Pettee, Bruno Regaldo-Saint Blancard, Tiberiu Tesileanu, Kyunghyun Cho, Shirley Ho
+shorttitle: "AstroCLIP"
+date: 2023-10-09 09:31
 smallimage: astroclip.jpeg
 image: astroclip.jpeg
-blurb: We release a significant update to the AstroCLIP model, which demonstrates superior performance on all previously tested downstream tasks and introduces the capacity to tackle a host of new problems.
-shortblurb: We release a significant update to the AstroCLIP model, which demonstrates superior performance on all previously tested downstream tasks and introduces the capacity to tackle a host of new problems.
+blurb: We present a self-supervised learning strategy that bridges diverse observational modalities in astrophysics. By aligning cross-modal representations of galaxies in a shared space, we are able to perform cross-modal look-up and competitive zero-shot predictions on downstream tasks.  
+shortblurb: We present a self-supervised learning strategy that bridges diverse observational modalities in astrophysics. By aligning cross-modal representations of galaxies in a shared space, we are able to perform cross-modal look-up and competitive zero-shot predictions on downstream tasks.  
 splashimage: /images/blog/astroclip.jpeg
-link: 
+link: https://arxiv.org/abs/2310.03024
 github_link: https://github.com/PolymathicAI/AstroCLIP
-permalink: /blog/astroclip_update/
-—--
+permalink: /blog/astroclip/
+---
 
 A few months ago, we introduced[AstroCLIP](https://polymathic-ai.org/blog/astroclip/), a strategy for training cross-modal self-supervised models on scientific data. AstroCLIP addresses a primary objective of the Polymathic initiative: to develop unified systems that connect diverse scientific measurements. It tackles this objective in an astrophysics context, where the ability to handle diverse measurements is critical given the billions of varied astronomical observations available. To that end, AstroCLIP embeds complementary measurements of galaxies in a single, unified, physically meaningful embedding space, which can then be used for a variety of downstream tasks such as semantic similarity search and redshift estimation.. For a full overview of the AstroCLIP method, see our [previous blog post](https://polymathic-ai.org/blog/astroclip/). 
 Now, we are excited to announce the release of a new and improved AstroCLIP model. This updated version demonstrates superior performance on all previously tested downstream tasks and introduces the capacity to tackle a host of new problems. Across the board, the updated AstroCLIP demonstrates remarkable performance; in fact, AstroCLIP now matches or beats the performance of dedicated, supervised deep learning models on many of the downstream tasks on which it is evaluated, including redshift estimation and physical property regression. AstroCLIP’s competitive performance is achieved despite the fact that it has never been specifically trained or fine-tuned for any of these tasks.
