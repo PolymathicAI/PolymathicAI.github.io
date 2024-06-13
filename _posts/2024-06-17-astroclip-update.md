@@ -24,7 +24,7 @@ Overall, AstroCLIP represents the first cross-modal foundation model for astroph
   <img src="/images/blog/im_embedding.png" alt="AstroCLIP Method" width="770px" style="max-width:100%" style="mix-blend-mode: darken;">
 </p>
 
-#### Web Interfact
+#### Web Interface
 
 [COMING SOON]
 
@@ -61,7 +61,7 @@ In addition to redshift, astronomers typically estimate additional galaxy proper
 Overall, we show that AstroCLIP is once again able to effectively estimate important physical properties using basic regression tools (k-NN and MLP) from its embeddings, and outperforms its supervised counterparts despite no task-specific training.
 
 <p align="center">
-  <img src="/images/blog/physical_properties.png" alt="AstroCLIP Method" width="770px" style="max-width:100%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/physical_properties.png" alt="AstroCLIP Method" width="770px" style="max-width:50%" style="mix-blend-mode: darken;">
 </p>
 
 #### Morphology Classification
@@ -75,7 +75,7 @@ Morphology classification is a fundamental task in understanding the formation a
 A galaxy's spectrum typically provides perfect redshift information. However, because galaxy images do not perfectly convey redshift information, it was expected that AstroCLIP spectrum embeddings would lose some redshift data after CLIP alignment, as the training objective only promotes retaining the information that is shared between images and spectra. Surprisingly, this is not the case. Evaluating the AstroCLIP spectrum embeddings shows no significant loss of redshift information post-CLIP alignment. This finding suggests that cross-modal alignment, even with imperfectly informative modalities, can effectively retain information.
 
 <p align="center">
-  <img src="/images/blog/redshift_scatter_mlp.png" alt="AstroCLIP Method" width="770px" style="max-width:100%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/redshift_scatter_mlp.png" alt="AstroCLIP Method" width="770px" style="max-width:70%" style="mix-blend-mode: darken;">
 </p>
 
 Similarly, we also find that alignment has not materially degraded AstroCLIP's performance on morphology classification.
