@@ -9,7 +9,7 @@ image: astroclip.jpeg
 blurb: We release a significant update to the AstroCLIP model, which demonstrates superior performance on all previously tested downstream tasks and introduces the capacity to tackle a host of new problems.
 shortblurb: We release a significant update to the AstroCLIP model, which demonstrates superior performance on all previously tested downstream tasks and introduces the capacity to tackle a host of new problems.
 splashimage: /images/blog/astroclip.jpeg
-link: 
+link: https://arxiv.org/abs/2310.03024
 github_link: https://github.com/PolymathicAI/AstroCLIP
 permalink: /blog/astroclip_update/
 ---
