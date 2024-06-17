@@ -5,7 +5,7 @@ authors: Liam Parker, Francois Lanusse, Siavash Golkar, Leopoldo Sarra, Miles Cr
 shorttitle: "AstroCLIP Update"
 date: 2024-06-11 11:00
 smallimage: astroclip_update.jpeg
-image: astroclip.jpeg
+image: astroclip_update.jpeg
 blurb: We release a significant update to the AstroCLIP model, which demonstrates superior performance on all previously tested downstream tasks and introduces the capacity to tackle a host of new problems.
 shortblurb: We release a significant update to the AstroCLIP model, which demonstrates superior performance on all previously tested downstream tasks and introduces the capacity to tackle a host of new problems.
 splashimage: /images/blog/astroclip_update.jpeg
