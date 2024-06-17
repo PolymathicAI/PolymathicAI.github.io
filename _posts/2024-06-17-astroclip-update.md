@@ -31,7 +31,7 @@ Overall, AstroCLIP represents the first cross-modal foundation model for astroph
 
 We provide below an interactive interface to explore the embeddings produced by out model.
 <iframe
-  src="http://astroclip.streamlit.app?embed=true"
+  src="https://astroclip.streamlit.app?embed=true"
   style="height: 800px; width: 130%; margin-left: -15%;"
 ></iframe>
 
