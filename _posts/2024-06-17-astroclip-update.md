@@ -24,7 +24,7 @@ A few months ago, we introduced [AstroCLIP](https://polymathic-ai.org/blog/astro
 
 Now, we are excited to announce the release of a new and improved AstroCLIP model. This updated version outperforms the original version on all previously tested downstream tasks and introduces the capacity to tackle a host of new problems. Now, on many of these downstream tasks, AstroCLIP matches or beats the performance of dedicated, supervised deep learning models, including on tasks like redshift estimation and physical property regression. AstroCLIP’s competitive performance is achieved despite the fact that it has never been specifically trained or fine-tuned for any of these tasks.
 
-Overall, AstroCLIP represents the first cross-modal foundation model for astrophysics, as well as the first use of self-supervised transformers for galaxy images and spectra in astronomy. We release the full model weights, training codes, evaluation suite, and datasets [here](https://github.com/PolymathicAI/AstroCLIP).
+Overall, AstroCLIP represents the first cross-modal foundation model for galaxies, as well as the first use of self-supervised transformers for galaxy images and spectra in astronomy. We release the full model weights, training codes, evaluation suite, and datasets [here](https://github.com/PolymathicAI/AstroCLIP).
 
 
 #### Web Interface
