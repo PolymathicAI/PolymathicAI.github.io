@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AstroCLIP Update: Superior performance all around!"
+title: "AstroCLIP Update: A Cross-Modal Foundation Model for Galaxies"
 authors: Liam Parker, Francois Lanusse, Siavash Golkar, Leopoldo Sarra, Miles Cranmer, Alberto Bietti, Michael Eickenberg, Geraud Krawezik, Michael McCabe, Ruben Ohana, Rudy Morel, Mariel Pettee, Bruno Regaldo-Saint Blancard, Tiberiu Tesileanu, Kyunghyun Cho, Shirley Ho
 shorttitle: "AstroCLIP Update"
 date: 2024-06-11 11:00
