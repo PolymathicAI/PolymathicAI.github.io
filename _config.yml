@@ -357,6 +357,7 @@ team:
 
   - full_name: Siavash Golkar
     avatar: siavash_golkar.jpg
+    website: http://siavashgolkar.com/
     bio: Siavash Golkar is a research scientist working in the field of machine learning and applications to scientific domains. Siavash received his PhD in 2015 in the field of High Energy Physics, working on topological states of matter. He has since worked as a postdoc at Cambridge University and New York University and as an associate research scientist at the Flatiron Institute. His recent work spans research in ML from continual and transfer learning to applying large transformer models to numerical and scientific datasets.
 
   - full_name: Keiya Hirashima
@@ -411,7 +412,7 @@ team:
 
   - full_name: Bruno Regaldo
     avatar: bruno_regaldo_saint_blancard.jpg
-    website: https://users.flatironinstitute.org/~bregaldosaintblancard/
+    website: https://bregaldo.github.io/
     bio: Bruno Régaldo-Saint Blancard is a Research Fellow at the Center for Computational Mathematics, Flatiron Institute. He obtained a PhD in Astrophysics from the École Normale Supérieure (ENS), Paris. Prior to that, he graduated from the École Polytechnique, and obtained a M.S. in Astrophysics from the Observatoire de Paris. Bruno’s research focuses on the development of statistical methods for astrophysics/cosmology and beyond, using signal processing and machine learning. He is interested in various problems including generative modeling, inference, denoising, and source separation.
 
 
