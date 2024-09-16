@@ -415,16 +415,10 @@ team:
     bio: Bruno Régaldo-Saint Blancard is a Research Fellow at the Center for Computational Mathematics, Flatiron Institute. He obtained a PhD in Astrophysics from the École Normale Supérieure (ENS), Paris. Prior to that, he graduated from the École Polytechnique, and obtained a M.S. in Astrophysics from the Observatoire de Paris. Bruno’s research focuses on the development of statistical methods for astrophysics/cosmology and beyond, using signal processing and machine learning. He is interested in various problems including generative modeling, inference, denoising, and source separation.
 
 
-
-  - full_name: Leopoldo Sarra
-    avatar: leopoldo_sarra.jpg
-    website: https://users.flatironinstitute.org/~lsarra/
-    bio: Leopoldo Sarra is a Flatiron Research Fellow, working in the Foundation Models for Science initiative. His current research interests lie at the intersection of physics and machine learning. In particular, he has been investigating how machine learning techniques can be used to support scientific discovery, exploring how a future "Artificial Scientist" could automatically learn from observations, understand relevant concepts, build new physical models and design new experiments similar to how human scientists do. He received his Ph.D. from the Friedrich-Alexander Universität in Erlangen, Germany, in association with the Max Planck Institute for the Science of Light, after earning his B.Sc. and M.Sc. degrees in Physics at Sapienza University of Rome, Italy.
-
-  - full_name: Tiberiu Tesileanu
-    avatar: tiberiu_tesileanu.jpg
-    website: https://www.ttesileanu.com
-    bio: "Tiberiu Tesileanu is currently a Research Software Engineer at Meta, working with the CTRL team. Before that he was an Associate Research Scientist with the Center for Computational Neuroscience at the Flatiron Institute. His background is in high energy physics, having worked on the AdS/CFT duality in string theory for his PhD. He then worked for several years in systems biology and computational neuroscience, before shifting focus towards machine learning and software engineering."
+  # - full_name: Tiberiu Tesileanu
+  #   avatar: tiberiu_tesileanu.jpg
+  #   website: https://www.ttesileanu.com
+  #   bio: "Tiberiu Tesileanu is currently a Research Software Engineer at Meta, working with the CTRL team. Before that he was an Associate Research Scientist with the Center for Computational Neuroscience at the Flatiron Institute. His background is in high energy physics, having worked on the AdS/CFT duality in string theory for his PhD. He then worked for several years in systems biology and computational neuroscience, before shifting focus towards machine learning and software engineering."
 
   
 
