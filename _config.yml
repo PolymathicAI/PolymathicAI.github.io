@@ -416,6 +416,12 @@ team:
     bio: Bruno Régaldo-Saint Blancard is a Research Fellow at the Center for Computational Mathematics, Flatiron Institute. He obtained a PhD in Astrophysics from the École Normale Supérieure (ENS), Paris. Prior to that, he graduated from the École Polytechnique, and obtained a M.S. in Astrophysics from the Observatoire de Paris. Bruno’s research focuses on the development of statistical methods for astrophysics/cosmology and beyond, using signal processing and machine learning. He is interested in various problems including generative modeling, inference, denoising, and source separation.
 
 
+  - full_name: Tom Hehir
+    avatar: tom_hehir.jpg
+    website: https://tom-hehir.github.io/
+    bio: Tom's bio.
+  
+
   # - full_name: Tiberiu Tesileanu
   #   avatar: tiberiu_tesileanu.jpg
   #   website: https://www.ttesileanu.com
