@@ -395,6 +395,11 @@ team:
     website: https://mikemccabe210.github.io/
     bio: Michael McCabe joined the institute as a research analyst in 2023. He is a final year PhD Student at the University of Colorado, Boulder advised by Prof. Jed Brown and has broad research interests in machine learning and optimization, especially for physical systems. Michael’s current research goals are integrating ideas from numerical methods into large-scale deep learning architectures to build tools that are better suited to learning physical dynamics  more reliably or efficiently. Throughout his PhD, he has worked with Lawrence Berkeley and Argonne National Laboratories. Outside of work, Michael enjoys climbing, running, and reading.
 
+  - full_name: Lucas Meyer
+    avatar: lucas_meyer.jpg
+    website: https://lucas.meyer.cool/
+    bio: Bio placeholder.
+    
   - full_name: Rudy Morel
     avatar: rudy_morel.jpg
     website: https://www.di.ens.fr/rudy.morel/
