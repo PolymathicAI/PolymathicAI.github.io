@@ -363,7 +363,7 @@ team:
   - full_name: Tom Hehir
     avatar: tom_hehir.jpg
     website: https://tom-hehir.github.io/
-    bio: Tom's bio.
+    bio: Tom is a PhD student supervised by Prof Miles Cranmer at the Institute of Astronomy, University of Cambridge. He aspires to apply contemporary techniques in machine learning, data science, and statistics to assorted problems in astronomy. His current focus is on developing multimodal, transformer-based foundation models for galaxy surveys. Previously, Tom completed a master’s degree in physics at the University of Durham.
     
   - full_name: Keiya Hirashima
     avatar: keiya_hirashima.jpg
