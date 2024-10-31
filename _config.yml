@@ -405,6 +405,11 @@ team:
     website: https://www.di.ens.fr/rudy.morel/
     bio: Rudy Morel is a Research Fellow at the Center for Computational Mathematics (CCM) at the Flatiron Institute. He earned his PhD in Applied Mathematics from the École Normale Supérieure (ENS) in Paris, specializing in applied stochastic processes. Rudy's current research focuses on developing and understanding foundational models for science, with a particular emphasis on multi-scale modeling, generalization properties, and efficient fine-tuning.
 
+  - full_name: Payel Mukhopadhyay
+    avatar: payel_mukhopadhyay.jpg
+    website: https://www.linkedin.com/in/payel-mukhopadhyay-5529b026b/
+    bio: Payel Mukhopadhyay is a postdoctoral fellow working on building foundation models for scientific domains. She received her PhD in theoretical and particle astrophysics from Stanford University in 2022, where her research encompassed topics such as supernovae, galactic outflows, cosmic rays, and dark matter. She currently holds a postdoctoral fellowship at the University of California, Berkeley, and is a long-term visiting researcher at the University of Cambridge. Her current projects involve applying large transformer models to scientific and numerical datasets pertaining to astrophysical and fluids based simulations. Outside of work, Payel enjoys cooking, reading and going on long walks with her dog.
+
   - full_name: Ruben Ohana
     avatar: ruben_ohana.jpg
     website: https://rubenohana.github.io/
