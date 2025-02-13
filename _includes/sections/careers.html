@@ -1,0 +1,29 @@
+<!-- Careers Section -->
+<section class="careers-section" id="careers">
+    <div class="container">
+  
+      <!-- Section Heading -->
+      <div class="row text-center">
+  
+        <!-- Section Header -->
+        <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+          <h2>{{ site.career-title }}</h2>
+          <hr class="normal">
+        </header>
+  
+        <!-- Section Content -->
+        <div class="col-md-8 col-sm-12 section-content">
+          <p>{{ site.career-description }}</p>
+        </div>  
+          <!-- Job listings -->
+          {% for job in site.roles %}
+          <div class="col-md-8 col-sm-12 job-description">
+              <p></p><a href="{{ job.link }}" class="job-title">{{ job.title }}</a>
+              {{ job.description }}</p>        
+          </div>
+          {% endfor %}
+  
+      </div>  
+    </div>
+  </section>
+  

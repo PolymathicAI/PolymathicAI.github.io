@@ -1,0 +1,55 @@
+// Careers Section Styles
+section.careers-section {
+    padding: 100px 0;
+    background-color: $light-bkgd;
+
+    // Section Header
+    header.section-header {
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $secondary;
+        }
+
+        hr.normal {
+            margin: 40px auto;
+        }
+    }
+
+    // Section Content
+    .section-content {
+        p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: left;
+            color: $secondary;
+            margin-bottom: 1rem;
+        }
+    }
+
+
+    // Job description styling
+    .job-description{
+        font-size: 1.2rem;
+        font-weight: lighter;
+        text-align: left;
+        color: $secondary;
+        text-decoration: none;
+        margin-bottom: 1rem;
+    }
+
+    // Job title styling
+    .job-title {
+        display: block;
+        
+        font-weight: 500;
+        color: $secondary;
+        text-decoration: none;
+        margin-bottom: 0.25rem;
+
+        &:hover {
+            color: darken($primary, 15%);
+            text-decoration: underline;
+        }
+    }
+}
