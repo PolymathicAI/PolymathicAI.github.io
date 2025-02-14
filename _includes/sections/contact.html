@@ -18,16 +18,18 @@
       </header>
 
       <!-- Section Content -->
-      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+      <div class="col-md-8 col-md-push-2 col-sm-12 contact-description">
         <p>{{ site.contact-description }}</p>
+        <a href="mailto:{{ site.email }}" target="_blank" class="contact-button">{{site.email}}</a>
       </div>
 
     </div>
 
     <!-- Form Container -->
+    <!--
     <div class="row form-container">
 
-      <!-- Contact Form -->
+      <!-- Contact Form
       <div class="col-md-8 col-md-push-2">
         <form id="sera-contact-form" action="https://formspree.io/{{ site.email }}" method="POST"
           class="contact-form container-fluid">
@@ -52,7 +54,7 @@
         </form>
       </div>
 
-    </div>
+    </div> -->
 
   </div>
 </section>

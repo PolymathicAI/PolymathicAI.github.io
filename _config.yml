@@ -72,7 +72,7 @@ header-tagline: Advancing Science through Multi&#8209;Disciplinary&nbsp;AI
 # IMPORTANT: you can modify contact form from this static template, but now works contact form works with a free external server
 # To configure this contact form, first please send a fictive email afeter you enter below your email and verify that :)
 #
-email: your_email@example.com
+email: info@polymathic-ai.org
 
 # # Offer Banner Link
 # # Default link is a link to all Sera OnePage products
@@ -576,7 +576,7 @@ roles:
 ############   Contact   ############
 #####################################
 contact-title: Contact Us
-contact-description: Let's pioneer the future of science together. Contact us to join the conversation.
+contact-description: Need more information? Get in touch.
 
 #####################################
 #############   Footer   ############
