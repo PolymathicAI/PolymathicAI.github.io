@@ -528,13 +528,17 @@ roles:
     description: In-person - Manhattan, NYC / Rolling Deadline
     link: https://apply.interfolio.com/160510
 
+  - title: Research Software Engineers
+    description: In-person - Manhattan, NYC / Rolling Deadline
+    link: https://apply.interfolio.com/156427
+
+  - title: Postdoctoral Researchers to build large scientific model with solar physics data
+    description: In-person - Manhattan, NYC / Mar 15, 2025
+    link: https://apply.interfolio.com/161867
+  
   - title: Postdoctoral Researchers to build large scientific model with astronomical data
     description: In-person - Paris, France / Feb 14, 2025
     link: https://aas.org/jobregister/ad/09aadf56
-
-  - title: Postdoctoral Researchers to build large scientific model with solar physics data
-    description: In-person - Manhattan, NYC / Feb 15, 2025
-    link: https://apply.interfolio.com/161867
 
 #####################################
 ########## Pricing Tables ###########
