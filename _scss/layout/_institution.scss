@@ -8,7 +8,7 @@
  **/
 
 section.institution-section {
-  background-color: #fff !important;
+  //background-color: #fff !important;
 
   // Institution Members Container
   .institution-members-container {
@@ -28,7 +28,7 @@ section.institution-section {
 
     // Member
     .institution-member {
-      background: $white;
+      background: transparent;
       margin-bottom: 60px;
       transition: all $transition-links $transition-links-type;
 

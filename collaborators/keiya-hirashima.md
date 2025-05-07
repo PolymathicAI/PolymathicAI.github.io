@@ -1,5 +1,5 @@
 ---
-layout: member
+layout: collaborator
 full_name: "Keiya Hirashima"
 ---
 

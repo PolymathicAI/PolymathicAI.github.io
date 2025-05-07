@@ -350,10 +350,10 @@ team:
     website: https://astroautomata.com/
     bio: Miles Cranmer is Assistant Professor in Data Intensive Science at the University of Cambridge, joint between the Department of Applied Mathematics and Theoretical Physics and the Instititute of Astronomy. He received his PhD from Princeton University, spending time at Google DeepMind and Flatiron Institute, and before that, his BSc from McGill University. Miles is interested in automating scientific research in the physical sciences with machine learning, and works on a variety of pure and applied machine learning projects in pursuit of this goal. His ML research has concentrated on symbolic regression, graph neural networks, and physics-motivated architectures, while his applied projects have looked at multi-scale physics, planetary dynamics, and cosmology.
 
-  - full_name: Michael Eickenberg
-    avatar: michael_eickenberg.jpg
-    website: https://www.simonsfoundation.org/people/michael-eickenberg/
-    bio: Michael Eickenberg joined the Flatiron Institute’s Center for Computational Mathematics in February 2020. Eickenberg’s work consists in using machine learning methods towards forward and reverse modeling of fMRI brain activity following sensory stimulation. Recently, Eickenberg was a postdoctoral researcher at the Helen Wills Neuroscience Institute at UC Berkeley. He has a Bachelor’s degree in Physics and Mathematics from the University of Luxembourg, a Master’s degree in Mathematics, Computer Vision, and Applied Mathematics from École Normale Supérieure de Cachan, and a Ph.D. in Machine Learning and Modeling Applied to Neuroimaging from Paris-Sud University (Paris XI).
+  - full_name: Irina Espejo
+    avatar: irina_espejo.png
+    website: https://github.com/irinaespejo
+    bio: Irina Espejo joined the collaboration as a Postdoctoral Researcher at NYU CDS in May 2025. Her research interests are multimodal foundational models for science and their transferability to low-data regime. She received a PhD from NYU Center for Data Science in 2023, supervised by Kyle Cranmer. She was a Fulbright Scholar from 2018-2020. Irina previously worked at IBM Research in Zurich as a Postdoc from 2023 to 2025 and as an intern in BigHat Biosciences. Before that she obtained degrees in Physics and Mathematics from University of Oxford and Universitat Automona de Barcelona.
 
   - full_name: Siavash Golkar
     avatar: siavash_golkar.jpg
@@ -365,11 +365,6 @@ team:
     website: https://tom-hehir.github.io/
     bio: Tom is a PhD student supervised by Prof Miles Cranmer at the Institute of Astronomy, University of Cambridge. He aspires to apply contemporary techniques in machine learning, data science, and statistics to assorted problems in astronomy. His current focus is on developing multimodal, transformer-based foundation models for galaxy surveys. Previously, Tom completed a master’s degree in physics at the University of Durham.
     
-  - full_name: Keiya Hirashima
-    avatar: keiya_hirashima.jpg
-    website: https://kyafuk.github.io/utokyo-hirashima/index.html
-    bio: "Keiya Hirashima is a fourth-year PhD student in Astronomy at the University of Tokyo, Japan, and spending time at Flatiron Institute. He is striving to synergize Machine Learning, HPC, and galactic evolution insights. With a foundation in computer science, he is currently exploring CNN-based and transformer-based models for: (1) surrogate models to replace computationally intensive multi-scale simulations, and (2) the morphological classification of galaxies. He earned his B.E. in Informatics and Mathematical Science from Kyoto University. Beyond research, he enjoys pole vault and bouldering."
-
   - full_name: Shirley Ho
     avatar: shirley_ho.jpg
     website: https://www.shirleyho.me/
@@ -384,11 +379,6 @@ team:
     avatar: francois_lanusse.jpg
     website: https://flanusse.net/
     bio: Francois Lanusse is an interdisciplinary researcher at the intersection of Deep Learning, Statistical Modeling, and Observational Cosmology. Dr. Lanusse holds a permanent position at the CNRS, and is currently an Associate Research Scientist at the Simons Foundation. He received his PhD in Astrophysics at CEA Paris-Saclay and was subsequently a postdoctoral researcher at Carnegie Mellon University and UC Berkeley.
-
-  - full_name: Nick Lourie
-    avatar: nick_lourie.jpg
-    website: https://www.semanticscholar.org/author/Nicholas-Lourie/35219984
-    bio: Nicholas Lourie is a PhD student at NYU investigating empirical models of deep learning. His research seeks better statistical frameworks for designing, developing, and evaluating neural networks. At NYU, he is advised by He He and Kyunghyun Cho, while in the past he worked at the Allen Institute for AI on machine ethics, common sense, prompt-based learning, and the evaluation of natural language processing models.
 
   - full_name: Michael McCabe
     avatar: michael_mccabe.jpg
@@ -430,7 +420,10 @@ team:
     website: https://bregaldo.github.io/
     bio: Bruno Régaldo-Saint Blancard is a Research Fellow at the Center for Computational Mathematics, Flatiron Institute. He obtained a PhD in Astrophysics from the École Normale Supérieure (ENS), Paris. Prior to that, he graduated from the École Polytechnique, and obtained a M.S. in Astrophysics from the Observatoire de Paris. Bruno’s research focuses on the development of statistical methods for astrophysics/cosmology and beyond, using signal processing and machine learning. He is interested in various problems including generative modeling, inference, denoising, and source separation.
 
-
+  - full_name: Jeff Shen
+    avatar: jeff_shen.png
+    website: http://jshen.net/
+    bio: Jeff is a PhD student at Princeton University supervised by Shirley Ho. He is broadly interested in deep generative models and how to adapt these models to be better suited for use in the physical sciences. Within Polymathic, his current focus is on developing multimodal foundation models for astrophysics surveys. Previously, Jeff completed his undergraduate degree in astrophysics and statistics at the University of Toronto.
   
 
   # - full_name: Tiberiu Tesileanu
@@ -438,7 +431,100 @@ team:
   #   website: https://www.ttesileanu.com
   #   bio: "Tiberiu Tesileanu is currently a Research Software Engineer at Meta, working with the CTRL team. Before that he was an Associate Research Scientist with the Center for Computational Neuroscience at the Flatiron Institute. His background is in high energy physics, having worked on the AdS/CFT duality in string theory for his PhD. He then worked for several years in systems biology and computational neuroscience, before shifting focus towards machine learning and software engineering."
 
+#####################################
+########## Collaborators ############
+#####################################
+collaborators-title: Collaborators & Friends
+# collaborators-description: 
+#
+# Collaborators
+#
+collaborators:
+  # List of collaborators
+  - full_name: Michael Eickenberg
+    avatar: michael_eickenberg.jpg
+    mini-avatar: michael_eickenberg.png
+    website: https://www.simonsfoundation.org/people/michael-eickenberg/
+    bio: Michael Eickenberg joined the Flatiron Institute’s Center for Computational Mathematics in February 2020. Eickenberg’s work consists in using machine learning methods towards forward and reverse modeling of fMRI brain activity following sensory stimulation. Recently, Eickenberg was a postdoctoral researcher at the Helen Wills Neuroscience Institute at UC Berkeley. He has a Bachelor’s degree in Physics and Mathematics from the University of Luxembourg, a Master’s degree in Mathematics, Computer Vision, and Applied Mathematics from École Normale Supérieure de Cachan, and a Ph.D. in Machine Learning and Modeling Applied to Neuroimaging from Paris-Sud University (Paris XI).
   
+  - full_name: Rio Fear
+    avatar: 
+    mini-avatar: rio_fear.png
+    website: https://astroautomata.com/#team
+    bio: 
+  
+  - full_name: David Fouhey
+    avatar: 
+    mini-avatar: david_fouhey.png
+    website: https://cs.nyu.edu/~fouhey/
+    bio: 
+  
+  - full_name: Jiequn Han
+    avatar: 
+    mini-avatar: jiequn_han.png
+    website: https://users.flatironinstitute.org/~jhan/ 
+    bio: 
+
+  - full_name: Keiya Hirashima
+    avatar: 
+    mini-avatar: keiya_hirashima.png
+    website: https://kyafuk.github.io/utokyo-hirashima/index.html
+    bio: "Keiya Hirashima is a fourth-year PhD student in Astronomy at the University of Tokyo, Japan, and spending time at Flatiron Institute. He is striving to synergize Machine Learning, HPC, and galactic evolution insights. With a foundation in computer science, he is currently exploring CNN-based and transformer-based models for: (1) surrogate models to replace computationally intensive multi-scale simulations, and (2) the morphological classification of galaxies. He earned his B.E. in Informatics and Mathematical Science from Kyoto University. Beyond research, he enjoys pole vault and bouldering."
+  
+  - full_name: Ghazal Khalighinejad
+    avatar: 
+    mini-avatar: ghazal_khalighinejad.png
+    website: https://ghazalkhalighinejad.github.io/
+    bio: 
+  
+  - full_name: Jake Kovalic
+    avatar: 
+    mini-avatar: jake_kovalic.png
+    website: https://www.linkedin.com/in/jake-kovalic-080508146/
+    bio: 
+
+  - full_name: Oliver Liu
+    avatar: 
+    mini-avatar: oliver_liu.png
+    website: https://ollieliu.com/
+    bio:
+
+  - full_name: Nick Lourie
+    avatar: nick_lourie.jpg
+    mini-avatar: nick_lourie.png
+    website: https://www.semanticscholar.org/author/Nicholas-Lourie/35219984
+    bio: Nicholas Lourie is a PhD student at NYU investigating empirical models of deep learning. His research seeks better statistical frameworks for designing, developing, and evaluating neural networks. At NYU, he is advised by He He and Kyunghyun Cho, while in the past he worked at the Allen Institute for AI on machine ethics, common sense, prompt-based learning, and the evaluation of natural language processing models.
+  
+  - full_name: Helen Qu
+    avatar: 
+    mini-avatar: helen_qu.png
+    website: https://www.simonsfoundation.org/people/helen-qu/
+    bio:
+  
+  - full_name: Francesco Pio Ramunno
+    avatar: 
+    mini-avatar: francesco_pio_ramunno.png
+    website: https://github.com/fpramunno
+    bio:
+  
+  - full_name: Francois Rozet
+    avatar: 
+    mini-avatar: francois_rozet.png
+    website: https://francois-rozet.github.io/
+    bio:
+  
+  - full_name: Sebastian Wagner-Carena
+    avatar: 
+    mini-avatar: sebastian_wagner-carena.png
+    website: https://www.simonsfoundation.org/people/sebastian-wagner-carena/
+    bio:
+  
+  - full_name: Rachel C. Zhang
+    avatar: 
+    mini-avatar: rachel_zhang.png
+    website: https://astroautomata.com/#team
+    bio:
+
 
 #####################################
 ########## Institutions #############
@@ -603,6 +689,13 @@ page_gen:
     template: 'team-member'
     name: 'full_name'
     dir: 'team-members'
+    index_files: false
+    debug: true
+  
+  - data: collaborators
+    template: 'collaborator-member'
+    name: 'full_name'
+    dir: 'collaborator-members'
     index_files: false
     debug: true
 

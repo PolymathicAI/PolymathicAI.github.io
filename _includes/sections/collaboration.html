@@ -1,0 +1,49 @@
+<!-- Collaborators Section -->
+<section class="site-section collaboration-section section-focus" id="collaborators">
+    <div class="container">
+  
+      <!-- Section Heading -->
+      <div class="row text-center">
+  
+        <!-- Section Header -->
+        <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+          <h2>{{ site.collaborators-title }}</h2>
+          <hr class="normal">
+        </header>
+  
+        <!-- Section Content -->
+        <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+          <p>{{ site.collaborators-description }}</p>
+        </div>
+  
+      </div>
+  
+      <!-- Collaborators Members -->
+      <!--<input type="text" id="searchInput" placeholder="Filter..." oninput="filterFunction(this.value)" style="opacity: 50%;">-->
+      <div class="row collaborator-members-container">
+  
+        {% for member in site.collaborators %}
+        
+        <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
+          <a href={{member.website}}>
+            <div class="collaborator-member">
+              <div class="img-wrapper">
+                <!-- img with fixed height equal to 200px -->
+                <img src="{{ site.baseurl }}/images/avatars/no_bg_mini/{{ member.mini-avatar }}"
+                  style="height: auto !important; width: auto !important; display: block; margin: 0 auto; max-height: 160px;">
+              </div>
+              <div class="collaborator-member-content">
+                <h3 class="name" style="text-align: center;">{{ member.full_name }}</h3>
+                
+              </div>
+            </div>
+          </a>
+        </div>
+        
+  
+        {% endfor %}
+  
+      </div>
+  
+    </div>
+  </section>
