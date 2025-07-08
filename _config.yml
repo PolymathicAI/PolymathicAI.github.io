@@ -552,9 +552,9 @@ institution:
     url: https://www.schmidtfutures.com/
 
   # Institution Member
-  - name: Princeton University
-    avatar: princeton.svg
-    url: https://www.princeton.edu/
+  #- name: Princeton University
+  #  avatar: princeton.svg
+  #  url: https://www.princeton.edu/
 
   # Institution Members
   - name: Berkeley Lab
