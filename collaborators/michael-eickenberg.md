@@ -1,6 +1,7 @@
----
-layout: collaborator
-full_name: "Michael Eickenberg"
----
-
-
+   
+    ---
+    layout: collaborator
+    full_name: "Michael Eickenberg"
+    ---
+    
+    

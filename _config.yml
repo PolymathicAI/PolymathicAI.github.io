@@ -380,6 +380,11 @@ team:
     website: https://flanusse.net/
     bio: Francois Lanusse is an interdisciplinary researcher at the intersection of Deep Learning, Statistical Modeling, and Observational Cosmology. Dr. Lanusse holds a permanent position at the CNRS, and is currently an Associate Research Scientist at the Simons Foundation. He received his PhD in Astrophysics at CEA Paris-Saclay and was subsequently a postdoctoral researcher at Carnegie Mellon University and UC Berkeley.
 
+  - full_name: Tanya Marwah
+    avatar: tanya_marwah.png
+    website: https://tm157.github.io/
+    bio: Tanya Marwah is a Research Fellow at the Simons Foundation working with Polymathic AI. She is broadly interested in theoretical and empirical foundations of Machine Learning and its applications to scientific domains. Her current interests are around generative modeling of scientific phenomena, inverse problems and building scientific agents. Her ultimate goal is to develop ML algorithms and methods that help us accelerate the scientific process and enable scientific discovery. She recently graduated with a PhD from the Machine Learning Department at Carnegie Mellon University and holds a Masters in Robotics from the Robotics Institute at CMU and was a Siebel Scholar.
+
   - full_name: Michael McCabe
     avatar: michael_mccabe.jpg
     website: https://mikemccabe210.github.io/
