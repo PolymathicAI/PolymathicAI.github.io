@@ -1,12 +1,14 @@
 ---
 layout: post
 title: "Universal Spectral Tokenization"
+authors: Jeff Shen, Francois Lanusse, Liam Holden Parker, Ollie Liu, Tom Hehir, Leopoldo Sarra, Lucas Thibaut Meyer, Micah Bowles, Sebastian Wagner-Carena, Helen Qu, Siavash Golkar, Alberto Bietti, Hatim Bourfoune, Pierre Cornette, Keiya Hirashima, Geraud Krawezik, Ruben Ohana, Nicholas Lourie, Michael McCabe, Rudy Morel, Payel Mukhopadhyay, Mariel Pettee, Kyunghyun Cho, Miles Cranmer, Shirley Ho
 shorttitle: "Universal Spectral Tokenization"
 date: 2025-10-21 09:00
 image: spectok/spectra.png
 smallimage: spectok/spectra.png
 blurb: "A universal tokenizer for spectra that directly ingests native wavelength grids without resampling, enabling seamless integration across astronomical surveys."
 shortblurb: "A universal tokenizer for spectra that directly ingests native wavelength grids without resampling, enabling seamless integration across astronomical surveys."
+link: # TODO: fill this out with arxiv link
 splashimage: /images/blog/spectok/spectra.png
 permalink: /blog/spectrum-tokenizer/
 ---
