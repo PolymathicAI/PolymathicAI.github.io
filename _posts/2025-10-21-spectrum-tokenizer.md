@@ -8,7 +8,7 @@ image: spectok/spectra.png
 smallimage: spectok/spectra.png
 blurb: "A universal tokenizer for spectra that directly ingests native wavelength grids without resampling, enabling seamless integration across astronomical surveys."
 shortblurb: "A universal tokenizer for spectra that directly ingests native wavelength grids without resampling, enabling seamless integration across astronomical surveys."
-link: # TODO: fill this out with arxiv link
+link: https://arxiv.org/abs/2510.17959
 splashimage: /images/blog/spectok/spectra.png
 permalink: /blog/spectrum-tokenizer/
 ---
