@@ -552,9 +552,9 @@ institution:
     avatar: cambridge.png
     url: https://www.cam.ac.uk
 
-  - name: Schmidt Futures
-    avatar: schmidt.png
-    url: https://www.schmidtfutures.com/
+  #- name: Schmidt Futures
+  #  avatar: schmidt.png
+  #  url: https://www.schmidtfutures.com/
 
   # Institution Member
   #- name: Princeton University
