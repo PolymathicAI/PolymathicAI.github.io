@@ -8,9 +8,9 @@ smallimage: physics-steering-splash.jpg
 image: physics-steering-splash.jpg
 blurb: Discovering that physics foundation models can learn steerable, domain-general representations of physical concepts.
 shortblurb: Discovering that physics foundation models can learn steerable, domain-general representations of physical concepts.
-splashimage: /images/blog/physics-steering-splash.jpg
-link: [ARXIV_LINK_HERE]
-github_link: [GITHUB_LINK_HERE]
+splashimage: /images/blog/walrus_steering/paper-schematic.png
+link: [https://arxiv.org/abs/2511.20798]
+github_link: [https://github.com/DJ-Fear/walrus_steering]
 permalink: /blog/physics-steering/
 ---
 
@@ -29,7 +29,7 @@ Polymathic AI's new "Physics Steering" paper tackles this gap using Walrus[LINK]
 ## How physics steering works
 <br/>
 <p align="center">
-  <img src="/images/blog/walrus-steering/Paper-Schematic.jpeg" alt="Physics Steering Methodology" width="70%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/walrus_steering/paper-schematic.png" alt="Physics Steering Methodology" width="70%" style="mix-blend-mode: darken;">
 </p>
 
 
@@ -45,7 +45,7 @@ At inference time the concept direction is multiplied by a coefficient, [alpha],
 ### Controlling Vorticity
 <br/>
 <p align="center">
-  <img src="/images/blog/walrus-steering/Vorticity-Decreased.jpg" alt="Vorticity suppression across steering strengths" width="85%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/walrus_steering/shear-flow-vort-decrease-T.png" alt="Vorticity suppression across steering strengths" width="85%" style="mix-blend-mode: darken;">
 </p>
 
 Within a shear-flow dataset, subtracting the learned vorticity direction from activations progressively removes vortices from a turbulent run. As the steering coefficient α becomes more negative, the turbulent flow smooths into a laminar-like profile, with vortices systematically suppressed. The effect is smooth and controllable: stronger negative steering produces progressively cleaner laminar flows.
@@ -53,7 +53,7 @@ Within a shear-flow dataset, subtracting the learned vorticity direction from ac
 ### Multiple Concepts in Shear Flow
 <br/>
 <p align="center">
-  <img src="/images/blog/walrus-steering/Shear-Flow-Features-Speed-diffusion-Vort.jpeg" alt="Vorticity, diffusion, and speed steering in shear flow" width="95%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/walrus_steering/shear-flow-grid-T.png" alt="Vorticity, diffusion, and speed steering in shear flow" width="95%" style="mix-blend-mode: darken;">
 </p>
 
 Beyond vorticity, we can extract and manipulate multiple independent concepts. In shear flow experiments, we successfully identify directions for **vorticity** (creating or removing rotational structures), **diffusion** (sharpening or blurring fluid interfaces), and **temporal speed** (making vortices appear earlier or later without changing the simulation time step). Each concept can be independently controlled, demonstrating that Walrus maintains distinct, linearly separable representations for different physical phenomena.
@@ -61,7 +61,7 @@ Beyond vorticity, we can extract and manipulate multiple independent concepts. I
 ### Fine-Grained Diffusion Control
 <br/>
 <p align="center">
-  <img src="/images/blog/walrus-steering/Diffusion-full-details-plot.jpeg" alt="Diffusion steering across multiple physical fields" width="90%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/walrus_steering/diffusion-full-grid-T.png" alt="Diffusion steering across multiple physical fields" width="90%" style="mix-blend-mode: darken;">
 </p>
 
 The diffusion direction affects multiple related physical fields in a coherent way. Increasing diffusion steering blurs sharp features in tracer concentration, smooths pressure structures, and dampens velocity gradients, while decreasing it sharpens interfaces and enhances fine-scale structure. Importantly, the steering acts consistently across all these coupled fields, suggesting the model has learned an abstract notion of "diffusivity" rather than field-specific patterns.
@@ -69,7 +69,7 @@ The diffusion direction affects multiple related physical fields in a coherent w
 ### Cross-Domain Transfer: The Key Result
 <br/>
 <p align="center">
-  <img src="/images/blog/walrus-steering/Cross-Domain-Concept-Transfer.jpeg" alt="Cross-domain transfer to Euler shocks and Gray-Scott reaction-diffusion" width="95%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/walrus_steering/cross-domain-transfer-T.png" alt="Cross-domain transfer to Euler shocks and Gray-Scott reaction-diffusion" width="95%" style="mix-blend-mode: darken;">
 </p>
 
 The most striking tests apply concept directions learned from shear flow to completely different physical systems:
@@ -93,8 +93,8 @@ At the same time, further work is needed to address limitations: the physical va
 ### Open Source Resources  
 <br/>
 Code and materials will be made available:
-* **Paper:** [Physics Steering: Causal Control of Cross-Domain Concepts in a Physics Foundation Model](ARXIV_LINK_HERE)
-* **Code:** [GitHub Repository](GITHUB_LINK_HERE)
+* **Paper:** [Physics Steering: Causal Control of Cross-Domain Concepts in a Physics Foundation Model](https://arxiv.org/abs/2511.20798)
+* **Code:** [GitHub Repository](https://github.com/DJ-Fear/walrus_steering)
 * **Walrus Model:** [Hugging Face](https://huggingface.co/polymathic-ai/walrus)
 * **The Well Dataset:** [GitHub](https://github.com/PolymathicAI/the_well)
 
