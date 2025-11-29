@@ -45,7 +45,7 @@ At inference time the concept direction is multiplied by a coefficient, α, and 
 ### Fine-Grained Vorticity Control
 <br/>
 <p align="center">
-  <img src="/images/blog/walrus_steering/shear-flow-vort-decrease-WC.png" alt="Vorticity suppression across steering strengths" width="95%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/walrus_steering/shear-flow-vort-decrease-WC.png" alt="Vorticity suppression across steering strengths" width="90%" style="mix-blend-mode: darken;">
 </p>
 
 Within a shear-flow dataset, injecting the learned vorticity direction with a negative steering coefficient α progressively removes vortices during rollout. As α becomes more negative, the flow smooths into a laminar-like profile, with vortices systematically suppressed. The effect is smooth and controllable: stronger negative steering produces progressively cleaner laminar flows.
