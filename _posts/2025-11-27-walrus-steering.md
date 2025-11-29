@@ -69,7 +69,7 @@ Zooming in on the diffusion result we can see that the diffusion direction affec
 ### Cross-Domain Transfer: The Key Result
 <br/>
 <p align="center">
-  <img src="/images/blog/walrus_steering/cross-domain-transfer-WC.png" alt="Cross-domain transfer to Euler shocks and Gray-Scott reaction-diffusion" width="95%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/walrus_steering/cross-domain-transfer-WC.png" alt="Cross-domain transfer to Euler shocks and Gray-Scott reaction-diffusion" width="90%" style="mix-blend-mode: darken;">
 </p>
 
 The most striking experimental results come from the cross-domain transfer of concept directions learned from shear flow into completely unrelated physical systems:
