@@ -29,7 +29,7 @@ Polymathic AI's new "Physics Steering" paper tackles this gap using Walrus[LINK]
 ## How physics steering works
 <br/>
 <p align="center">
-  <img src="/images/blog/walrus_steering/paper-schematic-W.png" alt="Physics Steering Methodology" width="70%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/walrus_steering/paper-schematic-WC.png" alt="Physics Steering Methodology" width="70%" style="mix-blend-mode: darken;">
 </p>
 
 
