@@ -45,7 +45,7 @@ At inference time the concept direction is multiplied by a coefficient, [alpha],
 ### Controlling Vorticity
 <br/>
 <p align="center">
-  <img src="/images/blog/walrus_steering/shear-flow-vort-decrease-T.png" alt="Vorticity suppression across steering strengths" width="85%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/walrus_steering/shear-flow-vort-decrease-T.png" alt="Vorticity suppression across steering strengths" width="95%" style="mix-blend-mode: darken;">
 </p>
 
 Within a shear-flow dataset, subtracting the learned vorticity direction from activations progressively removes vortices from a turbulent run. As the steering coefficient α becomes more negative, the turbulent flow smooths into a laminar-like profile, with vortices systematically suppressed. The effect is smooth and controllable: stronger negative steering produces progressively cleaner laminar flows.
@@ -53,7 +53,7 @@ Within a shear-flow dataset, subtracting the learned vorticity direction from ac
 ### Multiple Concepts in Shear Flow
 <br/>
 <p align="center">
-  <img src="/images/blog/walrus_steering/shear-flow-grid-T.png" alt="Vorticity, diffusion, and speed steering in shear flow" width="95%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/walrus_steering/shear-flow-grid-T.png" alt="Vorticity, diffusion, and speed steering in shear flow" width="80%" style="mix-blend-mode: darken;">
 </p>
 
 Beyond vorticity, we can extract and manipulate multiple independent concepts. In shear flow experiments, we successfully identify directions for **vorticity** (creating or removing rotational structures), **diffusion** (sharpening or blurring fluid interfaces), and **temporal speed** (making vortices appear earlier or later without changing the simulation time step). Each concept can be independently controlled, demonstrating that Walrus maintains distinct, linearly separable representations for different physical phenomena.
