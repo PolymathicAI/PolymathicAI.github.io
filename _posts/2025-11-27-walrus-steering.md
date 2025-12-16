@@ -4,8 +4,8 @@ title: "Steerable Representations of Abstract Physics in Walrus"
 authors: Rio Alexa Fear, Payel Mukhopadhyay, Michael McCabe, Alberto Bietti, Miles Cranmer, The PolymathicAI Collaboration
 shorttitle: "Steerable Representations of Abstract Physics in Walrus"
 date: 2025-11-29 11:00
-smallimage: physics-steering-splash.jpg
-image: physics-steering-splash.jpg
+smallimage: walrus_steering/paper-schematic-W.png
+image: walrus_steering/paper-schematic-W.png
 blurb: Discovering that physics foundation models can learn steerable, domain-general representations of physical concepts.
 shortblurb: Discovering that physics foundation models can learn steerable, domain-general representations of physical concepts.
 splashimage: /images/blog/walrus_steering/paper-schematic-W.png
