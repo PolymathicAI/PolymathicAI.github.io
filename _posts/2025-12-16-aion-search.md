@@ -4,11 +4,11 @@ title: "AION-Search: Semantic search for 100M+ galaxy images using AI-generated 
 authors: Nolan Koblischke, Liam Parker, Francois Lanusse, Irina Espejo Morales, Jo Bovy, Shirley Ho
 shorttitle: "AION-Search: Semantic Search for Galaxy Images"
 date: 2025-12-16 11:00
-image: aion-search/aionsearchsplash.png
-smallimage: aion-search/aionsearchsplash.png
+image: aion-search/aionsearchsplash.jpg
+smallimage: aion-search/aionsearchsplash.jpg
 blurb: The first system to enable meaning-based search across 140 million galaxy images with no human annotation required.
 shortblurb: Semantic search across 140 million galaxy images using AI-generated captions.
-splashimage: /images/blog/aion-search/aionsearchsplash.png
+splashimage: /images/blog/aion-search/aionsearchsplash.jpg
 link: https://arxiv.org/abs/2512.11982
 github_link: https://github.com/NolanKoblischke/AION-Search
 permalink: /blog/aion-search/
@@ -31,10 +31,10 @@ At this point, one might ask: if captions already provide a searchable semantic 
 
 The answer is cost.
 
-Generating high-quality scientific descriptions for every image using GPT-4 would be computationally and financially prohibitive. We need a way to obtain these semantic representations directly from images, without having to caption each one individually.
+Generating high-quality scientific descriptions for every image using vision-language models would be computationally and financially prohibitive. We need a way to obtain these semantic representations directly from images, without having to caption each one individually.
 
 <p align="center">
-<img src="/images/blog/aion-search/fig1.png" alt="Caption generation process" width="65%">
+<img src="/images/blog/aion-search/fig1.jpg" alt="Caption generation process" width="65%">
 </p>
 
 #### 2. Contrastive alignment
@@ -44,7 +44,7 @@ To address this, we train the model so that images and their corresponding descr
 This is where we get the ability to search massive datasets with language queries such as "visible spiral arms":
 
 <p align="center">
-<img src="/images/blog/aion-search/fig2.png" alt="Contrastive alignment" width="90%">
+<img src="/images/blog/aion-search/fig2.jpg" alt="Contrastive alignment" width="90%">
 </p>
 
 #### 3. Improving discovery with re-ranking
@@ -54,7 +54,7 @@ After a semantic query is made, the system retrieves images whose embeddings are
 Instead, AION-Search delegates this review step to a more capable model which evaluates each candidate and assigns a relevance score based on how well it matches the query. The results are then reordered according to these scores and targeted phenomena rise to the top of the list—useful especially when searching for rare phenomena such as strong gravitational lenses.
 
 <p align="center">
-<img src="/images/blog/aion-search/fig3.png" alt="Re-ranking process" width="60%">
+<img src="/images/blog/aion-search/fig3.jpg" alt="Re-ranking process" width="60%">
 </p>
 
 ---
@@ -74,7 +74,7 @@ We have a public app to enable search over a ~20 million galaxy subset of the fu
 </p>
 
 <p align="center">
-<img src="/images/blog/aion-search/fig4.png" alt="AION-Search demo" width="90%">
+<img src="/images/blog/aion-search/fig4.jpg" alt="AION-Search demo" width="90%">
 </p>
 
 *-- Sophie Barstein, Nolan Koblischke*
