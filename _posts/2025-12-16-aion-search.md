@@ -18,7 +18,7 @@ How could we best leverage "a country of geniuses in a datacenter" ([1](#fn1)) t
 
 When it comes to astrophysics, we are producing imaging data at a scale that makes manual interpretation impossible. These datasets contain hundreds of millions of galaxy images, and upcoming telescopes will increase this to billions. Extracting scientific value from survey datasets has traditionally required human annotation, even in the age of machine learning. However, human labelling is often limited to predefined categories and requires substantial time and coordination. We need semantic search: the ability to search based on meaning.
 
-AION-Search uses large language models (LLMs) that can process image data such as GPT-4 to generate captions for unlabeled galaxy images and is the first system to enable meaning-based search across 140-million galaxy images with absolutely no human annotation required. It allows researchers to search by scientific intent rather than label availability, an essential tool for exploring massive datasets for rare phenomena in which the majority of observed objects may not be cataloged or classified at all.
+AION-Search uses large language models (LLMs) that can process image data, such as GPT-4, to generate captions for unlabeled galaxy images and is the first system to enable meaning-based search across galaxy images with absolutely no human annotation required. It allows researchers to search by scientific intent rather than label availability, an essential tool for exploring massive datasets for rare phenomena in which the majority of observed objects may not be cataloged or classified at all.
 
 ---
 
@@ -27,7 +27,7 @@ Under the hood, AION-Search works in three steps:
 
 First, a galaxy image is shown to an image-capable language model (such as GPT-4.1-mini) and it is asked to describe the observable features in scientific terms. The model produces short descriptions (e.g., "face-on spiral with two arms and a central bar"), which are then converted into numerical representations that encode the meaning of the description. These captions serve as the semantic reference that later allows the system to search by concept rather than by visual similarity.
 
-At this point, one might ask: if captions already provide a searchable semantic representation, why not simply generate captions for all 140 million galaxies?
+At this point, one might ask: if captions already provide a searchable semantic representation, why not simply generate captions for all galaxies?
 
 The answer is cost.
 
