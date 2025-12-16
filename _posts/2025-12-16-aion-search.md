@@ -69,7 +69,7 @@ For the first time, astronomers can free-form search datasets with millions of i
 
 We have a public app to enable search over a ~20 million galaxy subset of the full dataset.
 
-<p align="center">
+<p align="left">
 <a href="https://huggingface.co/spaces/astronolan/AION-Search" target="_blank" class="button-post">Try AION-Search</a>
 </p>
 
@@ -82,3 +82,4 @@ We have a public app to enable search over a ~20 million galaxy subset of the fu
 References.
 
 <p id="fn1">(1) Dario Amodei, <a href="https://darioamodei.com/machines-of-loving-grace">"Machines of Loving Grace"</a>, 2024.</p>
+Cover image credit: DESI Legacy Imaging Surveys
