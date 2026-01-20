@@ -336,96 +336,115 @@ team-title: The Team
 team:
   # Team Member
   - full_name: Alberto Bietti
+    tagline:
     avatar: albert_bietti.jpg
     website: https://alberto.bietti.me/
     bio: Alberto Bietti is a research scientist at Flatiron Institute's Center for Computational Mathematics. He received his PhD in applied mathematics from Inria and Université Grenoble Alpes in 2019, and was a Faculty Fellow at the NYU Center for Data Science from 2020 to 2022. He also spent time at Inria Paris, Microsoft Research, and Meta AI. Prior to his PhD, he obtained degrees from Mines ParisTech and Ecole Normale Supérieure, and worked as a software engineer at Quora. His research focuses on the theoretical foundations of deep learning.
 
   - full_name: Kyunghyun Cho
+    tagline:
     avatar: kyunghyun_cho.jpg
     website: https://kyunghyuncho.me
     bio: Kyunghyun Cho is an associate professor of computer science and data science at New York University and a senior director of frontier research at the Prescient Design team within Genentech Research & Early Development (gRED). He is also a CIFAR Fellow of Learning in Machines & Brains and an Associate Member of the National Academy of Engineering of Korea. He was a research scientist at Facebook AI Research from June 2017 to May 2020 and a postdoctoral fellow at University of Montreal until Summer 2015 under the supervision of Prof. Yoshua Bengio, after receiving MSc and PhD degrees from Aalto University April 2011 and April 2014, respectively, under the supervision of Prof. Juha Karhunen, Dr. Tapani Raiko and Dr. Alexander Ilin. He received the Samsung Ho-Am Prize in Engineering in 2021. He tries his best to find a balance among machine learning, natural language processing, and life, but almost always fails to do so.
 
   - full_name: Miles Cranmer
+    tagline:
     avatar: miles_cranmer.jpg
     website: https://astroautomata.com/
     bio: Miles Cranmer is Assistant Professor in Data Intensive Science at the University of Cambridge, joint between the Department of Applied Mathematics and Theoretical Physics and the Instititute of Astronomy. He received his PhD from Princeton University, spending time at Google DeepMind and Flatiron Institute, and before that, his BSc from McGill University. Miles is interested in automating scientific research in the physical sciences with machine learning, and works on a variety of pure and applied machine learning projects in pursuit of this goal. His ML research has concentrated on symbolic regression, graph neural networks, and physics-motivated architectures, while his applied projects have looked at multi-scale physics, planetary dynamics, and cosmology.
 
   - full_name: Irina Espejo
+    tagline:
     avatar: irina_espejo.png
     website: https://github.com/irinaespejo
     bio: Irina Espejo joined the collaboration as a Postdoctoral Researcher at NYU CDS in May 2025. Her research interests are multimodal foundational models for science and their transferability to low-data regime. She received a PhD from NYU Center for Data Science in 2023, supervised by Kyle Cranmer. She was a Fulbright Scholar from 2018-2020. Irina previously worked at IBM Research in Zurich as a Postdoc from 2023 to 2025 and as an intern in BigHat Biosciences. Before that she obtained degrees in Physics and Mathematics from University of Oxford and Universitat Automona de Barcelona.
 
   - full_name: Siavash Golkar
+    tagline:
     avatar: siavash_golkar.jpg
     website: http://siavashgolkar.com/
     bio: Siavash Golkar is a research scientist working in the field of machine learning and applications to scientific domains. Siavash received his PhD in 2015 in the field of High Energy Physics, working on topological states of matter. He has since worked as a postdoc at Cambridge University and New York University and as an associate research scientist at the Flatiron Institute. His recent work spans research in ML from continual and transfer learning to applying large transformer models to numerical and scientific datasets.
 
   - full_name: Tom Hehir
+    tagline:
     avatar: tom_hehir.jpg
     website: https://tom-hehir.github.io/
     bio: Tom is a PhD student supervised by Prof Miles Cranmer at the Institute of Astronomy, University of Cambridge. He aspires to apply contemporary techniques in machine learning, data science, and statistics to assorted problems in astronomy. His current focus is on developing multimodal, transformer-based foundation models for galaxy surveys. Previously, Tom completed a master’s degree in physics at the University of Durham.
     
   - full_name: Shirley Ho
+    tagline: Principal Investigator
     avatar: shirley_ho.jpg
     website: https://www.shirleyho.me/
     bio: Shirley Ho is a Group Leader of Cosmology & Machine Learning at Flatiron Institute,  Research Professor of Physics and Affiliated Faculty of Center for Data Science at New York University. She also holds other appointments at Carnegie Mellon University and Princeton University. She is also a Fellow at the International Astrostatistics Association. She was a Senior Scientist at Berkeley Lab from 2016 to 2018 and a Cooper Siegel Chair Professor at Carnegie Mellon University from 2011 to 2016. She was a Seaborg and Chamberlain fellow at Berkeley Lab and UC Berkeley from 2009-2011 under the supervision of Prof. Martin White, Prof. David Schlegel and Prof. Uros Seljak, after receiving a PhD degree from Princeton University 2008, under the supervision of Prof. David Spergel and graduated summa cum laude with a B.A. in Physics and Computer Science from UC Berkeley. She was a National Blavatnik finalist in 2023, and was awarded the Macronix Prize (2014) and Carnegie Science Award (2015). She was also recognized by the European Physical Society Giuseppe and Vanna Cocconi Prize in cosmology 2023 for work in Sloan Digital Sky Survey BOSS survey, NASA Group Achievement Prize in 2020 and 2022 for her work in Planck and Roman Space Telescope. 
 
   - full_name: Geraud Krawezik
+    tagline:
     avatar: geraud_krawezik.jpg
     website: https://www.simonsfoundation.org/people/geraud-krawezik/
     bio: Géraud Krawezik joined the foundation in 2021 as a software engineer in the Scientific Computing Core in the Flatiron Institute. He was previously part of the technical team at Lucata, where he was working on graph, artificial intelligence, database, and linear algebra algorithms. Géraud has held several research and development positions, ranging from engineering for parallel scientific software, quantitative programming in finance, to CTO in a consumer electronics startup. Géraud has a PhD in High Performance Computing from Paris Sud University, and has conducted post-doctoral research at UIUC.
 
   - full_name: Francois Lanusse
+    tagline:
     avatar: francois_lanusse.jpg
     website: https://flanusse.net/
     bio: Francois Lanusse is an interdisciplinary researcher at the intersection of Deep Learning, Statistical Modeling, and Observational Cosmology. Dr. Lanusse holds a permanent position at the CNRS, and is currently an Associate Research Scientist at the Simons Foundation. He received his PhD in Astrophysics at CEA Paris-Saclay and was subsequently a postdoctoral researcher at Carnegie Mellon University and UC Berkeley.
 
   - full_name: Tanya Marwah
+    tagline:
     avatar: tanya_marwah.png
     website: https://tm157.github.io/
     bio: Tanya Marwah is a Research Fellow at the Simons Foundation working with Polymathic AI. She is broadly interested in theoretical and empirical foundations of Machine Learning and its applications to scientific domains. Her current interests are around generative modeling of scientific phenomena, inverse problems and building scientific agents. Her ultimate goal is to develop ML algorithms and methods that help us accelerate the scientific process and enable scientific discovery. She recently graduated with a PhD from the Machine Learning Department at Carnegie Mellon University and holds a Masters in Robotics from the Robotics Institute at CMU and was a Siebel Scholar.
 
   - full_name: Michael McCabe
+    tagline:
     avatar: michael_mccabe.jpg
     website: https://mikemccabe210.github.io/
     bio: Michael McCabe joined the institute as a research analyst in 2023. He is a final year PhD Student at the University of Colorado, Boulder advised by Prof. Jed Brown and has broad research interests in machine learning and optimization, especially for physical systems. Michael’s current research goals are integrating ideas from numerical methods into large-scale deep learning architectures to build tools that are better suited to learning physical dynamics  more reliably or efficiently. Throughout his PhD, he has worked with Lawrence Berkeley and Argonne National Laboratories. Outside of work, Michael enjoys climbing, running, and reading.
 
   - full_name: Lucas Meyer
+    tagline:
     avatar: lucas_meyer.jpg
     website: https://ltmeyer.github.io/
     bio: Lucas Meyer is a researcher and software engineer working on accelerating science using artificial intelligence and high-performance computing. He holds a PhD in computer science and applied mathematics from Université Grenoble Alpes, completed in partnership with INRIA and EDF, under the supervision of Bruno Raffin. His doctoral research centered on training deep learning models for large-scale numerical simulations. Before pursuing his PhD, Lucas worked in the space industry, including at the European Space Agency, developing software and deep learning methods for remote sensing. He holds an M.Sc. in computer science from Université de Montréal, where he worked on optimization software for robotic swarms with Giovanni Beltrame. He also graduated in software engineering and applied mathematics from École Nationale des Ponts et Chaussées.
     
   - full_name: Rudy Morel
+    tagline:
     avatar: rudy_morel.jpg
     website: https://www.di.ens.fr/rudy.morel/
     bio: Rudy Morel is a Research Fellow at the Center for Computational Mathematics (CCM) at the Flatiron Institute. He earned his PhD in Applied Mathematics from the École Normale Supérieure (ENS) in Paris, specializing in applied stochastic processes. Rudy's current research focuses on developing and understanding foundational models for science, with a particular emphasis on multi-scale modeling, generalization properties, and efficient fine-tuning.
 
   - full_name: Payel Mukhopadhyay
+    tagline:
     avatar: payel_mukhopadhyay.jpg
     website: https://www.linkedin.com/in/payel-mukhopadhyay-5529b026b/
     bio: Payel Mukhopadhyay is a postdoctoral fellow working on building foundation models for scientific domains. She received her PhD in theoretical and particle astrophysics from Stanford University in 2022, where her research encompassed topics such as supernovae, galactic outflows, cosmic rays, and dark matter. She currently holds a postdoctoral fellowship at the University of California, Berkeley, and is a long-term visiting researcher at the University of Cambridge. Her current projects involve applying large transformer models to scientific and numerical datasets pertaining to astrophysical and fluids based simulations. Outside of work, Payel enjoys cooking, reading and going on long walks with her dog.
 
   - full_name: Ruben Ohana
+    tagline:
     avatar: ruben_ohana.jpg
     website: https://rubenohana.github.io/
     bio: Ruben Ohana joined the Center for Computational Mathematics of the Flatiron Institute as a Research Fellow in 2022. His research interests are machine learning for scientific problems, optimization of large models, and bridging gaps between theoretical fields. He obtained his PhD from Ecole Normale Supérieure in 2022, supervised by Florent Krzakala, Alessandro Rudi and Laurent Daudet. In parallel, he was a research scientist at LightOn, and interned at the Criteo AI Lab.  
 
   - full_name: Liam Parker
+    tagline:
     avatar: liam_parker.jpg
     website: https://www.linkedin.com/in/liam-parker-96ba14160/
     bio:  Liam is a Ph.D. student in physics at U.C. Berkeley, supported by the NSF Graduate Research Fellowship, and a visiting researcher at the Flatiron Institute. He has been a member of the Polymathic team since 2023. Presently, his research focuses primarily on developing large, multimodal foundation model for the physical sciences. Prior to Berkeley, he received his B.S. in physics from Princeton University and completed a predoctoral fellowship in the Center for Computational Astrophysics at Flatiron. Outside of work, Liam enjoys mountaineering, olympic-style weightlifting, and guitar.
 
   - full_name: Mariel Pettee
+    tagline:
     avatar: mariel_pettee.jpg
     website: https://marielpettee.com/
     bio: Dr. Mariel Pettee (Physics PhD, Yale University) is an interdisciplinary scientist and performing artist based in Brooklyn. She is a Chamberlain Postdoctoral Research Fellow at Lawrence Berkeley National Laboratory and a visiting researcher at the Flatiron Institute Center for Computational Astrophysics. Her scientific research encompasses the development of Machine Learning (ML) models for high-energy particle physics and cosmology that have broad applicability across other areas of science and art. Since 2017, she has been one of the pioneers of AI-generated dance, leading multiple independent teams of researchers to develop custom ML models to generate choreography based on 3D motion capture data of her own movements. Prior to her PhD, she earned her Bachelors in Physics & Mathematics from Harvard University and her Masters in Physics at the University of Cambridge as a Harvard-Cambridge Scholar. 
 
   - full_name: Bruno Regaldo
+    tagline:
     avatar: bruno_regaldo_saint_blancard.jpg
     website: https://bregaldo.github.io/
     bio: Bruno Régaldo-Saint Blancard is a Research Fellow at the Center for Computational Mathematics, Flatiron Institute. He obtained a PhD in Astrophysics from the École Normale Supérieure (ENS), Paris. Prior to that, he graduated from the École Polytechnique, and obtained a M.S. in Astrophysics from the Observatoire de Paris. Bruno’s research focuses on the development of statistical methods for astrophysics/cosmology and beyond, using signal processing and machine learning. He is interested in various problems including generative modeling, inference, denoising, and source separation.
 
   - full_name: Jeff Shen
+    tagline:
     avatar: jeff_shen.png
     website: http://jshen.net/
     bio: Jeff is a PhD student at Princeton University supervised by Shirley Ho. He is broadly interested in deep generative models and how to adapt these models to be better suited for use in the physical sciences. Within Polymathic, his current focus is on developing multimodal foundation models for astrophysics surveys. Previously, Jeff completed his undergraduate degree in astrophysics and statistics at the University of Toronto.

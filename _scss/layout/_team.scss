@@ -12,7 +12,6 @@ section.team-section {
 
   // Team Members Container
   .team-members-container {
-    margin-top: 80px;
 
     .col-md-3 {
     //   @media (max-width: 600px) and (min-width: 430px) {
@@ -35,6 +34,7 @@ section.team-section {
       background: $white;
       margin-bottom: 30px;
       transition: all $transition-links $transition-links-type;
+      min-height: 310px;
 
       .img-wrapper {
         display: block;
@@ -70,6 +70,7 @@ section.team-section {
 
       .team-member-content {
         padding: 30px 30px 20px 30px;
+        flex-grow: 1;
 
         
         @media (max-width: 600px) {
@@ -93,7 +94,8 @@ section.team-section {
         }
 
         h4.tagline {
-          font-size: 0.875rem;
+          font-size: 1.1rem;
+          color: $text-gray;
         }
 
         .social-icons {
