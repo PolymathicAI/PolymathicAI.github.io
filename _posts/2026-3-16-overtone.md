@@ -48,7 +48,7 @@ This flexibility also enables something that ordinary fixed-patch surrogates sim
 
 **4 → 8 → 16 → 4 → 8 → 16**
 
-This schedule turns tokenization into an inference-time control knob. It does not only change cost — but it also changes how rollout errors accumulate in frequency space.
+This schedule turns tokenization into an inference-time control knob and also changes how rollout errors accumulate in frequency space.
 
 ---
 
@@ -73,7 +73,7 @@ Across 2D and 3D PDE benchmarks from The Well, we find that a single Overtone mo
   <img src="/images/blog/overtone/density_averaged_power_spectrum.png" alt="Residual spectra showing harmonic artifact suppression under cyclic patch modulation" width="50%" style="mix-blend-mode: darken;">
 </p>
 
-The second major result of the paper is that flexibility in tokenization is not only useful for deployment — it also improves the predictions themselves.
+The second major result of the paper is that this approach to tokenization not only improves compute flexibility but also improves the predictions themselves.
 
 When a model rolls out autoregressively using the same patch size at every step, the patch lattice remains fixed. This means the same boundary-related errors can be injected at the same spatial frequencies over and over again. We show that this leads to **harmonic artifact accumulation**: residual power concentrates at patch-related harmonics, and visible grid patterns emerge in the predicted fields.
 
@@ -88,12 +88,9 @@ In practice, this leads to visibly cleaner rollouts and significantly lower long
 <p align="center">
   <img src="/images/blog/overtone/colormap_rollout_v1.png" alt="Visual comparison of rollout behavior under fixed and cyclic patch schedules" width="40%" style="mix-blend-mode: darken;">
 </p>
-
-One very exciting outcome of Overtone is that inference itself becomes more programmable. Since the model supports multiple patch or stride settings, we can ask not only *which* tokenization to use, but also *when* to use it during rollout.
+One exciting outcome of Overtone is that we can now do inference-time scaling. As the model supports multiple patch or stride settings, we can control both the timing and type of tokenization.
 
 We explored several inference-time rollout schedules, including simple periodic cycles, two-step dwell schedules, warm-up schedules, and random schedules. A striking finding is that the schedule choice really matters. Not all ways of varying tokenization are equally good. In our experiments, simple structured schedules like **4 → 8 → 16** often perform best, while random schedules could noticeably degrade rollout quality. We expect these trends to depend on factors such as the model architecture and the type of dataset.
-
-This means that rollout-time tokenization becomes a genuinely new form of inference-time control in patch-based PDE surrogates. Instead of treating rollout as a fixed procedure, Overtone turns it into something that can be tuned based on accuracy targets, compute limits, or rollout horizon.
 
 ---
 
@@ -116,21 +113,6 @@ First, the flexible models provide a strong and practical **compute–accuracy t
 Second, cyclic schedules consistently yield **cleaner and more stable rollouts** than fixed-patch baselines, with lower long-horizon error and substantially reduced patch artifacts.
 
 We also show that the method is **architecture-agnostic**. Overtone works not only with vanilla and axial ViTs, but can also be integrated into newer hybrid architectures such as **CViT**, where it again improves performance while preserving inference-time flexibility.
-
----
-
-## Why this matters
-<br/>
-
-Overtone changes the role of tokenization in PDE surrogate modeling.
-
-Traditionally, patch size is treated as a static architectural hyperparameter chosen once during training. Our work shows that it can instead become a **dynamic inference-time control variable**. That shift has two important consequences.
-
-First, it makes large surrogate models more practical. A single model can now serve different deployment needs without retraining, which is especially useful as foundation models for physics continue to scale up.
-
-Second, it reveals that tokenization is not only a compute choice — it also affects the dynamics of rollout error. By changing the patching pattern over time, we can actively reduce the coherent accumulation of structured artifacts that otherwise limit long-horizon stability.
-
-In that sense, Overtone is both an **ML methods contribution** and a **scientific modeling contribution**: it gives users finer control over inference compute while also improving the physical quality of the predictions.
 
 ---
 
