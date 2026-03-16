@@ -48,7 +48,7 @@ This flexibility also enables something that ordinary fixed-patch surrogates sim
 
 **4 → 8 → 16 → 4 → 8 → 16**
 
-This schedule turns tokenization into an inference-time control knob. It does not just change cost — it also changes how rollout errors accumulate.
+This schedule turns tokenization into an inference-time control knob. It does not only change cost — but it also changes how rollout errors accumulate in frequency space.
 
 ---
 
@@ -73,7 +73,7 @@ Across 2D and 3D PDE benchmarks from The Well, we find that a single Overtone mo
   <img src="/images/blog/overtone/density_averaged_power_spectrum.png" alt="Residual spectra showing harmonic artifact suppression under cyclic patch modulation" width="50%" style="mix-blend-mode: darken;">
 </p>
 
-The second major result of the paper is that flexibility in tokenization is not just useful for deployment — it also improves the predictions themselves.
+The second major result of the paper is that flexibility in tokenization is not only useful for deployment — it also improves the predictions themselves.
 
 When a model rolls out autoregressively using the same patch size at every step, the patch lattice remains fixed. This means the same boundary-related errors can be injected at the same spatial frequencies over and over again. We show that this leads to **harmonic artifact accumulation**: residual power concentrates at patch-related harmonics, and visible grid patterns emerge in the predicted fields.
 
@@ -128,7 +128,7 @@ Traditionally, patch size is treated as a static architectural hyperparameter ch
 
 First, it makes large surrogate models more practical. A single model can now serve different deployment needs without retraining, which is especially useful as foundation models for physics continue to scale up.
 
-Second, it reveals that tokenization is not just a compute choice — it also affects the dynamics of rollout error. By changing the patching pattern over time, we can actively reduce the coherent accumulation of structured artifacts that otherwise limit long-horizon stability.
+Second, it reveals that tokenization is not only a compute choice — it also affects the dynamics of rollout error. By changing the patching pattern over time, we can actively reduce the coherent accumulation of structured artifacts that otherwise limit long-horizon stability.
 
 In that sense, Overtone is both an **ML methods contribution** and a **scientific modeling contribution**: it gives users finer control over inference compute while also improving the physical quality of the predictions.
 
