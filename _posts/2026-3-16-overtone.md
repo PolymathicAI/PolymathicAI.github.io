@@ -89,7 +89,7 @@ In practice, this leads to visibly cleaner rollouts and significantly lower long
   <img src="/images/blog/overtone/colormap_rollout_v1.png" alt="Visual comparison of rollout behavior under fixed and cyclic patch schedules" width="40%" style="mix-blend-mode: darken;">
 </p>
 
-One interesting outcome of Overtone is that inference itself becomes more programmable. Since the model supports multiple patch or stride settings, we can ask not only *which* tokenization to use, but also *when* to use it during rollout.
+One very exciting outcome of Overtone is that inference itself becomes more programmable. Since the model supports multiple patch or stride settings, we can ask not only *which* tokenization to use, but also *when* to use it during rollout.
 
 We explored several inference-time rollout schedules, including simple periodic cycles, two-step dwell schedules, warm-up schedules, and random schedules. A striking finding is that the schedule choice really matters. Not all ways of varying tokenization are equally good. In our experiments, simple structured schedules like **4 → 8 → 16** often perform best, while random schedules could noticeably degrade rollout quality. We expect these trends to depend on factors such as the model architecture and the type of dataset.
 
