@@ -9,7 +9,7 @@ image: overtone/modulator-diagram-02.png
 blurb: Overtone introduces compute-flexible tokenization for transformer-based PDE surrogates, enabling a single model to trade speed for accuracy at inference time while also reducing long-rollout patch artifacts through cyclic patch modulation.
 shortblurb: A single PDE transformer can adapt its inference compute budget on demand while producing cleaner long rollouts.
 splashimage: /images/blog/overtone/modulator-diagram-02.png
-link: https://arxiv.org/abs/2507.09264v2
+link: https://arxiv.org/abs/2507.09264
 github_link: https://github.com/payelmuk150/patch-modulator
 permalink: /blog/overtone/
 ---
@@ -135,7 +135,7 @@ As physics foundation models grow larger and see wider use, giving users finer c
 ### Open source resources
 <br/>
 Code and materials:
-* **Paper:** [Overtone: Cyclic Patch Modulation for Clean, Efficient, and Flexible Physics Emulators](https://arxiv.org/abs/2507.09264v2)
+* **Paper:** [Overtone: Cyclic Patch Modulation for Clean, Efficient, and Flexible Physics Emulators](https://arxiv.org/abs/2507.09264)
 * **Code:** [GitHub](https://github.com/payelmuk150/patch-modulator)
 
 *-- Payel Mukhopadhyay, Michael McCabe, Ruben Ohana, Miles Cranmer*
