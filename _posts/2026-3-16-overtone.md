@@ -130,7 +130,7 @@ First, it makes large surrogate models more practical. A single model can now se
 
 Second, it reveals that tokenization is not just a compute choice — it also affects the dynamics of rollout error. By changing the patching pattern over time, we can actively reduce the coherent accumulation of structured artifacts that otherwise limit long-horizon stability.
 
-In that sense, Overtone is both a **systems contribution** and a **scientific modeling contribution**: it gives users more control over inference compute, and it improves the physical quality of the predictions.
+In that sense, Overtone is both an **ML methods contribution** and a **scientific modeling contribution**: it gives users finer control over inference compute while also improving the physical quality of the predictions.
 
 ---
 
@@ -139,16 +139,16 @@ In that sense, Overtone is both a **systems contribution** and a **scientific mo
 
 We think this idea extends well beyond the specific models in this paper. Any patch-based autoregressive model — in physics, video, or other spatiotemporal domains — may benefit from more flexible inference-time tokenization.
 
-There are also many exciting next steps. Rather than using simple cyclic schedules, one could imagine **adaptive schedules** that respond to the evolving state of the rollout. More broadly, the same ideas may become particularly valuable in large pretrained multiphysics foundation models, where a single network is expected to support many downstream tasks with different fidelity and compute requirements. In fact, recent work has already demonstrated this direction at scale by incorporating **CSM** into the large multiphysics foundation model **Walrus**, where it showed strong performance across a wide range of 2D and 3D systems.
+There are also many exciting next steps. Rather than using simple cyclic schedules, one could imagine **adaptive schedules** that respond to the evolving state of the rollout. More broadly, the same ideas will become particularly valuable in large pretrained multiphysics foundation models, where a single network is expected to support many downstream tasks with different fidelity and compute requirements. In fact, recent work has already demonstrated this direction at scale by incorporating **CSM** into the large multiphysics foundation model **Walrus**, where it showed strong performance across a wide range of 2D and 3D systems.
 
-As physics foundation models become larger and more widely deployed, giving users **fine-grained control over both compute and rollout behavior** may become increasingly important. Overtone is a step in that direction.
+As physics foundation models become larger and more widely deployed, giving users **fine-grained control over both compute and rollout behavior** will become increasingly important. Overtone is a step in that direction.
 
 ---
 
 ### Open Source Resources
 <br/>
 Code and materials:
-* **Paper:** Overtone: Cyclic Patch Modulation for Clean, Efficient, and Flexible Physics Emulators
+* **Paper:** [Overtone: Cyclic Patch Modulation for Clean, Efficient, and Flexible Physics Emulators](https://openreview.net/pdf?id=itUo64aUeK)
 * **Code:** [GitHub](https://github.com/payelmuk150/patch-modulator)
 
 *-- Payel Mukhopadhyay, Michael McCabe, Ruben Ohana, Miles Cranmer*
