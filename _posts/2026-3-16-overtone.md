@@ -34,7 +34,7 @@ Overtone is designed to address both of these issues together: it makes tokeniza
 ## What Overtone changes
 <br/>
 <p align="center">
-  <img src="/images/blog/overtone/modulator-diagram-02.png" alt="Overtone overview with flexible tokenization and cyclic rollout schedules" width="75%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/overtone/modulator-diagram-02.png" alt="Overtone overview with flexible tokenization and cyclic rollout schedules" width="58%">
 </p>
 
 Overtone introduces two architecture-agnostic modules for patch-based PDE transformers:
@@ -68,7 +68,7 @@ Across 2D and 3D PDE benchmarks from The Well, we find that a single Overtone mo
 ## Cyclic patch modulation reduces harmonic artifacts
 <br/>
 <p align="center">
-  <img src="/images/blog/overtone/density_averaged_power_spectrum.png" alt="Residual spectra showing harmonic artifact suppression under cyclic patch modulation" width="80%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/overtone/density_averaged_power_spectrum.png" alt="Residual spectra showing harmonic artifact suppression under cyclic patch modulation" width="50%" style="mix-blend-mode: darken;">
 </p>
 
 The second major result of the paper is that flexibility in tokenization is not just useful for deployment — it also improves the predictions themselves.
@@ -84,7 +84,7 @@ In practice, this leads to visibly cleaner rollouts and significantly lower long
 ## A new inference-time control knob: rollout schedules
 <br/>
 <p align="center">
-  <img src="/images/blog/overtone/colormap_rollout_v1.png" alt="Visual comparison of rollout behavior under fixed and cyclic patch schedules" width="85%" style="mix-blend-mode: darken;">
+  <img src="/images/blog/overtone/colormap_rollout_v1.png" alt="Visual comparison of rollout behavior under fixed and cyclic patch schedules" width="50%" style="mix-blend-mode: darken;">
 </p>
 
 One interesting outcome of Overtone is that inference itself becomes more programmable. Since the model supports multiple patch or stride settings, we can ask not only *which* tokenization to use, but also *when* to use it during rollout.
