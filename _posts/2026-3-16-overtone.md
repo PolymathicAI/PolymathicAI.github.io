@@ -135,7 +135,7 @@ As physics foundation models grow larger and see wider use, giving users finer c
 ### Open source resources
 <br/>
 Code and materials:
-* **Paper:** [Overtone: Cyclic Patch Modulation for Clean, Efficient, and Flexible Physics Emulators](https://openreview.net/pdf?id=itUo64aUeK)
+* **Paper:** [Overtone: Cyclic Patch Modulation for Clean, Efficient, and Flexible Physics Emulators](https://arxiv.org/abs/2507.09264v2)
 * **Code:** [GitHub](https://github.com/payelmuk150/patch-modulator)
 
 *-- Payel Mukhopadhyay, Michael McCabe, Ruben Ohana, Miles Cranmer*
