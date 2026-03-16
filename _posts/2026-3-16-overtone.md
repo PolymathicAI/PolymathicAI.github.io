@@ -79,7 +79,7 @@ When a model rolls out autoregressively using the same patch size at every step,
 
 Cyclic schedules break this coherence. By varying the patch or stride size across rollout steps, Overtone prevents those errors from repeatedly reinforcing at the same frequencies. Instead, the errors are distributed more broadly, reducing the structured buildup that causes checkerboard-like artifacts.
 
-In practice, this leads to visibly cleaner rollouts and significantly lower long-horizon error. Across our experiments, cyclic modulation reduces 10-step rollout VRMSE by up to **40%** relative to conventional fixed-patch baselines.
+In practice, this leads to visibly cleaner rollouts and significantly lower long-horizon error. Across our experiments, cyclic modulation reduces 10-step rollout VRMSE by up to **30-40%** relative to conventional fixed-patch baselines.
 
 ---
 
