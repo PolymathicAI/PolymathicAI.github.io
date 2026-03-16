@@ -7,27 +7,31 @@ date: 2026-01-15 11:00
 smallimage: overtone/modulator-diagram-02.png
 image: overtone/modulator-diagram-02.png
 blurb: Overtone introduces compute-flexible tokenization for transformer-based PDE surrogates, enabling a single model to trade speed for accuracy at inference time while also reducing long-rollout patch artifacts through cyclic patch modulation.
-shortblurb: A single PDE transformer can now adapt its inference compute budget on demand while producing cleaner long rollouts.
+shortblurb: A single PDE transformer can adapt its inference compute budget on demand while producing cleaner long rollouts.
 splashimage: /images/blog/overtone/modulator-diagram-02.png
 link: https://openreview.net/pdf?id=itUo64aUeK
 github_link: https://github.com/payelmuk150/patch-modulator
 permalink: /blog/overtone/
 ---
 
-Transformer-based PDE surrogates are becoming increasingly powerful, but they still inherit a critical limitation from vision models: they usually rely on a fixed patch size. That means a model is typically trained and deployed at one tokenization scale, with little room to adapt if the user later wants higher fidelity, lower compute cost, or better long-rollout behavior. In our new paper, we introduce **Overtone**, a framework that makes patch-based physics emulators far more flexible at inference time. A single trained model can now be run at different patch or stride settings depending on the available compute budget, allowing users to dynamically trade off speed and accuracy without retraining. At the same time, we show that cyclically changing the patching pattern during autoregressive rollout produces a second major benefit: it suppresses the structured harmonic artifacts that often accumulate in fixed-patch models over long horizons. Across challenging 2D and 3D PDE benchmarks, Overtone delivers both practical compute-adaptive deployment and cleaner, more stable long rollouts.
+Transformer-based PDE surrogates have become remarkably capable, but they still inherit a basic limitation from vision models: they usually rely on a fixed patch size. In practice, that means a model is trained and deployed at one tokenization scale, with little flexibility if a user later wants higher fidelity, lower compute cost, or better long-rollout behavior.
+
+In our new paper, we introduce **Overtone**, a framework that makes patch-based physics emulators much more flexible at inference time. A single trained model can run at different patch or stride settings depending on the available compute budget, so users can trade speed against accuracy without retraining. Just as importantly, we show that cyclically changing the patching pattern during autoregressive rollout has a second benefit: it reduces the structured harmonic artifacts that fixed-patch models often accumulate over long horizons.
+
+Across challenging 2D and 3D PDE benchmarks, Overtone gives users practical control over inference-time compute and produces cleaner, more stable long rollouts.
 
 ---
 
 ## Why fixed patching is limiting
 <br/>
 
-Patch-based tokenization is one of the main reasons transformer surrogates are practical for spatiotemporal physics. By grouping pixels or grid cells into patches, the model reduces the number of tokens and therefore the cost of attention. But this design choice comes with two important drawbacks.
+Patch-based tokenization is one reason transformer surrogates are practical for spatiotemporal physics. By grouping pixels or grid cells into patches, the model reduces the number of tokens and therefore the cost of attention. But this convenience comes with two drawbacks.
 
-First, **fixed patching makes inference compute inflexible**. If a user wants a faster prediction, or instead wants to spend more compute to get higher fidelity, that typically requires training and maintaining multiple separate models at different patch sizes. This is especially undesirable as PDE surrogates and foundation models continue to grow larger and more expensive to train.
+First, **fixed patching makes inference compute rigid**. If a user wants a faster prediction, or wants to spend more compute for better fidelity, the usual answer is to train and maintain separate models at different patch sizes. That becomes increasingly awkward as PDE surrogates and foundation models get larger and more expensive to train.
 
-Second, **fixed patching can create structured long-horizon errors**. In autoregressive rollouts, repeatedly using the same patch grid means that discretization errors can appear at the same patch-lattice frequencies step after step. Over time, these errors accumulate coherently, producing spectral spikes and visible grid-like artifacts in the predicted fields.
+Second, **fixed patching can introduce structured long-horizon errors**. In autoregressive rollouts, using the same patch grid at every step means that discretization errors reappear at the same patch-lattice frequencies again and again. Over time, those errors can reinforce each other, leading to spectral spikes and visible grid-like artifacts in the predicted fields.
 
-Overtone is designed to address both of these issues together: it makes tokenization **controllable at inference time**, and it uses that control to improve long-rollout stability.
+Overtone addresses both problems at once: it makes tokenization **controllable at inference time**, and it uses that control to improve long-rollout stability.
 
 ---
 
@@ -40,30 +44,30 @@ Overtone is designed to address both of these issues together: it makes tokeniza
 Overtone introduces two architecture-agnostic modules for patch-based PDE transformers:
 
 - **Convolutional Stride Modulation (CSM):** keeps the convolutional kernel fixed, but changes the stride dynamically.
-- **Convolutional Kernel Modulation (CKM):** dynamically resizes the convolutional kernel itself, allowing the effective patch size to change across forward passes.
+- **Convolutional Kernel Modulation (CKM):** resizes the convolutional kernel itself, so the effective patch size can change across forward passes.
 
-Both methods let a single trained model operate at multiple tokenization scales at inference. In practice, this means a user can run the same model with smaller patches for higher accuracy, or larger patches for lower compute cost, depending on the application.
+Both methods let a single trained model operate at multiple tokenization scales at inference time. In practice, that means the same model can run with smaller patches for higher accuracy or larger patches for lower compute cost, depending on the application.
 
-This flexibility also enables something that ordinary fixed-patch surrogates simply cannot do: **inference-time rollout schedules**. Instead of using one patch size forever, Overtone can cycle through several, for example:
+This flexibility also enables something fixed-patch surrogates cannot do: **inference-time rollout schedules**. Instead of using one patch size forever, Overtone can cycle through several, for example:
 
 **4 → 8 → 16 → 4 → 8 → 16**
 
-This schedule turns tokenization into an inference-time control knob and also changes how rollout errors accumulate in frequency space.
+That turns tokenization into an inference-time control knob and changes how rollout errors accumulate in frequency space.
 
 ---
 
 ## Compute flexibility: one model, multiple deployment budgets
 <br/>
 
-A central motivation for Overtone is practical deployment. In many scientific settings, the available compute at inference time is not fixed in advance. Sometimes users want the best possible accuracy. Sometimes they need a faster forecast. Sometimes they want to probe several operating points quickly without retraining a new model for each one.
+A central motivation for Overtone is deployment. In many scientific settings, the available compute at inference time is not fixed ahead of time. Sometimes users want the best accuracy they can get. Sometimes they need a faster forecast. Sometimes they want to probe several operating points quickly, without retraining a new model each time.
 
-A practical question is how best to use a fixed training budget. One option is to spend that budget training several separate fixed-patch models, each targeting a different compute–accuracy regime. Overtone instead uses that budget to train a single flexible model that can operate across multiple tokenization settings at inference time. In our experiments, we train three fixed-patch baselines separately at patch sizes 4, 8, and 16, while training CSM and CKM once under the same total compute budget.
+This raises a practical question: how should we spend a fixed training budget? One option is to train several separate fixed-patch models, each aimed at a different compute-accuracy regime. Overtone takes a different route. We use that budget to train a single flexible model that can operate across multiple tokenization settings at inference time. In our experiments, we train three fixed-patch baselines separately at patch sizes 4, 8, and 16, while training CSM and CKM once under the same total compute budget.
 
-Overtone makes this possible with a **single model**. After training once on multiple patch or stride settings, the same model can be evaluated at different token counts, giving a direct compute–accuracy trade-off at inference time.
+The result is a **single model** that can be evaluated at different token counts, giving a direct compute-accuracy trade-off at inference time.
 
-This is important because smaller patches generally improve fidelity, but also increase the cost of attention. With conventional patch-based surrogates, exploiting that trade-off requires training separate fixed-patch models from scratch. With Overtone, that trade-off becomes available on demand within one flexible model.
+This matters because smaller patches usually improve fidelity, but they also increase attention cost. With conventional patch-based surrogates, using that trade-off means training separate models from scratch. With Overtone, the same trade-off becomes available on demand within one model.
 
-Across 2D and 3D PDE benchmarks from The Well, we find that a single Overtone model can match or exceed multiple fixed-patch baselines across multiple inference-time operating points, while eliminating the need to train and maintain separate models for each patch size.
+Across 2D and 3D PDE benchmarks from The Well, we find that a single Overtone model can match or exceed multiple fixed-patch baselines across several inference-time operating points, while removing the need to train and maintain separate models for each patch size.
 
 ---
 
@@ -73,13 +77,13 @@ Across 2D and 3D PDE benchmarks from The Well, we find that a single Overtone mo
   <img src="/images/blog/overtone/density_averaged_power_spectrum.png" alt="Residual spectra showing harmonic artifact suppression under cyclic patch modulation" width="50%" style="mix-blend-mode: darken;">
 </p>
 
-The second major result of the paper is that this approach to tokenization not only improves compute flexibility but also improves the predictions themselves.
+The second main result of the paper is that this approach not only improves compute flexibility, but also improves the predictions themselves.
 
-When a model rolls out autoregressively using the same patch size at every step, the patch lattice remains fixed. This means the same boundary-related errors can be injected at the same spatial frequencies over and over again. We show that this leads to **harmonic artifact accumulation**: residual power concentrates at patch-related harmonics, and visible grid patterns emerge in the predicted fields.
+When a model rolls out autoregressively using the same patch size at every step, the patch lattice stays fixed. That means the same boundary-related errors can be injected at the same spatial frequencies over and over. We show that this leads to **harmonic artifact accumulation**: residual power piles up at patch-related harmonics, and visible grid patterns appear in the predicted fields.
 
-Cyclic schedules break this coherence. By varying the patch or stride size across rollout steps, Overtone prevents those errors from repeatedly reinforcing at the same frequencies. Instead, the errors are distributed more broadly, reducing the structured buildup that causes checkerboard-like artifacts.
+Cyclic schedules break that coherence. By varying the patch or stride size across rollout steps, Overtone prevents errors from repeatedly reinforcing at the same frequencies. Instead, the error gets spread more broadly, which reduces the structured buildup that causes checkerboard-like artifacts.
 
-In practice, this leads to visibly cleaner rollouts and significantly lower long-horizon error. Across our experiments, cyclic modulation reduces 10-step rollout VRMSE by up to 30-40% relative to conventional fixed-patch baselines.
+In practice, this gives visibly cleaner rollouts and lower long-horizon error. Across our experiments, cyclic modulation reduces 10-step rollout VRMSE by up to 30-40% relative to conventional fixed-patch baselines.
 
 ---
 
@@ -88,9 +92,10 @@ In practice, this leads to visibly cleaner rollouts and significantly lower long
 <p align="center">
   <img src="/images/blog/overtone/colormap_rollout_v1.png" alt="Visual comparison of rollout behavior under fixed and cyclic patch schedules" width="40%" style="mix-blend-mode: darken;">
 </p>
-One exciting outcome of Overtone is that we can now do inference-time scaling. As the model supports multiple patch or stride settings, we can control both the timing and type of tokenization.
 
-We explored several inference-time rollout schedules, including simple periodic cycles, two-step dwell schedules, warm-up schedules, and random schedules. A striking finding is that the schedule choice really matters. Not all ways of varying tokenization are equally good. In our experiments, simple structured schedules like **4 → 8 → 16** often perform best, while random schedules could noticeably degrade rollout quality. We expect these trends to depend on factors such as the model architecture and the type of dataset.
+One of the more interesting consequences of Overtone is that tokenization no longer has to stay fixed during rollout. Once the model supports multiple patch or stride settings, we can control not just the scale of tokenization, but also when and how it changes.
+
+We explored several inference-time rollout schedules, including simple periodic cycles, two-step dwell schedules, warm-up schedules, and random schedules. The schedule choice matters quite a bit. Not every way of varying tokenization works equally well. In our experiments, simple structured schedules like **4 → 8 → 16** often performed best, while random schedules could noticeably hurt rollout quality. I suspect the best choice will depend on the model architecture and on the dataset.
 
 ---
 
@@ -101,33 +106,33 @@ We evaluated Overtone on challenging 2D and 3D datasets from **The Well**, spann
 
 - **Shear Flow**
 - **Turbulent Radiative Layer 2D**
-- **Rayleigh–Bénard convection**
+- **Rayleigh-Benard convection**
 - **Active Matter**
 - **Supernova Explosion**
 - **Turbulence Gravity Cooling**
 
-Across these datasets, Overtone shows the same two recurring advantages.
+Across these datasets, the same two advantages keep showing up.
 
-First, the flexible models provide a strong and practical compute–accuracy trade-off at inference time, allowing one model to cover multiple deployment regimes.
+First, the flexible models provide a useful compute-accuracy trade-off at inference time, allowing one model to cover multiple deployment regimes.
 
-Second, cyclic schedules consistently yield cleaner and more stable rollouts than fixed-patch baselines, with lower long-horizon error and substantially reduced patch artifacts.
+Second, cyclic schedules yield cleaner and more stable rollouts than fixed-patch baselines, with lower long-horizon error and much weaker patch artifacts.
 
-We also show that the method is **architecture-agnostic**. Overtone works not only with vanilla and axial ViTs, but can also be integrated into newer hybrid architectures such as CViT, where it again improves performance while preserving inference-time flexibility.
+We also show that the method is **architecture-agnostic**. Overtone works not only with vanilla and axial ViTs, but also with newer hybrid architectures such as CViT, where it again improves performance while preserving inference-time flexibility.
 
 ---
 
 ## Looking ahead
 <br/>
 
-We think this idea extends well beyond the specific models in this paper. Any patch-based autoregressive model — in physics, video, or other spatiotemporal domains — may benefit from more flexible inference-time tokenization.
+We think this idea extends beyond the particular models in this paper. Any patch-based autoregressive model, whether in physics, video, or another spatiotemporal domain, could benefit from more flexible inference-time tokenization.
 
-There are also many exciting next steps. Rather than using simple cyclic schedules, one could imagine adaptive schedules that respond to the evolving state of the rollout. More broadly, the same ideas will become particularly valuable in large pretrained multiphysics foundation models, where a single network is expected to support many downstream tasks with different fidelity and compute requirements. In fact, recent work has already demonstrated this direction at scale by incorporating CSM into the large multiphysics foundation model **Walrus**, where it showed strong performance across a wide range of 2D and 3D systems.
+There are several directions worth exploring next. Instead of using simple cyclic schedules, one could imagine adaptive schedules that respond to the evolving state of the rollout. More broadly, these ideas should become even more useful in large pretrained multiphysics foundation models, where a single network is expected to support many downstream tasks with different fidelity and compute requirements. Recent work has already pushed in this direction at scale by incorporating CSM into the large multiphysics foundation model **Walrus**, where it performed well across a wide range of 2D and 3D systems.
 
-As physics foundation models become larger and more widely deployed, giving users fine-grained control over both compute and rollout behavior will become increasingly important. Overtone is a step in that direction.
+As physics foundation models grow larger and see wider use, giving users finer control over both compute and rollout behavior will matter more. Overtone is one step in that direction.
 
 ---
 
-### Open Source Resources
+### Open source resources
 <br/>
 Code and materials:
 * **Paper:** [Overtone: Cyclic Patch Modulation for Clean, Efficient, and Flexible Physics Emulators](https://openreview.net/pdf?id=itUo64aUeK)
@@ -138,4 +143,4 @@ Code and materials:
 ---
 **Acknowledgements**
 
-Polymathic AI gratefully acknowledges funding from the Simons Foundation and Schmidt Sciences, LLC. Payel Mukhopadhyay thanks the Infosys-Cambridge AI centre for support. We also thank the Scientific Computing Core at the Flatiron Institute for computational support, and the broader Polymathic AI team for valuable discussions and feedback.
+Polymathic AI gratefully acknowledges funding from the Simons Foundation and Schmidt Sciences, LLC. Payel Mukhopadhyay thanks the Infosys-Cambridge AI Centre for support. We also thank the Scientific Computing Core at the Flatiron Institute for computational support, and the broader Polymathic AI team for valuable discussions and feedback.
