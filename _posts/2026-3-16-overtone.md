@@ -9,7 +9,7 @@ image: overtone/modulator-diagram-02.png
 blurb: Overtone introduces compute-flexible tokenization for transformer-based PDE surrogates, enabling a single model to trade speed for accuracy at inference time while also reducing long-rollout patch artifacts through cyclic patch modulation.
 shortblurb: A single PDE transformer can adapt its inference compute budget on demand while producing cleaner long rollouts.
 splashimage: /images/blog/overtone/modulator-diagram-02.png
-link: https://openreview.net/pdf?id=itUo64aUeK
+link: https://arxiv.org/abs/2507.09264v2
 github_link: https://github.com/payelmuk150/patch-modulator
 permalink: /blog/overtone/
 ---
@@ -95,7 +95,7 @@ In practice, this gives visibly cleaner rollouts and lower long-horizon error. A
 
 One of the more interesting consequences of Overtone is that tokenization no longer has to stay fixed during rollout. Once the model supports multiple patch or stride settings, we can control not just the scale of tokenization, but also when and how it changes.
 
-We explored several inference-time rollout schedules, including simple periodic cycles, two-step dwell schedules, warm-up schedules, and random schedules. The schedule choice matters quite a bit. Not every way of varying tokenization works equally well. In our experiments, simple structured schedules like **4 → 8 → 16** often performed best, while random schedules could noticeably hurt rollout quality. I suspect the best choice will depend on the model architecture and on the dataset.
+We explored several inference-time rollout schedules, including simple periodic cycles, two-step dwell schedules, warm-up schedules, and random schedules. The schedule choice matters quite a bit. Not every way of varying tokenization works equally well. In our experiments, simple structured schedules like **4 → 8 → 16** often performed best, while random schedules could noticeably hurt rollout quality. We think the best choice will depend on other factors like the model architecture or the dataset.
 
 ---
 
