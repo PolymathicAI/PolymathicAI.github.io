@@ -3,7 +3,7 @@ layout: post
 title: "Overtone: Flexible and Cleaner Physics Emulators with Cyclic Patch Modulation"
 authors: Payel Mukhopadhyay, Michael McCabe, Ruben Ohana, Miles Cranmer
 shorttitle: "Overtone: Flexible and Cleaner Physics Emulators"
-date: 2026-01-15 11:00
+date: 2026-03-16
 smallimage: overtone/modulator-diagram-02.png
 image: overtone/modulator-diagram-02.png
 blurb: Overtone introduces compute-flexible tokenization for transformer-based PDE surrogates, enabling a single model to trade speed for accuracy at inference time while also reducing long-rollout patch artifacts through cyclic patch modulation.
