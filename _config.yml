@@ -425,12 +425,6 @@ team:
     website: https://rubenohana.github.io/
     bio: Ruben Ohana joined the Center for Computational Mathematics of the Flatiron Institute as a Research Fellow in 2022. His research interests are machine learning for scientific problems, optimization of large models, and bridging gaps between theoretical fields. He obtained his PhD from Ecole Normale Supérieure in 2022, supervised by Florent Krzakala, Alessandro Rudi and Laurent Daudet. In parallel, he was a research scientist at LightOn, and interned at the Criteo AI Lab.  
 
-  - full_name: Liam Parker
-    tagline:
-    avatar: liam_parker.jpg
-    website: https://www.linkedin.com/in/liam-parker-96ba14160/
-    bio:  Liam is a Ph.D. student in physics at U.C. Berkeley, supported by the NSF Graduate Research Fellowship, and a visiting researcher at the Flatiron Institute. He has been a member of the Polymathic team since 2023. Presently, his research focuses primarily on developing large, multimodal foundation model for the physical sciences. Prior to Berkeley, he received his B.S. in physics from Princeton University and completed a predoctoral fellowship in the Center for Computational Astrophysics at Flatiron. Outside of work, Liam enjoys mountaineering, olympic-style weightlifting, and guitar.
-
   - full_name: Mariel Pettee
     tagline:
     avatar: mariel_pettee.jpg
@@ -519,6 +513,12 @@ collaborators:
     website: https://www.semanticscholar.org/author/Nicholas-Lourie/35219984
     bio: Nicholas Lourie is a PhD student at NYU investigating empirical models of deep learning. His research seeks better statistical frameworks for designing, developing, and evaluating neural networks. At NYU, he is advised by He He and Kyunghyun Cho, while in the past he worked at the Allen Institute for AI on machine ethics, common sense, prompt-based learning, and the evaluation of natural language processing models.
   
+  - full_name: Liam Parker
+    tagline:
+    mini-avatar: liam_parker.png
+    website: https://www.linkedin.com/in/liam-parker-96ba14160/
+    bio:  Liam is a Ph.D. student in physics at U.C. Berkeley, supported by the NSF Graduate Research Fellowship, and a visiting researcher at the Flatiron Institute. He has been a member of the Polymathic team since 2023. Presently, his research focuses primarily on developing large, multimodal foundation model for the physical sciences. Prior to Berkeley, he received his B.S. in physics from Princeton University and completed a predoctoral fellowship in the Center for Computational Astrophysics at Flatiron. Outside of work, Liam enjoys mountaineering, olympic-style weightlifting, and guitar.
+
   - full_name: Helen Qu
     avatar: 
     mini-avatar: helen_qu.png
