@@ -395,11 +395,11 @@ team:
     website: https://flanusse.net/
     bio: Francois Lanusse is an interdisciplinary researcher at the intersection of Deep Learning, Statistical Modeling, and Observational Cosmology. Dr. Lanusse holds a permanent position at the CNRS, and is currently an Associate Research Scientist at the Simons Foundation. He received his PhD in Astrophysics at CEA Paris-Saclay and was subsequently a postdoctoral researcher at Carnegie Mellon University and UC Berkeley.
 
-  - full_name: Tanya Marwah
-    tagline:
-    avatar: tanya_marwah.png
-    website: https://tm157.github.io/
-    bio: Tanya Marwah is a Research Fellow at the Simons Foundation working with Polymathic AI. She is broadly interested in theoretical and empirical foundations of Machine Learning and its applications to scientific domains. Her current interests are around generative modeling of scientific phenomena, inverse problems and building scientific agents. Her ultimate goal is to develop ML algorithms and methods that help us accelerate the scientific process and enable scientific discovery. She recently graduated with a PhD from the Machine Learning Department at Carnegie Mellon University and holds a Masters in Robotics from the Robotics Institute at CMU and was a Siebel Scholar.
+  #- full_name: Tanya Marwah
+  #  tagline:
+  #  avatar: tanya_marwah.png
+  #  website: https://tm157.github.io/
+  #  bio: Tanya Marwah is a Research Fellow at the Simons Foundation working with Polymathic AI. She is broadly interested in theoretical and empirical foundations of Machine Learning and its applications to scientific domains. Her current interests are around generative modeling of scientific phenomena, inverse problems and building scientific agents. Her ultimate goal is to develop ML algorithms and methods that help us accelerate the scientific process and enable scientific discovery. She recently graduated with a PhD from the Machine Learning Department at Carnegie Mellon University and holds a Masters in Robotics from the Robotics Institute at CMU and was a Siebel Scholar.
 
   - full_name: Michael McCabe
     tagline:
@@ -407,11 +407,11 @@ team:
     website: https://mikemccabe210.github.io/
     bio: Michael McCabe joined the institute as a research analyst in 2023. He is a final year PhD Student at the University of Colorado, Boulder advised by Prof. Jed Brown and has broad research interests in machine learning and optimization, especially for physical systems. Michael’s current research goals are integrating ideas from numerical methods into large-scale deep learning architectures to build tools that are better suited to learning physical dynamics  more reliably or efficiently. Throughout his PhD, he has worked with Lawrence Berkeley and Argonne National Laboratories. Outside of work, Michael enjoys climbing, running, and reading.
 
-  - full_name: Lucas Meyer
-    tagline:
-    avatar: lucas_meyer.jpg
-    website: https://ltmeyer.github.io/
-    bio: Lucas Meyer is a researcher and software engineer working on accelerating science using artificial intelligence and high-performance computing. He holds a PhD in computer science and applied mathematics from Université Grenoble Alpes, completed in partnership with INRIA and EDF, under the supervision of Bruno Raffin. His doctoral research centered on training deep learning models for large-scale numerical simulations. Before pursuing his PhD, Lucas worked in the space industry, including at the European Space Agency, developing software and deep learning methods for remote sensing. He holds an M.Sc. in computer science from Université de Montréal, where he worked on optimization software for robotic swarms with Giovanni Beltrame. He also graduated in software engineering and applied mathematics from École Nationale des Ponts et Chaussées.
+  #- full_name: Lucas Meyer
+  #  tagline:
+  #  avatar: lucas_meyer.jpg
+  #  website: https://ltmeyer.github.io/
+  #  bio: Lucas Meyer is a researcher and software engineer working on accelerating science using artificial intelligence and high-performance computing. He holds a PhD in computer science and applied mathematics from Université Grenoble Alpes, completed in partnership with INRIA and EDF, under the supervision of Bruno Raffin. His doctoral research centered on training deep learning models for large-scale numerical simulations. Before pursuing his PhD, Lucas worked in the space industry, including at the European Space Agency, developing software and deep learning methods for remote sensing. He holds an M.Sc. in computer science from Université de Montréal, where he worked on optimization software for robotic swarms with Giovanni Beltrame. He also graduated in software engineering and applied mathematics from École Nationale des Ponts et Chaussées.
     
   - full_name: Rudy Morel
     tagline:
@@ -425,11 +425,11 @@ team:
     website: https://www.linkedin.com/in/payel-mukhopadhyay-5529b026b/
     bio: Payel Mukhopadhyay is an Assistant Research Professor at the University of Cambridge working at the intersection of AI, physics, and scientific computing. She received her PhD in astrophysics from Stanford University in 2022, where her research covered supernovae, galactic outflows, cosmic rays, and dark matter. Her current work focuses on developing machine learning methods for scientific discovery, with particular interests in foundation models, scientific machine learning, and complex physical systems. Outside of research, she enjoys cooking, reading, and taking long walks with her dog.
 
-  - full_name: Ruben Ohana
-    tagline:
-    avatar: ruben_ohana.jpg
-    website: https://rubenohana.github.io/
-    bio: Ruben Ohana joined the Center for Computational Mathematics of the Flatiron Institute as a Research Fellow in 2022. His research interests are machine learning for scientific problems, optimization of large models, and bridging gaps between theoretical fields. He obtained his PhD from Ecole Normale Supérieure in 2022, supervised by Florent Krzakala, Alessandro Rudi and Laurent Daudet. In parallel, he was a research scientist at LightOn, and interned at the Criteo AI Lab.  
+  #- full_name: Ruben Ohana
+  #  tagline:
+  #  avatar: ruben_ohana.jpg
+  #  website: https://rubenohana.github.io/
+  #  bio: Ruben Ohana joined the Center for Computational Mathematics of the Flatiron Institute as a Research Fellow in 2022. His research interests are machine learning for scientific problems, optimization of large models, and bridging gaps between theoretical fields. He obtained his PhD from Ecole Normale Supérieure in 2022, supervised by Florent Krzakala, Alessandro Rudi and Laurent Daudet. In parallel, he was a research scientist at LightOn, and interned at the Criteo AI Lab.  
 
   - full_name: Mariel Pettee
     tagline:
@@ -443,11 +443,11 @@ team:
     website: https://www.simonsfoundation.org/people/helen-qu/
     bio: Helen Qu is a research fellow at the Center for Computational Astrophysics (CCA) at the Flatiron Institute. She is broadly interested in reinforcement learning, collective intelligence, multimodal models, and AI for science. She holds a PhD in Physics and a BSE in Computer Science from the University of Pennsylvania, specializing in machine learning methods for type Ia supernova cosmology.
 
-  - full_name: Bruno Regaldo
-    tagline:
-    avatar: bruno_regaldo_saint_blancard.jpg
-    website: https://bregaldo.github.io/
-    bio: Bruno Régaldo-Saint Blancard is a Research Fellow at the Center for Computational Mathematics, Flatiron Institute. He obtained a PhD in Astrophysics from the École Normale Supérieure (ENS), Paris. Prior to that, he graduated from the École Polytechnique, and obtained a M.S. in Astrophysics from the Observatoire de Paris. Bruno’s research focuses on the development of statistical methods for astrophysics/cosmology and beyond, using signal processing and machine learning. He is interested in various problems including generative modeling, inference, denoising, and source separation.
+  #- full_name: Bruno Regaldo
+  #  tagline:
+  #  avatar: bruno_regaldo_saint_blancard.jpg
+  #  website: https://bregaldo.github.io/
+  #  bio: Bruno Régaldo-Saint Blancard is a Research Fellow at the Center for Computational Mathematics, Flatiron Institute. He obtained a PhD in Astrophysics from the École Normale Supérieure (ENS), Paris. Prior to that, he graduated from the École Polytechnique, and obtained a M.S. in Astrophysics from the Observatoire de Paris. Bruno’s research focuses on the development of statistical methods for astrophysics/cosmology and beyond, using signal processing and machine learning. He is interested in various problems including generative modeling, inference, denoising, and source separation.
 
   - full_name: Jeff Shen
     tagline:
