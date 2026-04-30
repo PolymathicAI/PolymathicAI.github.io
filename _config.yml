@@ -454,7 +454,14 @@ team:
     avatar: jeff_shen.png
     website: http://jshen.net/
     bio: Jeff is a PhD student at Princeton University supervised by Shirley Ho. He is broadly interested in deep generative models and how to adapt these models to be better suited for use in the physical sciences. Within Polymathic, his current focus is on developing multimodal foundation models for astrophysics surveys. Previously, Jeff completed his undergraduate degree in astrophysics and statistics at the University of Toronto.
-  
+
+
+  - full_name: Hadi Sotoudeh
+    tagline:
+    avatar: hadi_sotoudeh.png
+    website: https://inferstellar.ai
+    bio: Hadi is a PhD student at the University of Cambridge, co-supervised by Miles Cranmer and Neil Lawrence. His research focuses on developing foundation models that learn physically meaningful representations of astronomical and physical systems. Within Polymathic AI, he works on connecting simulations and observations through shared latent representations, with applications to galaxy evolution, large sky surveys, and cosmology. More broadly, he is interested in how expressive AI models can support reliable scientific inference while remaining grounded in physical and methodological principles. Before Cambridge, he worked on machine learning for astrophysics at Mila with Laurence Perreault-Levasseur. Outside research, he enjoys hiking, scuba diving, and watching birds behave like tiny dinosaurs.
+
 
   # - full_name: Tiberiu Tesileanu
   #   avatar: tiberiu_tesileanu.jpg
