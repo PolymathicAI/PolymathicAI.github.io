@@ -80,9 +80,9 @@ The sim-experiment gap in α has a leading candidate explanation: initial condit
 We finetune Walrus on 2D slices from a single DNS realization, then apply it directly to initial conditions from six sliding-barrier laboratory experiments with no experimental training data at any stage.
 
 <p align="center">
-  <img src="/images/blog/walrus-rti/rti-exp-plots.png" alt="Late-time growth rate coefficient alpha on held-out laboratory experiments: zero-shot (left) and experimentally finetuned (right)" width="75%">
+  <img src="/images/blog/walrus-rti/sim-to-real.png" alt="Zero-shot transfer from idealized DNS to laboratory RTI. Left: the DNS-specialized Walrus model tracks held-out 2D DNS slices and settles into the low-α DNS regime near α ≈ 0.02. Right: the same model, with the same weights, is initialized from sliding-barrier experimental frames instead. Without any experimental training data, its rollout enters the late-time experimentally observed growth band, showing that the input experimental initial conditions are sufficient to move the model across the simulation-to-laboratory gap." width="75%">
   <br>
-  <em>Growth rate coefficient α(t) on held-out laboratory experiments. Left: zero-shot, no experimental training data. Right: after light finetuning on two experimental samples. In both cases Walrus enters the experimentally observed late-time growth band.</em>
+  <em></em>
 </p>
 
 The DNS-specialized model, given experimental initial frames, rises into the experimentally observed self-similar band at late times. The same model given DNS frames settles near α ≈ 0.02. The only difference between the two rollouts is the input.
@@ -90,6 +90,12 @@ The DNS-specialized model, given experimental initial frames, rises into the exp
 What this reveals about the learned representation matters more than the number itself. Self-similar RTI growth is governed by h(t) ∼ α A<sub>t</sub> g t², and α depends on how the flow was seeded. The model was trained exclusively on DNS with short-wavelength initial conditions and low α. Given experimental frames carrying large-scale initial structure, it produces a higher late-time α, in the physically correct direction. The model has encoded the dependence of self-similar growth on initial condition structure, general enough to carry from the DNS-like regime to the laboratory.
 
 That this happens from experimental initial frames alone supports the view that initial conditions drive a substantial part of the sim-experiment discrepancy in α. It is independent, data-driven evidence on a debate that has resisted resolution through simulation alone.
+
+<p align="center">
+  <img src="/images/blog/walrus-rti/rti-exp-plots.png" alt="Late-time growth rate coefficient alpha on held-out laboratory experiments: zero-shot (left) and experimentally finetuned (right)" width="75%">
+  <br>
+  <em>Growth rate coefficient α(t) on held-out laboratory experiments. Left: zero-shot, no experimental training data. Right: after light finetuning on two experimental samples. In both cases Walrus enters the experimentally observed late-time growth band.</em>
+</p>
 
 The shift is robust across different amounts of input context. With just two experimental samples, a lightweight finetuning stage further improves agreement through the early transient, while the late-time α already reached zero-shot is preserved.
 
