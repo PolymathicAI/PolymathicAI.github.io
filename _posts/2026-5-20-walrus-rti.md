@@ -80,9 +80,9 @@ The sim-experiment gap in α has a leading candidate explanation: initial condit
 We finetune Walrus on 2D slices from a single DNS realization, then apply it directly to initial conditions from six sliding-barrier laboratory experiments with no experimental training data at any stage.
 
 <p align="center">
-  <img src="/images/blog/walrus-rti/sim-to-real.png" alt="Zero-shot transfer from idealized DNS to laboratory RTI. Left: the DNS-specialized Walrus model tracks held-out 2D DNS slices and settles into the low-α DNS regime near α ≈ 0.02. Right: the same model, with the same weights, is initialized from sliding-barrier experimental frames instead. Without any experimental training data, its rollout enters the late-time experimentally observed growth band, showing that the input experimental initial conditions are sufficient to move the model across the simulation-to-laboratory gap." width="75%">
+  <img src="/images/blog/walrus-rti/sim-to-real.png" alt="Growth coefficient alpha for DNS validation and zero-shot transfer from DNS-specialized Walrus to laboratory RTI" width="75%">
   <br>
-  <em></em>
+  <em>Zero-shot transfer from idealized DNS to laboratory RTI. Left: the DNS-specialized Walrus model tracks held-out 2D DNS slices and settles into the low-α DNS regime near α ≈ 0.02. Right: the same model, with the same weights, is initialized from sliding-barrier experimental frames instead. Without any experimental training data, its rollout enters the late-time experimentally observed growth band, showing that the input experimental initial conditions are sufficient to move the model across the simulation-to-laboratory gap.</em>
 </p>
 
 The DNS-specialized model, given experimental initial frames, rises into the experimentally observed self-similar band at late times. The same model given DNS frames settles near α ≈ 0.02. The only difference between the two rollouts is the input.
