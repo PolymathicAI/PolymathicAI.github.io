@@ -95,7 +95,7 @@ The shift is robust across different amounts of input context. With just two exp
 
 ---
 
-## Zero-shot transfer to new physics: stable stratification
+## Zero-shot transfer to new physical regime: stable stratification
 <br/>
 <p align="center">
   <img src="/images/blog/walrus-rti/rti-stratified-profiles.png" alt="Horizontally averaged concentration profiles for stratified DNS reference and Walrus zero-shot rollout" width="85%">
