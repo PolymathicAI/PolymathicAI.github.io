@@ -77,7 +77,7 @@ The sim-experiment gap in α has a leading candidate explanation: initial condit
   <em>Initial concentration fields for a DNS realization (left) and a sliding-barrier experimental sample (right). The DNS interface carries short-wavelength perturbations; the experimental interface carries large-scale structure set by the barrier release. This difference is the leading candidate explanation for the factor-of-three gap in α.</em>
 </p>
 
-We finetune Walrus on 2D slices from a single DNS realization, then apply it directly to initial conditions from six sliding-barrier laboratory experiments with no experimental training data at any stage.
+We finetune Walrus on 2D slices from a single DNS realization, then apply it directly to initial conditions from six sliding-barrier laboratory experimental samples with no experimental training data at any stage. This is a highly data-limited zero-shot transfer setup.
 
 <p align="center">
   <img src="/images/blog/walrus-rti/sim-to-real.png" alt="Growth rate coefficient alpha for DNS validation and zero-shot transfer from DNS-specialized Walrus to laboratory RTI" width="75%">
