@@ -101,21 +101,23 @@ The shift is robust across different amounts of input context. With just two exp
 
 ---
 
-## Zero-shot transfer to new physical regime: stable stratification
+## Zero-shot transfer to a new physical regime: stable stratification
 <br/>
 <p align="center">
-  <img src="/images/blog/walrus-rti/rti-stratified-profiles.png" alt="Horizontally averaged concentration profiles for stratified DNS reference and Walrus zero-shot rollout" width="85%">
+  <img src="/images/blog/walrus-rti/rti-stratified-profiles.png" alt="Stable stratification confines mixing near the midplane in both the DNS reference and the zero-shot Walrus rollout" width="85%">
   <br>
-  <em>Mean concentration profiles for the stratified DNS reference (b) and the corresponding zero-shot Walrus rollout (c), finetuned only on unstratified RTI. Stable stratification confines mixing near the midplane; Walrus captures this without ever seeing stratified flows during training.</em>
+  <em>(a) Initial mean concentration profiles for the unstratified and stratified cases. (b) Mean concentration profiles from the stratified DNS reference. (c) Corresponding zero-shot Walrus rollout after finetuning only on unstratified RTI. (d) Very long zero-shot rollout out to <i>t</i> = 200. Stable stratification confines mixing near the midplane, and Walrus captures that response without ever seeing stratified flow during training.</em>
 </p>
 
-The experimental result crosses the simulation-to-real divide. But sim-to-real transfer alone does not tell us whether the model has learned RTI as a broader buoyancy-driven phenomenon, or only the unstratified dynamics it saw during finetuning. To ask that question, we need to change the physics in a controlled way: keep the problem in the RTI family, but alter how buoyancy acts on the mixing layer.
+The laboratory result asks whether the model can cross the sim-to-real divide. The stratified case asks something different. It asks whether the model has learned only the unstratified RTI dynamics it saw during finetuning, or whether it has learned something more general about buoyancy-driven mixing.
 
-We test this by applying the DNS-finetuned model to **stably stratified RTI**, a regime where a stable background density gradient acts as a restoring force, suppressing vertical spreading and confining the mixing layer near the midplane. This regime was entirely absent from finetuning.
+To test that, we change the physics while staying within the RTI family. We apply the DNS-finetuned model to **stably stratified RTI**, where a stable background density gradient acts as a restoring force and suppresses vertical spreading of the mixing layer. This regime was completely absent from finetuning.
 
-In unstratified RTI, buoyancy drives the mixing layer to spread indefinitely. In stably stratified RTI, it arrests that spreading. A model that had only pattern-matched unstratified DNS trajectories would keep spreading. Walrus confines the mixing layer, matching the qualitative behavior of the stratified DNS reference over rollouts extending well beyond the training horizon. The discrepancy is one of degree rather than kind: the model predicts slightly stronger spreading at late times, but the physical response to stratification is correct.
+That change is enough to separate the two possibilities. In the unstratified case, the mixing layer keeps spreading. In the stratified case, the partially mixed region remains confined near the midplane. A model that had only learned to continue unstratified RTI rollouts would keep opening up the layer. Walrus does not. In zero shot, it moves into the correct qualitative regime: the mean concentration profiles stay confined, in clear agreement with the stratified DNS reference.
 
-The learned representation carries something about how buoyancy governs mixing, not unstratified RTI as a specific flow pattern, but the underlying physics that makes RTI respond differently when the buoyancy balance changes.
+Panel (d) pushes the same test much further. The model never saw stratified flow during training, and it never saw times this late during finetuning, yet the rollout continues into the expected decelerating, confined regime rather than drifting back toward unstratified growth.
+
+The mismatch is in degree, not in kind. At late times Walrus spreads the layer somewhat more than the DNS reference, but it still responds to stratification in the right physical direction. For a model finetuned only on unstratified RTI, that is a strong sign that the learned representation is carrying something more general than one familiar rollout pattern. It has to encode something about how buoyancy governs mixing, and how that mixing changes when the buoyancy balance itself is altered.
 
 ---
 
