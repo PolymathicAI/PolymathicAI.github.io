@@ -54,7 +54,7 @@ Walrus is pretrained on a broad corpus of continuum dynamics simulations with RT
   <em>Kinetic energy spectra in the self-similar regime. Walrus matches the DNS shape and amplitude across the inertial range.</em>
 </p>
 
-On held-out test realizations, the finetuned model recovers the canonical diagnostics simultaneously. Bubble morphology and mixed-layer growth track the DNS through the onset of turbulence. The kinetic energy spectrum matches across the inertial range. The global energy budget is reproduced over the full rollout. Conventional surrogate models typically diverge within a handful of autoregressive steps, so sustaining all three over long rollouts is a genuine test of whether the model has encoded physical structure rather than memorized specific trajectories.
+On held-out test realizations, the finetuned model recovers the canonical diagnostics simultaneously. Bubble morphology and mixed-layer growth track the DNS through the onset of turbulence. The kinetic energy spectrum matches across the inertial range. The global energy budget is reproduced over the full rollout. Conventional surrogate models typically diverge within a handful of autoregressive steps, so sustaining all three over long rollouts is a stringent test of whether the model has encoded physical structure rather than memorized specific trajectories.
 
 Finetuning on a single DNS realization already gets close; adding a second or third tightens agreement only incrementally. The broad fluid prior means only a few examples are needed to specialize.
 
