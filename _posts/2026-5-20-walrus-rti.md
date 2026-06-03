@@ -3,12 +3,12 @@ layout: post
 title: "Emergent Transfer of a Physics Foundation Model from Simulation to Laboratory Turbulence"
 authors: Payel Mukhopadhyay, Stefan Nixon, Romain Watteaux, Alberto Bietti, Kyunghyun Cho, Cristiana Diaconu, Irina Espejo Morales, David Fouhey, Siavash Golkar, Tom Hehir, Shirley Ho, Jake Kovalic, Géraud Krawezik, François Lanusse, Tanya Marwah, Michael McCabe, Rudy Morel, Mariel Pettee, Helen Qu, Jeff Shen, Hadi Sotoudeh, Stuart Dalziel, Miles Cranmer
 shorttitle: "A Physics Foundation Model Bridges Simulation and Laboratory Turbulence"
-date: 2026-06-02
-smallimage: walrus-rti/rti-alpha-comparison.png
-image: walrus-rti/rti-alpha-comparison.png
+date: 2026-06-03
+smallimage: /images/blog/walrus-rti/RTI_pretty.png
+image: /images/blog/walrus-rti/RTI_pretty.png
 blurb: Can a physics foundation model finetuned only on idealized simulation transfer to real laboratory experiments it was never trained on? We test this on Rayleigh-Taylor instability, where simulation and experiment have disagreed on the mixing growth rate for decades, and show that Walrus crosses the divide zero-shot, entering the experimentally observed growth band and shedding independent light on a longstanding debate.
 shortblurb: A physics foundation model finetuned on idealized simulations transfers zero-shot to laboratory turbulence, crossing a decades-old sim-experiment gap in the mixing growth rate.
-splashimage: /images/blog/walrus-rti/rti-summary.png
+splashimage: /images/blog/walrus-rti/RTI_pretty.png
 link: https://arxiv.org/abs/2606.01470
 permalink: /blog/walrus-rti/
 ---
@@ -136,9 +136,9 @@ The question of how the model achieves this transfer remains open. Until we unde
 <br/>
 Materials:<br/>
 * **Paper:** [Emergent Transfer of a Physics Foundation Model: From Simulation to Laboratory Turbulence](https://arxiv.org/abs/2606.01470)<br/>
-* **Code:** https://github.com/payelmuk150/walrus_rti/<br/>
-* **Data:** https://huggingface.co/datasets/pmukhop/rti-dataset-boussinesq<br/>
-* **Model Checkpoints:** https://huggingface.co/pmukhop/rti-walrus-model<br/>
+* **Code:** [GitHub](https://github.com/payelmuk150/walrus_rti/)<br/>
+* **Data:** [Huggingface](https://huggingface.co/datasets/pmukhop/rti-dataset-boussinesq)<br/>
+* **Model Checkpoint:** [Huggingface](https://huggingface.co/pmukhop/rti-walrus-model)<br/>
 
 *-- Payel Mukhopadhyay, Stefan Nixon, Romain Watteaux, Alberto Bietti, Kyunghyun Cho, Cristiana Diaconu, Irina Espejo Morales, David Fouhey, Siavash Golkar, Tom Hehir, Shirley Ho, Jake Kovalic, Géraud Krawezik, François Lanusse, Tanya Marwah, Michael McCabe, Rudy Morel, Mariel Pettee, Helen Qu, Jeff Shen, Hadi Sotoudeh, Stuart Dalziel, Miles Cranmer*
 
