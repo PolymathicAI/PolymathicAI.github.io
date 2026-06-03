@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Emergent Transfer of a Physics Foundation Model from Simulation to Laboratory Turbulence"
-authors: Payel Mukhopadhyay, Stefan Nixon
+authors: Payel Mukhopadhyay, Stefan Nixon, Romain Watteaux, Alberto Bietti, Kyunghyun Cho, Cristiana Diaconu, Irina Espejo Morales, David Fouhey, Siavash Golkar, Tom Hehir, Shirley Ho, Jake Kovalic, Géraud Krawezik, François Lanusse, Tanya Marwah, Michael McCabe, Rudy Morel, Mariel Pettee, Helen Qu, Jeff Shen, Hadi Sotoudeh, Stuart Dalziel, Miles Cranmer
 shorttitle: "A Physics Foundation Model Bridges Simulation and Laboratory Turbulence"
 date: 2026-06-03
 smallimage: /images/blog/walrus-rti/RTI_pretty_small.png
@@ -141,7 +141,7 @@ Materials:<br/>
 * **Data:** [Huggingface](https://huggingface.co/datasets/pmukhop/rti-dataset-boussinesq)<br/>
 * **Model Checkpoint:** [Huggingface](https://huggingface.co/pmukhop/rti-walrus-model)<br/>
 
-*-- Payel Mukhopadhyay, Stefan Nixon, Romain Watteaux, Alberto Bietti, Kyunghyun Cho, Cristiana Diaconu, Irina Espejo Morales, David Fouhey, Siavash Golkar, Tom Hehir, Shirley Ho, Jake Kovalic, Géraud Krawezik, François Lanusse, Tanya Marwah, Michael McCabe, Rudy Morel, Mariel Pettee, Helen Qu, Jeff Shen, Hadi Sotoudeh, Stuart Dalziel, Miles Cranmer*
+*-- Payel Mukhopadhyay, Stefan Nixon*
 
 ---
 **Acknowledgements**
