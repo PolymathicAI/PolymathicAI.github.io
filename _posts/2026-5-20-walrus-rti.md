@@ -136,15 +136,9 @@ The question of how the model achieves this transfer remains open. Until we unde
 <br/>
 Materials:<br/>
 * **Paper:** [Emergent Transfer of a Physics Foundation Model: From Simulation to Laboratory Turbulence](https://arxiv.org/abs/2606.01470)<br/>
-<<<<<<< HEAD
 * **Code:** [GitHub](https://github.com/payelmuk150/walrus_rti/)<br/>
 * **Data:** [Huggingface](https://huggingface.co/datasets/pmukhop/rti-dataset-boussinesq)<br/>
 * **Model Checkpoint:** [Huggingface](https://huggingface.co/pmukhop/rti-walrus-model)<br/>
-=======
-* **Code:** https://github.com/payelmuk150/walrus_rti/<br/>
-* **Data:** https://huggingface.co/datasets/pmukhop/rti-dataset-boussinesq<br/>
-* **Model Checkpoints:** https://huggingface.co/pmukhop/rti-walrus-model<br/>
->>>>>>> upstream/main
 
 *-- Payel Mukhopadhyay, Stefan Nixon, Romain Watteaux, Alberto Bietti, Kyunghyun Cho, Cristiana Diaconu, Irina Espejo Morales, David Fouhey, Siavash Golkar, Tom Hehir, Shirley Ho, Jake Kovalic, Géraud Krawezik, François Lanusse, Tanya Marwah, Michael McCabe, Rudy Morel, Mariel Pettee, Helen Qu, Jeff Shen, Hadi Sotoudeh, Stuart Dalziel, Miles Cranmer*
 
