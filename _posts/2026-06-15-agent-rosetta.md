@@ -4,11 +4,11 @@ title: "Protein Design with Agent Rosetta: A Case Study for Specialized Scientif
 authors: Jacopo Teneggi, SM Bargeen Alam Turzo, Tanya Marwah, Alberto Bietti, P. Douglas Renfrew, Vikram Khipple Mulligan, Siavash Golkar
 shorttitle: "Protein Design with Agent Rosetta"
 date: 2026-06-15 12:00
-smallimage: agent-rosetta/logo.jpg
-image: agent-rosetta/logo.jpg
+smallimage: agent-rosetta/splash.jpg
+image: agent-rosetta/splash.jpg
 blurb: An LLM agent to execute protein-design tasks with RosettaScripts.
 shortblurb: An LLM agent to execute protein-design tasks with RosettaScripts.
-splashimage: /images/blog/agent-rosetta/logo.jpg
+splashimage: /images/blog/agent-rosetta/splash.jpg
 link: https://arxiv.org/pdf/2603.15952
 github_link: https://github.com/PolymathicAI/agent-rosetta
 permalink: /blog/agent-rosetta/
@@ -111,7 +111,7 @@ We validated the structural stability of Agent Rosetta's designs with molecular 
   <em style="color:gray">Figure 6: Example designs by Agent Rosetta on including one TRF in an existing protein. TRF is colored in purple, and RMSD to the native structure is computed at the end of the MD simulation of 1μs.</em>
 </p>
 
-The following video includes a visual representation of a portion of the MD simulation for the best design on 7SQ3. TRF, the glowing residue, remains well-packed in the core of the protein, without compromising the global structure.
+The following animation depicts a portion of the MD simulation for the best design on 7SQ3. TRF, the glowing residue, remains well-packed in the core of the protein without compromising the global structure.
 
 <p align="center" style="margin: 1.5rem 0;">
   <video style="width: 90%; max-width: 800px;" controls preload="metadata" poster="/images/blog/agent-rosetta/md.png">
@@ -138,3 +138,6 @@ We are actively preparing Agent Rosetta for release to the general public. We wi
 **Acknowledgements**
 
 We would like to acknowledge the support of the Simons Foundation and of Schmidt Sciences. This work was supported in part by the AI2050 program at Schmidt Sciences (Grant G-25-70028). PDR and VKM are wholly funded by the Simons Foundation. We thank the Flatiron Institute's Scientific Computing Core for ongoing support. The computations reported in this paper were performed in-part using resources made available by the Flatiron Institute. The Flatiron Institute is a division of the Simons Foundation. We thank Lucy Reading-Ikkanda and Aditya Chhatrala for their contribution to the figures presented in this paper.
+
+Photo by <a href="https://unsplash.com/@sunify?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Lunyov</a> on <a href="https://unsplash.com/photos/swirling-abstract-pattern-of-green-foliage-and-blue-sky-Qx6dv2tcceU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
