@@ -3,7 +3,7 @@ layout: post
 title: "Protein Design with Agent Rosetta: A Case Study for Specialized Scientific Agents"
 authors: Jacopo Teneggi, SM Bargeen Alam Turzo, Tanya Marwah, Alberto Bietti, P. Douglas Renfrew, Vikram Khipple Mulligan, Siavash Golkar
 shorttitle: "Protein Design with Agent Rosetta"
-date: 2026-06-15 12:00
+date: 2026-06-18 12:00
 smallimage: agent-rosetta/splash.jpg
 image: agent-rosetta/splash.jpg
 blurb: An LLM agent to execute protein-design tasks with RosettaScripts.
@@ -135,7 +135,7 @@ We are actively preparing Agent Rosetta for release to the general public. We wi
 
 **Acknowledgements**
 
-We would like to acknowledge the support of the Simons Foundation and of Schmidt Sciences. This work was supported in part by the AI2050 program at Schmidt Sciences (Grant G-25-70028). PDR and VKM are wholly funded by the Simons Foundation. We thank the Flatiron Institute's Scientific Computing Core for ongoing support. The computations reported in this paper were performed in-part using resources made available by the Flatiron Institute. The Flatiron Institute is a division of the Simons Foundation. We thank Lucy Reading-Ikkanda and Aditya Chhatrala for their contribution to the figures presented in this paper.
+We would like to acknowledge the support of the Simons Foundation and of Schmidt Sciences. This work was supported in part by the AI2050 program at Schmidt Sciences (Grant G-25-70028). PDR and VKM are wholly funded by the Simons Foundation. We thank the Flatiron Institute's Scientific Computing Core for ongoing support. The computations reported in this paper were performed in-part using resources made available by the Flatiron Institute. The Flatiron Institute is a division of the Simons Foundation. We thank Lucy Reading-Ikkanda and Aditya Chhatrala for their contribution to the figures presented in our paper, and Emeline Haroldsen for her comments on an earlier draft of this article.
 
 Photo by <a href="https://unsplash.com/@sunify?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Lunyov</a> on <a href="https://unsplash.com/photos/swirling-abstract-pattern-of-green-foliage-and-blue-sky-Qx6dv2tcceU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
