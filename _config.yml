@@ -563,6 +563,11 @@ collaborators:
 institution-title: Participating Institutions
 
 institution:
+    # Institution Member
+  - name: Schmidt<br>Sciences
+    avatar: schmidtsciences.png
+    url: https://www.schmidtsciences.org/
+  
   # Institution Member
   - name: Simons<br>Foundation
     avatar: simons-logo.svg
@@ -578,6 +583,7 @@ institution:
     avatar: cambridge.png
     url: https://www.cam.ac.uk
 
+  # Institution Member
   #- name: Schmidt Futures
   #  avatar: schmidt.png
   #  url: https://www.schmidtfutures.com/
