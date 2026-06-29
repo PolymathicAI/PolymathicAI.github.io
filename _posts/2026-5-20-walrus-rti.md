@@ -4,8 +4,8 @@ title: "Emergent Transfer of a Physics Foundation Model from Simulation to Labor
 authors: Payel Mukhopadhyay, Stefan Nixon, Romain Watteaux, Alberto Bietti, Kyunghyun Cho, Cristiana Diaconu, Irina Espejo Morales, David Fouhey, Siavash Golkar, Tom Hehir, Shirley Ho, Jake Kovalic, Géraud Krawezik, François Lanusse, Tanya Marwah, Michael McCabe, Rudy Morel, Mariel Pettee, Helen Qu, Jeff Shen, Hadi Sotoudeh, Stuart Dalziel, Miles Cranmer
 shorttitle: "A Physics Foundation Model Bridges Simulation and Laboratory Turbulence"
 date: 2026-06-03
-smallimage: /images/blog/walrus-rti/RTI_pretty_small.png
-image: /images/blog/walrus-rti/RTI_pretty_small.png
+smallimage: walrus-rti/RTI_pretty_small.png
+image: walrus-rti/RTI_pretty_small.png
 blurb: Can a physics foundation model finetuned only on idealized simulation transfer to real laboratory experiments it was never trained on? We test this on Rayleigh-Taylor instability, where simulation and experiment have disagreed on the mixing growth rate for decades, and show that Walrus crosses the divide zero-shot, entering the experimentally observed growth band and shedding independent light on a longstanding debate.
 shortblurb: A physics foundation model finetuned on idealized simulations transfers zero-shot to laboratory turbulence, crossing a decades-old sim-experiment gap in the mixing growth rate.
 splashimage: /images/blog/walrus-rti/RTI_pretty_small.png
