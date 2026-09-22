@@ -526,6 +526,12 @@ collaborators:
     website: https://www.semanticscholar.org/author/Nicholas-Lourie/35219984
     bio: Nicholas Lourie is a PhD student at NYU investigating empirical models of deep learning. His research seeks better statistical frameworks for designing, developing, and evaluating neural networks. At NYU, he is advised by He He and Kyunghyun Cho, while in the past he worked at the Allen Institute for AI on machine ethics, common sense, prompt-based learning, and the evaluation of natural language processing models.
   
+  - full_name: Stefan Nixon
+    avatar:
+    mini-avatar: stefan_nixon.png
+    website: https://uk.linkedin.com/in/stefan-nixon-a3856b1a5
+    bio:
+  
   - full_name: Liam Parker
     tagline:
     mini-avatar: liam_parker.png
