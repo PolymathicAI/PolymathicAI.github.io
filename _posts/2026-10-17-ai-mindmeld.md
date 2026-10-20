@@ -12,6 +12,7 @@ splashimage: /images/blog/ai-mindmeld/alina-grubnyak-unsplash.jpg
 splash_alt: "A glowing white visualization of a brain against a dark background, photographed by Alina Grubnyak."
 splash_crop: "8 / 5"
 splash_position: "center center"
+link: https://polymathic-ai.org/papers/aimm.pdf
 github_link: https://github.com/PolymathicAI/AI-Mindmeld
 permalink: /blog/ai-mindmeld/
 hidden: true
