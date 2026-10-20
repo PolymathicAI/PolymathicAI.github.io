@@ -43,6 +43,14 @@ hidden: true
   .blog-single-page .article-content li:last-child {
     margin-bottom: 0;
   }
+  @media (max-width: 767px) {
+    .blog-single-page > .article-header img,
+    .blog-single-page .article-content img {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto;
+    }
+  }
 </style>
 
 An LLM's capabilities need not end with what it learned during training. By drawing on other models, it can gain access to knowledge learned from different data and specialized for different problems. Scientific foundation models offer a natural opportunity for this kind of collaboration: the patterns they learn from scientific data can complement an LLM's knowledge of language and literature, helping it tackle questions it could not answer as well on its own.
