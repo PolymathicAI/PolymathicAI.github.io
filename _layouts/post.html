@@ -28,6 +28,10 @@ layout: page
     {% if page.link != nil %}
       <a href={{ page.github_link }} class="button-post">Code</a>
     {% endif %}
+
+    {% if page.data_link %}
+      <a href={{ page.data_link }} class="button-post">Data</a>
+    {% endif %}
     </p>
 
     <!-- Article Content -->

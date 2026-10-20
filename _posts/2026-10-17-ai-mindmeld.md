@@ -14,6 +14,7 @@ splash_crop: "8 / 5"
 splash_position: "center center"
 link: https://polymathic-ai.org/papers/aimm.pdf
 github_link: https://github.com/PolymathicAI/AI-Mindmeld
+data_link: https://huggingface.co/datasets/sgolkar/ai-mindmeld-data
 permalink: /blog/ai-mindmeld/
 hidden: true
 ---
