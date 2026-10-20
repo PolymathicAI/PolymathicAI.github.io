@@ -21,7 +21,7 @@ sass:
 baseurl: ""
 
 # the base hostname & protocol for your site
-url: "http://https://polymathic-ai.org/"
+url: "https://polymathic-ai.org"
 
 ####################################
 ######   Optional Features    ######
