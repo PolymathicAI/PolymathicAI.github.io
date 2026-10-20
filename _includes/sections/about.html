@@ -15,7 +15,8 @@
       <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
         <p>{{ site.about-description }}</p>
 
-        {%assign current_post =  site.posts | where: "explains_mission_statement", true |sample %}
+        {% assign visible_posts = site.posts | where_exp: "p", "p.hidden != true" %}
+        {%assign current_post =  visible_posts | where: "explains_mission_statement", true |sample %}
         <div style="padding-top: 10px;">
           <a href="{{ site.baseurl }}{{ current_post.url}}" class="button">Read More</a>
         </div>

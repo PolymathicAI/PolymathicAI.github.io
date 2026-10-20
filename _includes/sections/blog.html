@@ -22,7 +22,8 @@
     <div class="row blog-articles-container">
 
       <!-- Jekyll LOOP -->
-      {% for post in site.posts limit:3 %}
+      {% assign visible_posts = site.posts | where_exp: "p", "p.hidden != true" %}
+      {% for post in visible_posts limit:3 %}
 
       <!-- Blog Article -->
       <div class="col-md-4 col-md-push-0 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1">
@@ -32,7 +33,7 @@
           <header class="article-header">
             <div class="img-wrap">
               <a href="{{ site.baseurl }}{{ post.url }}"><img src="images/blog/{{ post.smallimage }}"
-                  alt="Article Blog Image" style="max-height: 200px;"></a>
+                  alt="Article Blog Image" style="max-height: 200px;{% if post.splash_crop %} width: calc(200px * {{ post.splash_crop }}); max-width: 100%; aspect-ratio: {{ post.splash_crop }}; object-fit: cover; object-position: {{ post.splash_position | default: 'center top' }};{% endif %}"></a>
             </div>
             <div class="article-title">
               <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.shorttitle }}</a></h3>

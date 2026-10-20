@@ -17,7 +17,10 @@
         {% endfor %}
       {% else %}
         {% for tag in tags_list %}
+          {% assign visible_in_tag = tag[1] | where_exp: "p", "p.hidden != true" %}
+          {% if visible_in_tag.size > 0 %}
           <li><a href="{{ site.baseurl }}/tag/{{ tag[0] | slugify }}">{{ tag[0] }}</a></li>
+          {% endif %}
         {% endfor %}
       {% endif %}
     {% assign tags_list = nil %}

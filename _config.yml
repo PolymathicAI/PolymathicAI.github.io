@@ -4,7 +4,14 @@
 #
 
 # Information for compile
-exclude: ["Gemfile", "README.md"]
+# Keep internal drafts and local build tooling out of every site build.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LOCAL_PREVIEW.md
+  - notes
+  - scripts
 
 # Sass configuration
 sass:

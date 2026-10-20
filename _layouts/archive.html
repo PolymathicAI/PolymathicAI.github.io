@@ -2,7 +2,8 @@
 layout: page
 ---
 
-{% for post in page.posts %}
+{% assign visible_posts = page.posts | where_exp: "p", "p.hidden != true" %}
+{% for post in visible_posts %}
 
   <!-- Blog Article -->
   <div class="post-full">
@@ -11,7 +12,7 @@ layout: page
       <!-- Article Header -->
       <header class="article-header">
         <div class="img-wrap">
-          <img src="{{ site.baseurl }}/images/blog/{{ post.image }}" alt="Article Blog Image">
+          <img src="{{ site.baseurl }}/images/blog/{{ post.image }}" alt="Article Blog Image"{% if post.splash_crop %} style="width: 100%; aspect-ratio: {{ post.splash_crop }}; object-fit: cover; object-position: {{ post.splash_position | default: 'center top' }};"{% endif %}>
         </div>
         <div class="article-title">
           <h3 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>

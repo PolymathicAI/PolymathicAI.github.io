@@ -17,7 +17,10 @@
         {% endfor %}
       {% else %}
         {% for category in cat_list %}
-          <li><a href="{{ site.baseurl }}/category/{{ category[0] | slugify }}">{{ category[0] }} <span class="cat-count">{{ category[1].size }}</span></a></li>
+          {% assign visible_in_cat = category[1] | where_exp: "p", "p.hidden != true" %}
+          {% if visible_in_cat.size > 0 %}
+          <li><a href="{{ site.baseurl }}/category/{{ category[0] | slugify }}">{{ category[0] }} <span class="cat-count">{{ visible_in_cat.size }}</span></a></li>
+          {% endif %}
         {% endfor %}
       {% endif %}
     {% assign cat_list = nil %}
