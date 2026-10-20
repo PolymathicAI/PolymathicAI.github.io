@@ -153,6 +153,8 @@ To realize this vision, the shared LLM should be prepared for these connections 
 
 Our [AI Mindmeld repository](https://github.com/PolymathicAI/AI-Mindmeld) provides the code and instructions for training and using connectors. The [LIP library](https://github.com/PolymathicAI/AI-Mindmeld/tree/main/library) brings together connector descriptions, supported LLMs, and links to code and weights, giving researchers a place to find connections they can build on.
 
+Download the [connectors](https://huggingface.co/sgolkar/ai-mindmeld-connectors) and [data](https://huggingface.co/datasets/sgolkar/ai-mindmeld-data) from Hugging Face.
+
 We invite teams to contribute connectors for their own specialists. Host the code and weights in your own repository or model hub, then [submit a listing](https://github.com/PolymathicAI/AI-Mindmeld/blob/main/CONTRIBUTING.md#list-your-connector) to the library with a short description, supported LLMs, and download links. You maintain your connector; we maintain the directory. This lets teams share their work independently while making it easier for others to discover and combine their contributions.
 
 *– Siavash Golkar*
