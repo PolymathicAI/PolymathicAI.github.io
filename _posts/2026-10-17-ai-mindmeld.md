@@ -2,7 +2,7 @@
 layout: post
 title: "AI Mindmeld: A Latent Interconnect Protocol"
 authors: Siavash Golkar, Jake Kovalic, Shirley Ho
-shorttitle: "AI Mindmeld: A Latent Interaction Protocol"
+shorttitle: "AI Mindmeld: A Latent Interconnect Protocol"
 date: 2026-10-17 12:00
 smallimage: ai-mindmeld/alina-grubnyak-unsplash.jpg
 image: ai-mindmeld/alina-grubnyak-unsplash.jpg
@@ -73,9 +73,9 @@ For a community to build on this approach, researchers need to be able to contri
 
 These requirements mean that the shared LLM must remain frozen while specialists are connected to it. The work of aligning their representations should instead sit in connectors: learned mappings that are relatively inexpensive to construct. Keeping that investment manageable would let teams add specialists to an existing LLM and retrain their connectors when a better one arrives, making it practical for the community to keep building as the models evolve.
 
-## Latent Interaction Protocol
+## Latent Interconnect Protocol
 
-We introduce the **Latent Interaction Protocol (LIP)**, a framework for connecting specialist models to LLMs that is designed to be flexible, extensible, and compositional. Each specialist is linked to a shared LLM through a learned connector that translates between their internal representations. These connectors are trained independently, while the specialist models and the LLM remain frozen.
+We introduce the **Latent Interconnect Protocol (LIP)**, a framework for connecting specialist models to LLMs that is designed to be flexible, extensible, and compositional. Each specialist is linked to a shared LLM through a learned connector that translates between their internal representations. These connectors are trained independently, while the specialist models and the LLM remain frozen.
 
 LIP works by combining ordinary text with specialist representations in the same prompt. Each representation is assigned a position, or *slot*, where its connector feeds information into selected internal layers of the LLM. In the figure below, the orange and green paths show two specialists supplying separate slots. The LLM can then attend to this information as it processes the surrounding text and generates its response. The text specifies the task, so the same representations and connectors can be reused with different questions.
 
