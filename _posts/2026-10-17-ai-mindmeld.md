@@ -17,7 +17,6 @@ github_link: https://github.com/PolymathicAI/AI-Mindmeld
 connectors_link: https://huggingface.co/sgolkar/ai-mindmeld-connectors
 data_link: https://huggingface.co/datasets/sgolkar/ai-mindmeld-data
 permalink: /blog/ai-mindmeld/
-hidden: true
 ---
 
 <style>
